@@ -1,0 +1,2463 @@
+[==========] Running 239 tests from 72 test suites.
+[----------] Global test environment set-up.
+[468] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+[1277481] SDK checkPayloadConnection(): Payload connected! 
+[----------] 2 tests from CameraEoCaptureImageTest
+[ RUN      ] CameraEoCaptureImageTest.ExampleFlow_CaptureIncrementsImageCount
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=396 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=396 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[       OK ] CameraEoCaptureImageTest.ExampleFlow_CaptureIncrementsImageCount (2363 ms)
+[ RUN      ] CameraEoCaptureImageTest.SourceAndImageMode_ReadBack
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[       OK ] CameraEoCaptureImageTest.SourceAndImageMode_ReadBack (1042 ms)
+[----------] 2 tests from CameraEoCaptureImageTest (3406 ms total)
+
+[----------] 2 tests from CameraEoRecordVideoTest
+[ RUN      ] CameraEoRecordVideoTest.ExampleFlow_StartTimeAdvancesThenStop
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=397 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=397 recordingTimeMs=3000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=397 recordingTimeMs=4000
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[       OK ] CameraEoRecordVideoTest.ExampleFlow_StartTimeAdvancesThenStop (5486 ms)
+[ RUN      ] CameraEoRecordVideoTest.StopWhileIdle_RemainsIdle
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[       OK ] CameraEoRecordVideoTest.StopWhileIdle_RemainsIdle (941 ms)
+[----------] 2 tests from CameraEoRecordVideoTest (6428 ms total)
+
+[----------] 2 tests from CameraEoShutterSpeedTest
+[ RUN      ] CameraEoShutterSpeedTest.ExampleFlow_OneTenthThenOneThousandth
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[       OK ] CameraEoShutterSpeedTest.ExampleFlow_OneTenthThenOneThousandth (1243 ms)
+[ RUN      ] CameraEoShutterSpeedTest.RepresentativeSlowMediumFast_ReadBack
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[       OK ] CameraEoShutterSpeedTest.RepresentativeSlowMediumFast_ReadBack (1343 ms)
+[----------] 2 tests from CameraEoShutterSpeedTest (2587 ms total)
+
+[----------] 2 tests from CameraEoWhiteBalanceTest
+[ RUN      ] CameraEoWhiteBalanceTest.Manual_RedBlueGainsReadBack
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[       OK ] CameraEoWhiteBalanceTest.Manual_RedBlueGainsReadBack (1584 ms)
+[ RUN      ] CameraEoWhiteBalanceTest.OnePushTrigger_AcceptedOrStreamResponsive
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[       OK ] CameraEoWhiteBalanceTest.OnePushTrigger_AcceptedOrStreamResponsive (1163 ms)
+[----------] 2 tests from CameraEoWhiteBalanceTest (2748 ms total)
+
+[----------] 5 tests from CameraEoZoomFocusTest
+[ RUN      ] CameraEoZoomFocusTest.ExampleFlow_StepInFourThenOutTwo_ChangesFov
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[       OK ] CameraEoZoomFocusTest.ExampleFlow_StepInFourThenOutTwo_ChangesFov (16445 ms)
+[ RUN      ] CameraEoZoomFocusTest.ContinuousInStopOutStop_ChangesFov
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[       OK ] CameraEoZoomFocusTest.ContinuousInStopOutStop_ChangesFov (19605 ms)
+[ RUN      ] CameraEoZoomFocusTest.Range50_70_100_0_AcceptedOrResponsive
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[       OK ] CameraEoZoomFocusTest.Range50_70_100_0_AcceptedOrResponsive (14325 ms)
+[ RUN      ] CameraEoZoomFocusTest.FocusInStopOutStop_VisualVerification
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[WATCH] Observe initial EO focus (3s)
+[WATCH] Observe initial EO focus (2s)
+[WATCH] Observe initial EO focus (1s)
+[WATCH] FOCUS_IN active; image sharpness should change (5s)
+[WATCH] FOCUS_IN active; image sharpness should change (4s)
+[WATCH] FOCUS_IN active; image sharpness should change (3s)
+[WATCH] FOCUS_IN active; image sharpness should change (2s)
+[WATCH] FOCUS_IN active; image sharpness should change (1s)
+[WATCH] Inspect focus after stopping IN (3s)
+[WATCH] Inspect focus after stopping IN (2s)
+[WATCH] Inspect focus after stopping IN (1s)
+[WATCH] FOCUS_OUT active; sharpness should reverse (5s)
+[WATCH] FOCUS_OUT active; sharpness should reverse (4s)
+[WATCH] FOCUS_OUT active; sharpness should reverse (3s)
+[WATCH] FOCUS_OUT active; sharpness should reverse (2s)
+[WATCH] FOCUS_OUT active; sharpness should reverse (1s)
+[WATCH] Inspect final EO focus (3s)
+[WATCH] Inspect final EO focus (2s)
+[WATCH] Inspect final EO focus (1s)
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[       OK ] CameraEoZoomFocusTest.FocusInStopOutStop_VisualVerification (29429 ms)
+[ RUN      ] CameraEoZoomFocusTest.AutoFocus_CommandAcceptedOrStreamResponsive
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[       OK ] CameraEoZoomFocusTest.AutoFocus_CommandAcceptedOrStreamResponsive (10346 ms)
+[----------] 5 tests from CameraEoZoomFocusTest (90153 ms total)
+
+[----------] 2 tests from CameraIrCaptureImageTest
+[ RUN      ] CameraIrCaptureImageTest.ExampleFlow_CaptureIncrementsImageCount
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=397 recordingTimeMs=0
+[INFO] Camera mode before capture: 0 (IMAGE=0)
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[       OK ] CameraIrCaptureImageTest.ExampleFlow_CaptureIncrementsImageCount (2243 ms)
+[ RUN      ] CameraIrCaptureImageTest.IRViewAndRecordSource_ReadBack
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[       OK ] CameraIrCaptureImageTest.IRViewAndRecordSource_ReadBack (1404 ms)
+[----------] 2 tests from CameraIrCaptureImageTest (3648 ms total)
+
+[----------] 2 tests from CameraIrFfcControlTest
+[ RUN      ] CameraIrFfcControlTest.AutoThenManualThenTrigger_RemainsResponsive
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[       OK ] CameraIrFfcControlTest.AutoThenManualThenTrigger_RemainsResponsive (6020 ms)
+[ RUN      ] CameraIrFfcControlTest.FiveManualTriggers_KeepIRResponsive
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[TEST] IR FFC trigger 1/5
+[TEST] IR FFC trigger 2/5
+[TEST] IR FFC trigger 3/5
+[TEST] IR FFC trigger 4/5
+[TEST] IR FFC trigger 5/5
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[       OK ] CameraIrFfcControlTest.FiveManualTriggers_KeepIRResponsive (7023 ms)
+[----------] 2 tests from CameraIrFfcControlTest (13043 ms total)
+
+[----------] 3 tests from CameraIrIsothermProfileTest
+[ RUN      ] CameraIrIsothermProfileTest.HumanProfile_35To40C_ReadsBack
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[       OK ] CameraIrIsothermProfileTest.HumanProfile_35To40C_ReadsBack (2474 ms)
+[ RUN      ] CameraIrIsothermProfileTest.FireProfile_100To140C_ReadsBack
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[       OK ] CameraIrIsothermProfileTest.FireProfile_100To140C_ReadsBack (2472 ms)
+[ RUN      ] CameraIrIsothermProfileTest.UnsupportedProduct
+./googletest/src/gtest.cc:2506: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class, so mixing TEST_F and TEST in the same test suite is
+illegal.  In test suite CameraIrIsothermProfileTest,
+test HumanProfile_35To40C_ReadsBack is defined using TEST_F but
+test UnsupportedProduct is defined using TEST.  You probably
+want to change the TEST to TEST_F or move it to another test
+case.
+[  FAILED  ] CameraIrIsothermProfileTest.UnsupportedProduct (0 ms)
+[----------] 3 tests from CameraIrIsothermProfileTest (4947 ms total)
+
+[----------] 2 tests from CameraIrRecordVideoTest
+[ RUN      ] CameraIrRecordVideoTest.ExampleFlow_StartTimeAdvancesThenStop
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=3000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=3000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=3000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=3000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=4000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=4000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=4000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=4000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=5000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=5000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=5000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=5000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=5000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=6000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=6000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=6000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=6000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=7000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=7000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=7000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=7000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=7000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=8000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=8000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=8000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=8000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=9000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=9000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=9000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=9000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=9000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=10000
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/camera_ir/test_camera_ir_record_video.cpp:34: Failure
+Value of: cit::waitForRecording(false, 8000)
+  Actual: false
+Expected: true
+IR video_status did not return to idle.
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=10000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=398 recordingTimeMs=10000
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[  FAILED  ] CameraIrRecordVideoTest.ExampleFlow_StartTimeAdvancesThenStop (11513 ms)
+[ RUN      ] CameraIrRecordVideoTest.StopWhileIdle_RemainsIdle
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[       OK ] CameraIrRecordVideoTest.StopWhileIdle_RemainsIdle (962 ms)
+[----------] 2 tests from CameraIrRecordVideoTest (12476 ms total)
+
+[----------] 1 test from CameraIrPaletteTest
+[ RUN      ] CameraIrPaletteTest.Palettes1Through10_SetAndReadBack
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[TEST] Selecting IR palette 1
+[TEST] Selecting IR palette 2
+[TEST] Selecting IR palette 3
+[TEST] Selecting IR palette 4
+[TEST] Selecting IR palette 5
+[TEST] Selecting IR palette 6
+[TEST] Selecting IR palette 7
+[TEST] Selecting IR palette 8
+[TEST] Selecting IR palette 9
+[TEST] Selecting IR palette 10
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[       OK ] CameraIrPaletteTest.Palettes1Through10_SetAndReadBack (11608 ms)
+[----------] 1 test from CameraIrPaletteTest (11608 ms total)
+
+[----------] 3 tests from CameraIrZoomTest
+[ RUN      ] CameraIrZoomTest.StepInFourThenOutTwo_FactorChanges
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/camera_ir/test_camera_ir_set_zoom.cpp:44: Failure
+Expected: (zoomedIn) != (baseline), actual: 0 vs 0
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/camera_ir/test_camera_ir_set_zoom.cpp:52: Failure
+Expected: (zoomedOut) != (zoomedIn), actual: 0 vs 0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[  FAILED  ] CameraIrZoomTest.StepInFourThenOutTwo_FactorChanges (7044 ms)
+[ RUN      ] CameraIrZoomTest.ContinuousInStopOutStop_RemainsResponsive
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[       OK ] CameraIrZoomTest.ContinuousInStopOutStop_RemainsResponsive (8063 ms)
+[ RUN      ] CameraIrZoomTest.Range0_50_70_100_CommandsAcceptedOrStreamHealthy
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[       OK ] CameraIrZoomTest.Range0_50_70_100_CommandsAcceptedOrStreamHealthy (1083 ms)
+[----------] 3 tests from CameraIrZoomTest (16191 ms total)
+
+[----------] 6 tests from CameraFocusTest
+[ RUN      ] CameraFocusTest.ContinuousInThenStop_IsAccepted
+[WATCH] Observe the baseline image before FOCUS_IN (3s remaining)
+[WATCH] Observe the baseline image before FOCUS_IN (2s remaining)
+[WATCH] Observe the baseline image before FOCUS_IN (1s remaining)
+[WATCH] FOCUS_IN is active; watch the EO image (5s remaining)
+[WATCH] FOCUS_IN is active; watch the EO image (4s remaining)
+[WATCH] FOCUS_IN is active; watch the EO image (3s remaining)
+[WATCH] FOCUS_IN is active; watch the EO image (2s remaining)
+[WATCH] FOCUS_IN is active; watch the EO image (1s remaining)
+[WATCH] FOCUS_STOP sent; inspect the resulting image (3s remaining)
+[WATCH] FOCUS_STOP sent; inspect the resulting image (2s remaining)
+[WATCH] FOCUS_STOP sent; inspect the resulting image (1s remaining)
+[       OK ] CameraFocusTest.ContinuousInThenStop_IsAccepted (11523 ms)
+[ RUN      ] CameraFocusTest.ContinuousOutThenStop_IsAccepted
+[WATCH] Observe the baseline image before FOCUS_OUT (3s remaining)
+[WATCH] Observe the baseline image before FOCUS_OUT (2s remaining)
+[WATCH] Observe the baseline image before FOCUS_OUT (1s remaining)
+[WATCH] FOCUS_OUT is active; watch the EO image (5s remaining)
+[WATCH] FOCUS_OUT is active; watch the EO image (4s remaining)
+[WATCH] FOCUS_OUT is active; watch the EO image (3s remaining)
+[WATCH] FOCUS_OUT is active; watch the EO image (2s remaining)
+[WATCH] FOCUS_OUT is active; watch the EO image (1s remaining)
+[WATCH] FOCUS_STOP sent; inspect the resulting image (3s remaining)
+[WATCH] FOCUS_STOP sent; inspect the resulting image (2s remaining)
+[WATCH] FOCUS_STOP sent; inspect the resulting image (1s remaining)
+[       OK ] CameraFocusTest.ContinuousOutThenStop_IsAccepted (11463 ms)
+[ RUN      ] CameraFocusTest.VisualObserve_InStopOutStop
+[WATCH] Observe the initial EO image (3s remaining)
+[WATCH] Observe the initial EO image (2s remaining)
+[WATCH] Observe the initial EO image (1s remaining)
+[WATCH] FOCUS_IN is active; image sharpness should change (5s remaining)
+[WATCH] FOCUS_IN is active; image sharpness should change (4s remaining)
+[WATCH] FOCUS_IN is active; image sharpness should change (3s remaining)
+[WATCH] FOCUS_IN is active; image sharpness should change (2s remaining)
+[WATCH] FOCUS_IN is active; image sharpness should change (1s remaining)
+[WATCH] FOCUS_IN stopped; inspect and remember this image (3s remaining)
+[WATCH] FOCUS_IN stopped; inspect and remember this image (2s remaining)
+[WATCH] FOCUS_IN stopped; inspect and remember this image (1s remaining)
+[WATCH] FOCUS_OUT is active; image sharpness should reverse (5s remaining)
+[WATCH] FOCUS_OUT is active; image sharpness should reverse (4s remaining)
+[WATCH] FOCUS_OUT is active; image sharpness should reverse (3s remaining)
+[WATCH] FOCUS_OUT is active; image sharpness should reverse (2s remaining)
+[WATCH] FOCUS_OUT is active; image sharpness should reverse (1s remaining)
+[WATCH] FOCUS_OUT stopped; inspect the final image (3s remaining)
+[WATCH] FOCUS_OUT stopped; inspect the final image (2s remaining)
+[WATCH] FOCUS_OUT stopped; inspect the final image (1s remaining)
+[       OK ] CameraFocusTest.VisualObserve_InStopOutStop (19584 ms)
+[ RUN      ] CameraFocusTest.Stop_BestEffortCommandAck
+[       OK ] CameraFocusTest.Stop_BestEffortCommandAck (441 ms)
+[ RUN      ] CameraFocusTest.RangeCommand_IsAccepted
+[       OK ] CameraFocusTest.RangeCommand_IsAccepted (481 ms)
+[ RUN      ] CameraFocusTest.NativeFocusConfiguration_IsReadable
+[       OK ] CameraFocusTest.NativeFocusConfiguration_IsReadable (482 ms)
+[----------] 6 tests from CameraFocusTest (43978 ms total)
+
+[----------] 1 test from CameraIrFfcSdkGuardTest
+[ RUN      ] CameraIrFfcSdkGuardTest.SetFFCMode_InvalidValue_SendsNoMessage
+[       OK ] CameraIrFfcSdkGuardTest.SetFFCMode_InvalidValue_SendsNoMessage (1507 ms)
+[----------] 1 test from CameraIrFfcSdkGuardTest (1507 ms total)
+
+[----------] 4 tests from CameraIrFfcTest
+[ RUN      ] CameraIrFfcTest.SetManualMode_ThenTrigger_Acked
+[       OK ] CameraIrFfcTest.SetManualMode_ThenTrigger_Acked (360 ms)
+[ RUN      ] CameraIrFfcTest.SetFFCMode_Manual_BestEffortAck
+[       OK ] CameraIrFfcTest.SetFFCMode_Manual_BestEffortAck (40 ms)
+[ RUN      ] CameraIrFfcTest.SetFFCMode_Auto_BestEffortAck
+[       OK ] CameraIrFfcTest.SetFFCMode_Auto_BestEffortAck (40 ms)
+[ RUN      ] CameraIrFfcTest.Trigger_WithoutConfirmingMode_ObserveBehavior
+[FINDING] FFC trigger sent without first confirming Manual mode; ACK received.
+[FINDING] result=0
+[       OK ] CameraIrFfcTest.Trigger_WithoutConfirmingMode_ObserveBehavior (40 ms)
+[----------] 4 tests from CameraIrFfcTest (481 ms total)
+
+[----------] 1 test from CameraIRKnownGaps
+[ RUN      ] CameraIRKnownGaps.GetFFCMode_IsEmptyStub_NothingToTest
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/control/test_camera_ir_ffc.cpp:165: Skipped
+getPayloadCameraFFCMode(uint8_t&) has an empty function body in the current SDK -- it sends nothing and does not set the output parameter. There is nothing to test until the SDK implements it.
+[  SKIPPED ] CameraIRKnownGaps.GetFFCMode_IsEmptyStub_NothingToTest (0 ms)
+[----------] 1 test from CameraIRKnownGaps (0 ms total)
+
+[----------] 5 tests from CameraWhiteBalanceTest
+[ RUN      ] CameraWhiteBalanceTest.ManualMode_RedAndBlueGainsReadBack
+[       OK ] CameraWhiteBalanceTest.ManualMode_RedAndBlueGainsReadBack (562 ms)
+[ RUN      ] CameraWhiteBalanceTest.OnePushMode_ReadsBack
+[       OK ] CameraWhiteBalanceTest.OnePushMode_ReadsBack (381 ms)
+[ RUN      ] CameraWhiteBalanceTest.Trigger_BestEffortCommandAck
+[       OK ] CameraWhiteBalanceTest.Trigger_BestEffortCommandAck (381 ms)
+[ RUN      ] CameraWhiteBalanceTest.RepeatedTrigger_RemainsResponsive
+[       OK ] CameraWhiteBalanceTest.RepeatedTrigger_RemainsResponsive (442 ms)
+[ RUN      ] CameraWhiteBalanceTest.Trigger_DoesNotBreakModeReadback
+[       OK ] CameraWhiteBalanceTest.Trigger_DoesNotBreakModeReadback (402 ms)
+[----------] 5 tests from CameraWhiteBalanceTest (2171 ms total)
+
+[----------] 7 tests from CameraZoomTest
+[ RUN      ] CameraZoomTest.ContinuousInThenStop_NarrowsFov
+[       OK ] CameraZoomTest.ContinuousInThenStop_NarrowsFov (14702 ms)
+[ RUN      ] CameraZoomTest.ContinuousOutThenStop_WidensFov
+[       OK ] CameraZoomTest.ContinuousOutThenStop_WidensFov (14761 ms)
+[ RUN      ] CameraZoomTest.Stop_BestEffortCommandAck
+[       OK ] CameraZoomTest.Stop_BestEffortCommandAck (7160 ms)
+[ RUN      ] CameraZoomTest.StepInThenOut_CommandsAccepted
+[       OK ] CameraZoomTest.StepInThenOut_CommandsAccepted (7181 ms)
+[ RUN      ] CameraZoomTest.Target2x_IsMeasuredByFov
+[INFO] target=2 measured H=2.00478 V=2.00478
+[       OK ] CameraZoomTest.Target2x_IsMeasuredByFov (17241 ms)
+[ RUN      ] CameraZoomTest.Target3x_IsMeasuredByFov
+[INFO] target=3 measured H=3.00957 V=3.00957
+[       OK ] CameraZoomTest.Target3x_IsMeasuredByFov (17201 ms)
+[ RUN      ] CameraZoomTest.Target5x_IsMeasuredByFov
+[INFO] target=5 measured H=5.01914 V=5.01914
+[       OK ] CameraZoomTest.Target5x_IsMeasuredByFov (17181 ms)
+[----------] 7 tests from CameraZoomTest (95431 ms total)
+
+[----------] 5 tests from CameraCaptureTest
+[ RUN      ] CameraCaptureTest.Storage_HasEnoughSpaceForCapture
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[       OK ] CameraCaptureTest.Storage_HasEnoughSpaceForCapture (523 ms)
+[ RUN      ] CameraCaptureTest.CaptureImage_IncrementsImageCount
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=398 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=399 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=399 recordingTimeMs=0
+[       OK ] CameraCaptureTest.CaptureImage_IncrementsImageCount (782 ms)
+[ RUN      ] CameraCaptureTest.CaptureImage_BurstOfThree
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=399 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=399 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=400 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=400 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=401 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=401 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[       OK ] CameraCaptureTest.CaptureImage_BurstOfThree (1502 ms)
+[ RUN      ] CameraCaptureTest.GetCaptureStatus_EventArrives
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[       OK ] CameraCaptureTest.GetCaptureStatus_EventArrives (462 ms)
+[ RUN      ] CameraCaptureTest.StopImage_BestEffortAck
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[       OK ] CameraCaptureTest.StopImage_BestEffortAck (483 ms)
+[----------] 5 tests from CameraCaptureTest (3755 ms total)
+
+[----------] 9 tests from CameraRecordTest
+[ RUN      ] CameraRecordTest.GetCaptureStatus_InitiallyIdle
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[       OK ] CameraRecordTest.GetCaptureStatus_InitiallyIdle (382 ms)
+[ RUN      ] CameraRecordTest.StartEO_VideoStatusBecomesActive
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=3000
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[       OK ] CameraRecordTest.StartEO_VideoStatusBecomesActive (4246 ms)
+[ RUN      ] CameraRecordTest.StartIR_VideoStatusBecomesActive
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=3000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=3000
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[       OK ] CameraRecordTest.StartIR_VideoStatusBecomesActive (4206 ms)
+[ RUN      ] CameraRecordTest.StartBoth_VideoStatusBecomesActive
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=3000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=3000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=3000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=4000
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[       OK ] CameraRecordTest.StartBoth_VideoStatusBecomesActive (5330 ms)
+[ RUN      ] CameraRecordTest.StartPiP_VideoStatusBecomesActive
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=3000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=3000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=3000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=3000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=3000
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[       OK ] CameraRecordTest.StartPiP_VideoStatusBecomesActive (4268 ms)
+[ RUN      ] CameraRecordTest.RecordingTime_Advances
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[       OK ] CameraRecordTest.RecordingTime_Advances (4007 ms)
+[ RUN      ] CameraRecordTest.Stop_VideoStatusReturnsIdle
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=3000
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[       OK ] CameraRecordTest.Stop_VideoStatusReturnsIdle (4245 ms)
+[ RUN      ] CameraRecordTest.TearDown_StopsInterruptedRecording
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=3000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=3000
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[       OK ] CameraRecordTest.TearDown_StopsInterruptedRecording (4287 ms)
+[ RUN      ] CameraRecordTest.StartWhileAlreadyRecording_ObservedBehavior
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=1000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=2000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=3000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=3000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=3000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=3000
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[       OK ] CameraRecordTest.StartWhileAlreadyRecording_ObservedBehavior (4426 ms)
+[----------] 9 tests from CameraRecordTest (35401 ms total)
+
+[----------] 6 tests from CameraParamByIdTest
+[ RUN      ] CameraParamByIdTest.KnownId_ReturnsValue
+[       OK ] CameraParamByIdTest.KnownId_ReturnsValue (40 ms)
+[ RUN      ] CameraParamByIdTest.ResponseIsRoutedToExactRequestedId
+[       OK ] CameraParamByIdTest.ResponseIsRoutedToExactRequestedId (80 ms)
+[ RUN      ] CameraParamByIdTest.Value_MatchesListEntry
+[       OK ] CameraParamByIdTest.Value_MatchesListEntry (2994 ms)
+[ RUN      ] CameraParamByIdTest.RepeatedRead_IsStable
+[       OK ] CameraParamByIdTest.RepeatedRead_IsStable (40 ms)
+[ RUN      ] CameraParamByIdTest.UnknownId_DoesNotProduceFalseMatchingResponse
+[       OK ] CameraParamByIdTest.UnknownId_DoesNotProduceFalseMatchingResponse (1206 ms)
+[ RUN      ] CameraParamByIdTest.SixteenCharacterUnknownId_IsHandledSafely
+[       OK ] CameraParamByIdTest.SixteenCharacterUnknownId_IsHandledSafely (1205 ms)
+[----------] 6 tests from CameraParamByIdTest (5568 ms total)
+
+[----------] 4 tests from CameraParamByIndexTest
+[ RUN      ] CameraParamByIndexTest.FirstMiddleLast_ReturnExpectedEntries
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:24: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "CAM_MODE"
+  expected.id
+    Which is: "ADV_EO_EIS"
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:25: Failure
+Expected equality of these values:
+  actual.value
+    Which is: 1
+  expected.value
+    Which is: 0
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:24: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_VE"
+  expected.id
+    Which is: "C_V_BGAIN"
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:25: Failure
+Expected equality of these values:
+  actual.value
+    Which is: 3
+  expected.value
+    Which is: 79
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:24: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_AGC_LNP"
+  expected.id
+    Which is: "TRACK_MODE"
+[  FAILED  ] CameraParamByIndexTest.FirstMiddleLast_ReturnExpectedEntries (3014 ms)
+[ RUN      ] CameraParamByIndexTest.ReturnedIndex_MatchesRequest
+[       OK ] CameraParamByIndexTest.ReturnedIndex_MatchesRequest (2972 ms)
+[ RUN      ] CameraParamByIndexTest.EveryListedIndex_RoundTripsToSameId
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "CAM_MODE"
+  expected.id
+    Which is: "ADV_EO_EIS"
+Index 0 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "TRACK_MODE"
+  expected.id
+    Which is: "ADV_EO_IMG_ENH"
+Index 1 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "SETTING_TARGET"
+  expected.id
+    Which is: "ADV_IR_EIS"
+Index 2 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "RC_MODE"
+  expected.id
+    Which is: "ADV_IR_IMG_ENH"
+Index 3 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "STORAGE_TYPE"
+  expected.id
+    Which is: "ADV_OP_MODE"
+Index 4 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_SOURCE"
+  expected.id
+    Which is: "CAM_MODE"
+Index 5 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_REC"
+  expected.id
+    Which is: "C_SOURCE"
+Index 6 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "OSD_MODE"
+  expected.id
+    Which is: "C_T_AGC_LNP"
+Index 7 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "OSD_VALUE"
+  expected.id
+    Which is: "C_T_AGC_M"
+Index 8 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_FLIP"
+  expected.id
+    Which is: "C_T_CONST_M"
+Index 9 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "GB_MODE"
+  expected.id
+    Which is: "C_T_G"
+Index 10 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "GB_FW_FLAG"
+  expected.id
+    Which is: "C_T_ISO_M"
+Index 11 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "GB_SPD_P"
+  expected.id
+    Which is: "C_T_ISO_U"
+Index 12 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "GB_SPD_Y"
+  expected.id
+    Which is: "C_T_PALETTE"
+Index 13 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "GB_P_PANDRIFT"
+  expected.id
+    Which is: "C_T_RG0_CLR_M"
+Index 14 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "GB_BAUD"
+  expected.id
+    Which is: "C_T_RG0_CLR_MN"
+Index 15 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "GB_DEBUG_MODE"
+  expected.id
+    Which is: "C_T_RG0_CLR_MX"
+Index 16 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "LRF_MODE"
+  expected.id
+    Which is: "C_T_RG0_TMP"
+Index 17 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_FM"
+  expected.id
+    Which is: "C_T_RG1_CLR_M"
+Index 18 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_FV"
+  expected.id
+    Which is: "C_T_RG1_CLR_MN"
+Index 19 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_FA"
+  expected.id
+    Which is: "C_T_RG1_CLR_MX"
+Index 20 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_ZM_MODE"
+  expected.id
+    Which is: "C_T_RG1_TMP"
+Index 21 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_ZM_CB_LV"
+  expected.id
+    Which is: "C_T_RG2_CLR_M"
+Index 22 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_ZM_SR_LV"
+  expected.id
+    Which is: "C_T_RG2_CLR_MN"
+Index 23 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_WB"
+  expected.id
+    Which is: "C_T_RG2_CLR_MX"
+Index 24 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_AE"
+  expected.id
+    Which is: "C_T_RG2_TMP"
+Index 25 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_SP"
+  expected.id
+    Which is: "C_T_RG3_CLR_M"
+Index 26 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_IrP"
+  expected.id
+    Which is: "C_T_RG3_CLR_MN"
+Index 27 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_BrP"
+  expected.id
+    Which is: "C_T_RG3_CLR_MX"
+Index 28 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_DEFOG"
+  expected.id
+    Which is: "C_T_RG3_TMP"
+Index 29 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_DEFOG_LV"
+  expected.id
+    Which is: "C_T_RG4_CLR_M"
+Index 30 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_ICR"
+  expected.id
+    Which is: "C_T_RG4_CLR_MN"
+Index 31 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_ICR_MAN"
+  expected.id
+    Which is: "C_T_RG4_CLR_MX"
+Index 32 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_ICR_THR"
+  expected.id
+    Which is: "C_T_RG4_TMP"
+Index 33 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_GAIN"
+  expected.id
+    Which is: "C_T_RG5_CLR_M"
+Index 34 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_RGAIN"
+  expected.id
+    Which is: "C_T_RG5_CLR_MN"
+Index 35 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_BGAIN"
+  expected.id
+    Which is: "C_T_RG5_CLR_MX"
+Index 36 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_MinSP"
+  expected.id
+    Which is: "C_T_SPOT_M"
+Index 37 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_FREEZE"
+  expected.id
+    Which is: "C_T_SPOT_S"
+Index 38 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_HS"
+  expected.id
+    Which is: "C_T_SPOT_U"
+Index 39 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_Z_SPD"
+  expected.id
+    Which is: "C_T_ZOOM"
+Index 40 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_F_SPD"
+  expected.id
+    Which is: "C_V_AE"
+Index 41 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_GAINLIMIT"
+  expected.id
+    Which is: "C_V_AF_SEN"
+Index 42 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_VE"
+  expected.id
+    Which is: "C_V_BGAIN"
+Index 43 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_VE_BR"
+  expected.id
+    Which is: "C_V_BrP"
+Index 44 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_VE_COMP"
+  expected.id
+    Which is: "C_V_DEFOG"
+Index 45 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_VE_COMP_LV"
+  expected.id
+    Which is: "C_V_DEFOG_LV"
+Index 46 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_AF_SEN"
+  expected.id
+    Which is: "C_V_FA"
+Index 47 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "ADV_IR_IMG_ENH"
+  expected.id
+    Which is: "C_V_FLIP"
+Index 48 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "ADV_EO_IMG_ENH"
+  expected.id
+    Which is: "C_V_FM"
+Index 49 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "ADV_IR_EIS"
+  expected.id
+    Which is: "C_V_FREEZE"
+Index 50 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "ADV_EO_EIS"
+  expected.id
+    Which is: "C_V_FV"
+Index 51 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "ADV_OP_MODE"
+  expected.id
+    Which is: "C_V_F_SPD"
+Index 52 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_PALETTE"
+  expected.id
+    Which is: "C_V_GAIN"
+Index 53 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_ZOOM"
+  expected.id
+    Which is: "C_V_GAINLIMIT"
+Index 54 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_G"
+  expected.id
+    Which is: "C_V_HS"
+Index 55 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_SPOT_M"
+  expected.id
+    Which is: "C_V_ICR"
+Index 56 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_SPOT_U"
+  expected.id
+    Which is: "C_V_ICR_MAN"
+Index 57 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_SPOT_S"
+  expected.id
+    Which is: "C_V_ICR_THR"
+Index 58 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_ISO_M"
+  expected.id
+    Which is: "C_V_IrP"
+Index 59 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_ISO_U"
+  expected.id
+    Which is: "C_V_MinSP"
+Index 60 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG0_CLR_M"
+  expected.id
+    Which is: "C_V_REC"
+Index 61 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG0_TMP"
+  expected.id
+    Which is: "C_V_RGAIN"
+Index 62 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG0_CLR_MN"
+  expected.id
+    Which is: "C_V_SP"
+Index 63 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG0_CLR_MX"
+  expected.id
+    Which is: "C_V_VE"
+Index 64 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG1_CLR_M"
+  expected.id
+    Which is: "C_V_VE_BR"
+Index 65 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG1_TMP"
+  expected.id
+    Which is: "C_V_VE_COMP"
+Index 66 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG1_CLR_MN"
+  expected.id
+    Which is: "C_V_VE_COMP_LV"
+Index 67 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG1_CLR_MX"
+  expected.id
+    Which is: "C_V_WB"
+Index 68 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG2_CLR_M"
+  expected.id
+    Which is: "C_V_ZM_CB_LV"
+Index 69 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG2_TMP"
+  expected.id
+    Which is: "C_V_ZM_MODE"
+Index 70 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG2_CLR_MN"
+  expected.id
+    Which is: "C_V_ZM_SR_LV"
+Index 71 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG2_CLR_MX"
+  expected.id
+    Which is: "C_V_Z_SPD"
+Index 72 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG3_CLR_M"
+  expected.id
+    Which is: "GB_BAUD"
+Index 73 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG3_TMP"
+  expected.id
+    Which is: "GB_DEBUG_MODE"
+Index 74 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG3_CLR_MN"
+  expected.id
+    Which is: "GB_FW_FLAG"
+Index 75 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG3_CLR_MX"
+  expected.id
+    Which is: "GB_MODE"
+Index 76 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG4_CLR_M"
+  expected.id
+    Which is: "GB_P_PANDRIFT"
+Index 77 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG4_TMP"
+  expected.id
+    Which is: "GB_SPD_P"
+Index 78 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG4_CLR_MN"
+  expected.id
+    Which is: "GB_SPD_Y"
+Index 79 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG4_CLR_MX"
+  expected.id
+    Which is: "LRF_MODE"
+Index 80 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG5_CLR_M"
+  expected.id
+    Which is: "OSD_MODE"
+Index 81 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG5_CLR_MN"
+  expected.id
+    Which is: "OSD_VALUE"
+Index 82 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG5_CLR_MX"
+  expected.id
+    Which is: "RC_MODE"
+Index 83 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_CONST_M"
+  expected.id
+    Which is: "SETTING_TARGET"
+Index 84 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_AGC_M"
+  expected.id
+    Which is: "STORAGE_TYPE"
+Index 85 returned the wrong ID.
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49: Failure
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_AGC_LNP"
+  expected.id
+    Which is: "TRACK_MODE"
+Index 86 returned the wrong ID.
+[  FAILED  ] CameraParamByIndexTest.EveryListedIndex_RoundTripsToSameId (4775 ms)
+[ RUN      ] CameraParamByIndexTest.InvalidIndex_DoesNotProduceMatchingResponse
+[       OK ] CameraParamByIndexTest.InvalidIndex_DoesNotProduceMatchingResponse (4166 ms)
+[----------] 4 tests from CameraParamByIndexTest (14929 ms total)
+
+[----------] 7 tests from CameraParamCatalogTest
+[ RUN      ] CameraParamCatalogTest.DeclaredIds_AreUniqueAndFitMavlinkField
+[       OK ] CameraParamCatalogTest.DeclaredIds_AreUniqueAndFitMavlinkField (0 ms)
+[ RUN      ] CameraParamCatalogTest.EveryDeclaredParameter_IsReadable
+
+========== camera parameter catalog ==========
+GROUP           NAME                              PARAM_ID          VALUE
+------------------------------------------------------------------------------
+tracking        tracking_mode                     TRACK_MODE        0
+control         rc_mode                           RC_MODE           0
+source          view_source                       C_SOURCE          1
+source          record_source                     C_V_REC           0
+video           osd_mode                          OSD_MODE          0
+video           image_flip                        C_V_FLIP          3
+ir              palette                           C_T_PALETTE       0
+ir              zoom_factor                       C_T_ZOOM          0
+zoom            eo_zoom_mode                      C_V_ZM_MODE       0
+zoom            eo_zoom_combine_factor            C_V_ZM_CB_LV      0
+zoom            eo_zoom_super_resolution_factor   C_V_ZM_SR_LV      0
+zoom            eo_zoom_speed                     C_V_Z_SPD         5
+image           eo_freeze                         C_V_FREEZE        3
+image           defog                             C_V_DEFOG         3
+image           defog_level                       C_V_DEFOG_LV      0
+image           eo_high_sensitivity               C_V_HS            3
+exposure        auto_exposure                     C_V_AE            0
+exposure        shutter_speed                     C_V_SP            13
+exposure        shutter_min_limit                 C_V_MinSP         18
+exposure        aperture_value                    C_V_IrP           25
+exposure        eo_gain_hs                        C_V_GAIN_HS       READ_FAIL
+exposure        eo_gain_ls                        C_V_GAIN_LS       READ_FAIL
+exposure        bright_value                      C_V_BrP_LS        READ_FAIL
+white_balance   mode                              C_V_WB            0
+white_balance   r_gain                            C_V_RGAIN         174
+white_balance   b_gain                            C_V_BGAIN         79
+focus           focus_mode                        C_V_FM            0
+focus           focus_value                       C_V_FV            6
+focus           focus_speed                       C_V_F_SPD         0
+icr             icr_mode                          C_V_ICR           0
+icr             icr_auto_threshold                C_V_ICR_THR       0
+icr             icr_manual                        C_V_ICR_MAN       3
+gimbal          gimbal_mode                       GB_MODE           1
+lrf             lrf_mode                          LRF_MODE          3
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_catalog.cpp:34: Failure
+Expected equality of these values:
+  failures
+    Which is: 3
+  0
+3 declared parameters were not exposed by this payload.
+[  FAILED  ] CameraParamCatalogTest.EveryDeclaredParameter_IsReadable (9703 ms)
+[ RUN      ] CameraParamCatalogTest.SourceRecordAndOsd_RepresentativeValues
+[CONFIG] C_SOURCE -> 1
+[CONFIG] C_SOURCE -> 0
+[CONFIG] C_SOURCE -> 2
+[CONFIG] C_SOURCE -> 0
+[CONFIG] C_V_REC -> 0
+[CONFIG] C_V_REC -> 0
+[CONFIG] OSD_MODE -> 2
+[CONFIG] OSD_MODE -> 0
+[       OK ] CameraParamCatalogTest.SourceRecordAndOsd_RepresentativeValues (402 ms)
+[ RUN      ] CameraParamCatalogTest.ExposureAndImage_RepresentativeValues
+[CONFIG] C_V_FLIP -> 2
+[CONFIG] C_V_FLIP -> 0
+[CONFIG] C_V_FREEZE -> 3
+[CONFIG] C_V_FREEZE -> 0
+[CONFIG] C_V_AE -> 0
+[CONFIG] C_V_AE -> 0
+[CONFIG] C_V_DEFOG -> 3
+[CONFIG] C_V_DEFOG -> 0
+[       OK ] CameraParamCatalogTest.ExposureAndImage_RepresentativeValues (442 ms)
+[ RUN      ] CameraParamCatalogTest.WhiteBalanceAndFocus_RepresentativeValues
+[CONFIG] C_V_WB -> 0
+[CONFIG] C_V_WB -> 0
+[CONFIG] C_V_FM -> 0
+[CONFIG] C_V_FM -> 0
+[CONFIG] C_V_F_SPD -> 3
+[CONFIG] C_V_F_SPD -> 0
+[       OK ] CameraParamCatalogTest.WhiteBalanceAndFocus_RepresentativeValues (301 ms)
+[ RUN      ] CameraParamCatalogTest.ZoomAndIr_RepresentativeValues
+[CONFIG] C_V_ZM_MODE -> 2
+[CONFIG] C_V_ZM_MODE -> 0
+[CONFIG] C_V_ZM_SR_LV -> 0
+[CONFIG] C_V_ZM_SR_LV -> 0
+[CONFIG] C_T_ZOOM -> 0
+[CONFIG] C_T_ZOOM -> 0
+[CONFIG] C_T_PALETTE -> 0
+[CONFIG] C_T_PALETTE -> 0
+[       OK ] CameraParamCatalogTest.ZoomAndIr_RepresentativeValues (442 ms)
+[ RUN      ] CameraParamCatalogTest.ControlAndIcr_RepresentativeValues
+[CONFIG] RC_MODE -> 0
+[CONFIG] RC_MODE -> 0
+[CONFIG] C_V_ICR -> 2
+[CONFIG] C_V_ICR -> 0
+[CONFIG] C_V_ICR_THR -> 128
+[CONFIG] C_V_ICR_THR -> 0
+[       OK ] CameraParamCatalogTest.ControlAndIcr_RepresentativeValues (301 ms)
+[----------] 7 tests from CameraParamCatalogTest (11595 ms total)
+
+[----------] 5 tests from CameraParamListTest
+[ RUN      ] CameraParamListTest.Request_ReturnsParameters
+[INFO] Received 87 unique camera parameters.
+[       OK ] CameraParamListTest.Request_ReturnsParameters (2957 ms)
+[ RUN      ] CameraParamListTest.Ids_AreNonemptyUniqueAndBounded
+[       OK ] CameraParamListTest.Ids_AreNonemptyUniqueAndBounded (2956 ms)
+[ RUN      ] CameraParamListTest.Indices_AreUnique
+[       OK ] CameraParamListTest.Indices_AreUnique (2957 ms)
+[ RUN      ] CameraParamListTest.Values_AreFinite
+[       OK ] CameraParamListTest.Values_AreFinite (2956 ms)
+[ RUN      ] CameraParamListTest.RepeatedRequest_ReturnsStableIdsAndIndices
+[       OK ] CameraParamListTest.RepeatedRequest_ReturnsStableIdsAndIndices (5914 ms)
+[----------] 5 tests from CameraParamListTest (17742 ms total)
+
+[----------] 5 tests from CameraParamSetTest
+[ RUN      ] CameraParamSetTest.Uint32Value_RoundTripsAndRestores
+[CONFIG] RC_MODE -> 1
+[CONFIG] RC_MODE -> 0
+[       OK ] CameraParamSetTest.Uint32Value_RoundTripsAndRestores (120 ms)
+[ RUN      ] CameraParamSetTest.ValueContainingZeroBytes_RoundTrips
+[CONFIG] C_V_FV -> 30720
+[CONFIG] C_V_FV -> 6
+[       OK ] CameraParamSetTest.ValueContainingZeroBytes_RoundTrips (100 ms)
+[ RUN      ] CameraParamSetTest.MinimumAndMaximumKnownValues_RoundTrip
+[CONFIG] C_V_ICR_THR -> 0
+[CONFIG] C_V_ICR_THR -> 255
+[CONFIG] C_V_ICR_THR -> 0
+[       OK ] CameraParamSetTest.MinimumAndMaximumKnownValues_RoundTrip (141 ms)
+[ RUN      ] CameraParamSetTest.UnknownId_IsNotCreated
+[       OK ] CameraParamSetTest.UnknownId_IsNotCreated (1208 ms)
+[ RUN      ] CameraParamSetTest.OutOfRangeEnum_IsRejectedOrClamped
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_set.cpp:61: Failure
+Expected: (observed) != (255.0), actual: 255 vs 255
+Invalid RC mode was stored without rejection or clamping.
+[CONFIG] RC_MODE -> 0
+[  FAILED  ] CameraParamSetTest.OutOfRangeEnum_IsRejectedOrClamped (100 ms)
+[----------] 5 tests from CameraParamSetTest (1671 ms total)
+
+[----------] 4 tests from CameraFovTest
+[ RUN      ] CameraFovTest.EO_EventArrivesAndAnglesAreValid
+[INFO] EO FOV: cameraId=1 hfov=66.4131 vfov=51.9785
+[       OK ] CameraFovTest.EO_EventArrivesAndAnglesAreValid (20 ms)
+[ RUN      ] CameraFovTest.IR_EventArrivesAndAnglesAreValid
+[INFO] IR FOV: cameraId=2 hfov=32 vfov=25.6
+[       OK ] CameraFovTest.IR_EventArrivesAndAnglesAreValid (20 ms)
+[ RUN      ] CameraFovTest.RepeatedEORead_IsStable
+[       OK ] CameraFovTest.RepeatedEORead_IsStable (40 ms)
+[ RUN      ] CameraFovTest.EO_AspectRatioIsPlausible
+[       OK ] CameraFovTest.EO_AspectRatioIsPlausible (20 ms)
+[----------] 4 tests from CameraFovTest (101 ms total)
+
+[----------] 3 tests from CameraInformationTest
+[ RUN      ] CameraInformationTest.Request_ReturnsInformation
+[INFO] CAMERA_INFORMATION flags=0xFCF image=1 video=1 modes=1 zoom=1 focus=1 stream=1
+[       OK ] CameraInformationTest.Request_ReturnsInformation (20 ms)
+[ RUN      ] CameraInformationTest.CapabilityBitmap_IsNotEmpty
+[INFO] CAMERA_INFORMATION flags=0xFCF image=1 video=1 modes=1 zoom=1 focus=1 stream=1
+[       OK ] CameraInformationTest.CapabilityBitmap_IsNotEmpty (201 ms)
+[ RUN      ] CameraInformationTest.RepeatedRequests_ReturnStableCapabilities
+[INFO] CAMERA_INFORMATION flags=0xFCF image=1 video=1 modes=1 zoom=1 focus=1 stream=1
+[       OK ] CameraInformationTest.RepeatedRequests_ReturnStableCapabilities (603 ms)
+[----------] 3 tests from CameraInformationTest (825 ms total)
+
+[----------] 5 tests from CameraModeTest
+[ RUN      ] CameraModeTest.GetMode_EventArrives
+[INFO] Original camera mode: VIDEO (1)
+[INFO] Mode readback reached VIDEO
+[       OK ] CameraModeTest.GetMode_EventArrives (261 ms)
+[ RUN      ] CameraModeTest.SetImage_StateOrAcceptedAck
+[INFO] Original camera mode: VIDEO (1)
+[INFO] Mode readback reached IMAGE
+[INFO] Mode readback reached VIDEO
+[       OK ] CameraModeTest.SetImage_StateOrAcceptedAck (140 ms)
+[ RUN      ] CameraModeTest.SetVideo_StateOrAcceptedAck
+[INFO] Original camera mode: VIDEO (1)
+[INFO] Mode readback reached VIDEO
+[INFO] Mode readback reached VIDEO
+[       OK ] CameraModeTest.SetVideo_StateOrAcceptedAck (100 ms)
+[ RUN      ] CameraModeTest.InvalidMode_IsRejectedOrIgnored
+[INFO] Original camera mode: VIDEO (1)
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/query/test_camera_mode.cpp:122: Failure
+Value of: explicitlyRejected || ignored
+  Actual: false
+Expected: true
+Invalid mode 255 was not rejected and changed the reported mode from 1 to 255 (ACK received=true, ACK result=0).
+[INFO] Mode readback reached VIDEO
+[  FAILED  ] CameraModeTest.InvalidMode_IsRejectedOrIgnored (100 ms)
+[ RUN      ] CameraModeTest.OriginalMode_IsRestored
+[INFO] Original camera mode: VIDEO (1)
+[INFO] Mode readback reached IMAGE
+[INFO] Mode readback reached VIDEO
+[INFO] Mode readback reached VIDEO
+[       OK ] CameraModeTest.OriginalMode_IsRestored (160 ms)
+[----------] 5 tests from CameraModeTest (764 ms total)
+
+[----------] 5 tests from CameraStorageTest
+[ RUN      ] CameraStorageTest.InformationEventArrives
+[INFO] Storage total=479695 used=1320.33 available=453939 status=2
+[       OK ] CameraStorageTest.InformationEventArrives (20 ms)
+[ RUN      ] CameraStorageTest.Capacities_AreFiniteAndNonnegative
+[       OK ] CameraStorageTest.Capacities_AreFiniteAndNonnegative (100 ms)
+[ RUN      ] CameraStorageTest.TotalUsedAvailable_AreConsistent
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/query/test_camera_storage.cpp:59: Failure
+The difference between info.used + info.available and info.total is 24435.265625, which exceeds tolerance, where
+info.used + info.available evaluates to 455259.640625,
+info.total evaluates to 479694.90625, and
+tolerance evaluates to 9593.8981249999997.
+Used plus available storage differs materially from total.
+[  FAILED  ] CameraStorageTest.TotalUsedAvailable_AreConsistent (100 ms)
+[ RUN      ] CameraStorageTest.Status_IsKnown
+[       OK ] CameraStorageTest.Status_IsKnown (100 ms)
+[ RUN      ] CameraStorageTest.AvailableCapacity_ExceedsMediaThreshold
+[       OK ] CameraStorageTest.AvailableCapacity_ExceedsMediaThreshold (100 ms)
+[----------] 5 tests from CameraStorageTest (422 ms total)
+
+[----------] 5 tests from CaptureStatusTest
+[ RUN      ] CaptureStatusTest.EventArrives
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[       OK ] CaptureStatusTest.EventArrives (100 ms)
+[ RUN      ] CaptureStatusTest.ImageAndVideoStatus_AreKnown
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[       OK ] CaptureStatusTest.ImageAndVideoStatus_AreKnown (20 ms)
+[ RUN      ] CaptureStatusTest.ImageCount_IsFiniteNonnegativeInteger
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[       OK ] CaptureStatusTest.ImageCount_IsFiniteNonnegativeInteger (20 ms)
+[ RUN      ] CaptureStatusTest.RecordingTime_IsFiniteAndNonnegative
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[       OK ] CaptureStatusTest.RecordingTime_IsFiniteAndNonnegative (20 ms)
+[ RUN      ] CaptureStatusTest.RepeatedRead_ImageCountIsMonotonic
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[       OK ] CaptureStatusTest.RepeatedRead_ImageCountIsMonotonic (60 ms)
+[----------] 5 tests from CaptureStatusTest (221 ms total)
+
+[----------] 5 tests from ComponentInformationTest
+[ RUN      ] ComponentInformationTest.InfoCallbackArrives
+_handle_request_component_info 
+[       OK ] ComponentInformationTest.InfoCallbackArrives (40 ms)
+[ RUN      ] ComponentInformationTest.ModelName_IsNonempty
+_handle_request_component_info 
+[       OK ] ComponentInformationTest.ModelName_IsNonempty (20 ms)
+[ RUN      ] ComponentInformationTest.SoftwareVersion_IsNonempty
+_handle_request_component_info 
+[       OK ] ComponentInformationTest.SoftwareVersion_IsNonempty (20 ms)
+[ RUN      ] ComponentInformationTest.SerialNumber_IsNonempty
+_handle_request_component_info 
+[       OK ] ComponentInformationTest.SerialNumber_IsNonempty (20 ms)
+[ RUN      ] ComponentInformationTest.RepeatedRequests_ReturnStableIdentity
+_handle_request_component_info 
+_handle_request_component_info 
+[INFO] Component model=Vio software=3.1.8.20 serial=1650925055618
+[       OK ] ComponentInformationTest.RepeatedRequests_ReturnStableIdentity (40 ms)
+[----------] 5 tests from ComponentInformationTest (141 ms total)
+
+[----------] 2 tests from GimbalChangeSettingsExampleTest
+[ RUN      ] GimbalChangeSettingsExampleTest.ExampleFlow_StiffTilt50ReadBackRestore
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_change_settings.cpp:10: Failure
+Value of: gt::getParamById("STIFF_TILT", original_)
+  Actual: false
+Expected: true
+[  FAILED  ] GimbalChangeSettingsExampleTest.ExampleFlow_StiffTilt50ReadBackRestore (4005 ms)
+[ RUN      ] GimbalChangeSettingsExampleTest.SameStiffnessValue_IsIdempotent
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_change_settings.cpp:10: Failure
+Value of: gt::getParamById("STIFF_TILT", original_)
+  Actual: false
+Expected: true
+[  FAILED  ] GimbalChangeSettingsExampleTest.SameStiffnessValue_IsIdempotent (4008 ms)
+[----------] 2 tests from GimbalChangeSettingsExampleTest (8013 ms total)
+
+[----------] 1 test from GimbalModeTest
+[ RUN      ] GimbalModeTest.ExampleFlow_LockFollowMapping_ReadBack
+[       OK ] GimbalModeTest.ExampleFlow_LockFollowMapping_ReadBack (4242 ms)
+[----------] 1 test from GimbalModeTest (4242 ms total)
+
+[----------] 3 tests from GimbalMotionTest
+[ RUN      ] GimbalMotionTest.V2Angle_ReachesSmallPitchOffset
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_motion.cpp:13: Failure
+Value of: gt::getAttitude(original_, 4000)
+  Actual: false
+Expected: true
+No gimbal attitude telemetry.
+[  FAILED  ] GimbalMotionTest.V2Angle_ReachesSmallPitchOffset (4004 ms)
+[ RUN      ] GimbalMotionTest.V2Speed_ThenZeroChangesAndStopsYaw
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_motion.cpp:13: Failure
+Value of: gt::getAttitude(original_, 4000)
+  Actual: false
+Expected: true
+No gimbal attitude telemetry.
+[  FAILED  ] GimbalMotionTest.V2Speed_ThenZeroChangesAndStopsYaw (4005 ms)
+[ RUN      ] GimbalMotionTest.MAVLinkV1Angle_CommandAcceptedAndMoves
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_motion.cpp:13: Failure
+Value of: gt::getAttitude(original_, 4000)
+  Actual: false
+Expected: true
+No gimbal attitude telemetry.
+[  FAILED  ] GimbalMotionTest.MAVLinkV1Angle_CommandAcceptedAndMoves (4000 ms)
+[----------] 3 tests from GimbalMotionTest (12010 ms total)
+
+[----------] 3 tests from GimbalMoveAngleExampleTest
+[ RUN      ] GimbalMoveAngleExampleTest.MAVLinkV1_PitchAndYaw_ReachesTarget
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/gimbal_example_test_helpers.h:17: Failure
+Value of: gt::getAttitude(original_, 4000)
+  Actual: false
+Expected: true
+No MOUNT_ORIENTATION telemetry.
+[  FAILED  ] GimbalMoveAngleExampleTest.MAVLinkV1_PitchAndYaw_ReachesTarget (4002 ms)
+[ RUN      ] GimbalMoveAngleExampleTest.MAVLinkV1_SecondFartherPosition_ReachesTarget
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/gimbal_example_test_helpers.h:17: Failure
+Value of: gt::getAttitude(original_, 4000)
+  Actual: false
+Expected: true
+No MOUNT_ORIENTATION telemetry.
+[  FAILED  ] GimbalMoveAngleExampleTest.MAVLinkV1_SecondFartherPosition_ReachesTarget (4006 ms)
+[ RUN      ] GimbalMoveAngleExampleTest.MAVLinkV2_PitchAndYaw_ReachesTarget
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/gimbal_example_test_helpers.h:17: Failure
+Value of: gt::getAttitude(original_, 4000)
+  Actual: false
+Expected: true
+No MOUNT_ORIENTATION telemetry.
+[  FAILED  ] GimbalMoveAngleExampleTest.MAVLinkV2_PitchAndYaw_ReachesTarget (4005 ms)
+[----------] 3 tests from GimbalMoveAngleExampleTest (12014 ms total)
+
+[----------] 3 tests from GimbalMoveSpeedExampleTest
+[ RUN      ] GimbalMoveSpeedExampleTest.ExampleFlow_RightThenLeft20DegPerSecond
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/gimbal_example_test_helpers.h:17: Failure
+Value of: gt::getAttitude(original_, 4000)
+  Actual: false
+Expected: true
+No MOUNT_ORIENTATION telemetry.
+[  FAILED  ] GimbalMoveSpeedExampleTest.ExampleFlow_RightThenLeft20DegPerSecond (4006 ms)
+[ RUN      ] GimbalMoveSpeedExampleTest.ZeroSpeed_HoldsYawStable
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/gimbal_example_test_helpers.h:17: Failure
+Value of: gt::getAttitude(original_, 4000)
+  Actual: false
+Expected: true
+No MOUNT_ORIENTATION telemetry.
+[  FAILED  ] GimbalMoveSpeedExampleTest.ZeroSpeed_HoldsYawStable (4002 ms)
+[ RUN      ] GimbalMoveSpeedExampleTest.PitchPositiveThenNegative_MoveOpposite
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/gimbal_example_test_helpers.h:17: Failure
+Value of: gt::getAttitude(original_, 4000)
+  Actual: false
+Expected: true
+No MOUNT_ORIENTATION telemetry.
+[  FAILED  ] GimbalMoveSpeedExampleTest.PitchPositiveThenNegative_MoveOpposite (4019 ms)
+[----------] 3 tests from GimbalMoveSpeedExampleTest (12029 ms total)
+
+[----------] 3 tests from GimbalParamByIdTest
+[ RUN      ] GimbalParamByIdTest.KnownVersionId_ReturnsExactId
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_by_id.cpp:9: Failure
+Value of: gt::getParamById("VERSION_X", value)
+  Actual: false
+Expected: true
+[  FAILED  ] GimbalParamByIdTest.KnownVersionId_ReturnsExactId (4002 ms)
+[ RUN      ] GimbalParamByIdTest.KnownStiffnessId_IsRepeatable
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_by_id.cpp:16: Failure
+Value of: gt::getParamById("STIFF_TILT", first)
+  Actual: false
+Expected: true
+[  FAILED  ] GimbalParamByIdTest.KnownStiffnessId_IsRepeatable (4000 ms)
+[ RUN      ] GimbalParamByIdTest.UnknownId_DoesNotProduceFalseMatchingResponse
+[       OK ] GimbalParamByIdTest.UnknownId_DoesNotProduceFalseMatchingResponse (1206 ms)
+[----------] 3 tests from GimbalParamByIdTest (9210 ms total)
+
+[----------] 2 tests from GimbalParamByIndexTest
+[ RUN      ] GimbalParamByIndexTest.FirstCatalogIndex_ReturnsSameEntry
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_by_index.cpp:9: Failure
+Value of: catalog.empty()
+  Actual: true
+Expected: false
+[  FAILED  ] GimbalParamByIndexTest.FirstCatalogIndex_ReturnsSameEntry (8004 ms)
+[ RUN      ] GimbalParamByIndexTest.MiddleCatalogIndex_MatchesIdQuery
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_by_index.cpp:20: Failure
+Value of: catalog.empty()
+  Actual: true
+Expected: false
+[  FAILED  ] GimbalParamByIndexTest.MiddleCatalogIndex_MatchesIdQuery (8012 ms)
+[----------] 2 tests from GimbalParamByIndexTest (16017 ms total)
+
+[----------] 2 tests from GimbalParamListTest
+[ RUN      ] GimbalParamListTest.List_ReturnsNonemptyUniqueCatalog
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_list.cpp:12: Failure
+Value of: values.empty()
+  Actual: true
+Expected: false
+No gimbal PARAM_VALUE list response.
+[  FAILED  ] GimbalParamListTest.List_ReturnsNonemptyUniqueCatalog (8011 ms)
+[ RUN      ] GimbalParamListTest.RepeatedList_HasStableIdSet
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_list.cpp:28: Failure
+Value of: first.empty()
+  Actual: true
+Expected: false
+[  FAILED  ] GimbalParamListTest.RepeatedList_HasStableIdSet (16015 ms)
+[----------] 2 tests from GimbalParamListTest (24026 ms total)
+
+[----------] 2 tests from GimbalParamSetTest
+[ RUN      ] GimbalParamSetTest.StiffTilt_SetReadBackAndRestore
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_set.cpp:9: Failure
+Value of: gt::getParamById("STIFF_TILT", original_)
+  Actual: false
+Expected: true
+[  FAILED  ] GimbalParamSetTest.StiffTilt_SetReadBackAndRestore (4002 ms)
+[ RUN      ] GimbalParamSetTest.SameValue_IsIdempotent
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_set.cpp:9: Failure
+Value of: gt::getParamById("STIFF_TILT", original_)
+  Actual: false
+Expected: true
+[  FAILED  ] GimbalParamSetTest.SameValue_IsIdempotent (4000 ms)
+[----------] 2 tests from GimbalParamSetTest (8002 ms total)
+
+[----------] 1 test from PayloadGpsExampleTest
+[ RUN      ] PayloadGpsExampleTest.NoFixRawThenDgpsRawAndGlobalPosition
+[511013875] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+CLOSE PORT
+
+CLOSE THREADS 
+
+[       OK ] PayloadGpsExampleTest.NoFixRawThenDgpsRawAndGlobalPosition (1164 ms)
+[----------] 1 test from PayloadGpsExampleTest (1164 ms total)
+
+[----------] 1 test from PayloadSystemTimeExampleTest
+[ RUN      ] PayloadSystemTimeExampleTest.CurrentEpochAndIncreasingBootTimeEncode
+[512178461] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+CLOSE PORT
+
+CLOSE THREADS 
+
+[       OK ] PayloadSystemTimeExampleTest.CurrentEpochAndIncreasingBootTimeEncode (1164 ms)
+[----------] 1 test from PayloadSystemTimeExampleTest (1164 ms total)
+
+[----------] 1 test from PayloadComponentInfoExampleTest
+[ RUN      ] PayloadComponentInfoExampleTest.ModelVersionSerial_Arrive
+_handle_request_component_info 
+[       OK ] PayloadComponentInfoExampleTest.ModelVersionSerial_Arrive (20 ms)
+[----------] 1 test from PayloadComponentInfoExampleTest (20 ms total)
+
+[----------] 1 test from PayloadFovStatusExampleTest
+[ RUN      ] PayloadFovStatusExampleTest.EoAndIr_AreValidWhenAvailable
+[       OK ] PayloadFovStatusExampleTest.EoAndIr_AreValidWhenAvailable (40 ms)
+[----------] 1 test from PayloadFovStatusExampleTest (40 ms total)
+
+[----------] 1 test from PayloadVideoStreamingExampleTest
+[ RUN      ] PayloadVideoStreamingExampleTest.CameraCapabilityThenStreamInfo
+[       OK ] PayloadVideoStreamingExampleTest.CameraCapabilityThenStreamInfo (240 ms)
+[----------] 1 test from PayloadVideoStreamingExampleTest (240 ms total)
+
+[----------] 2 tests from PayloadStatusExampleTest
+[ RUN      ] PayloadStatusExampleTest.SetRates_ProducesRequestedStatusValues
+[       OK ] PayloadStatusExampleTest.SetRates_ProducesRequestedStatusValues (40 ms)
+[ RUN      ] PayloadStatusExampleTest.RequestParamValue_ReturnsMatchingIndex
+[       OK ] PayloadStatusExampleTest.RequestParamValue_ReturnsMatchingIndex (60 ms)
+[----------] 2 tests from PayloadStatusExampleTest (100 ms total)
+
+[----------] 3 tests from PayloadStreamControlEncodingTest
+[ RUN      ] PayloadStreamControlEncodingTest.Bitrate_EoAndIrEncode
+[513744616] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+CLOSE PORT
+
+CLOSE THREADS 
+
+[       OK ] PayloadStreamControlEncodingTest.Bitrate_EoAndIrEncode (1144 ms)
+[ RUN      ] PayloadStreamControlEncodingTest.Resolution_AllDocumentedLevelsEncode
+[514888963] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+CLOSE PORT
+
+CLOSE THREADS 
+
+[       OK ] PayloadStreamControlEncodingTest.Resolution_AllDocumentedLevelsEncode (1265 ms)
+[ RUN      ] PayloadStreamControlEncodingTest.Profile_AllDocumentedLevelsEncode
+[516154497] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+CLOSE PORT
+
+CLOSE THREADS 
+
+[       OK ] PayloadStreamControlEncodingTest.Profile_AllDocumentedLevelsEncode (1223 ms)
+[----------] 3 tests from PayloadStreamControlEncodingTest (3633 ms total)
+
+[----------] 1 test from PayloadStreamBitrateHardwareTest
+[ RUN      ] PayloadStreamBitrateHardwareTest.EoFourMbps_ReadBackAndRestore
+[       OK ] PayloadStreamBitrateHardwareTest.EoFourMbps_ReadBackAndRestore (2080 ms)
+[----------] 1 test from PayloadStreamBitrateHardwareTest (2080 ms total)
+
+[----------] 2 tests from PayloadSystemControlEncodingTest
+[ RUN      ] PayloadSystemControlEncodingTest.StandbyOnAndOffEncode
+[519458967] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+CLOSE PORT
+
+CLOSE THREADS 
+
+[       OK ] PayloadSystemControlEncodingTest.StandbyOnAndOffEncode (1144 ms)
+[ RUN      ] PayloadSystemControlEncodingTest.RestartGimbalAppId4Encodes
+[520603106] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+CLOSE PORT
+
+CLOSE THREADS 
+
+[       OK ] PayloadSystemControlEncodingTest.RestartGimbalAppId4Encodes (1124 ms)
+[----------] 2 tests from PayloadSystemControlEncodingTest (2268 ms total)
+
+[----------] 1 test from PayloadObjectDetectionExampleTest
+[ RUN      ] PayloadObjectDetectionExampleTest.EnableDetectionThenTracking_ReadBack
+[       OK ] PayloadObjectDetectionExampleTest.EnableDetectionThenTracking_ReadBack (361 ms)
+[----------] 1 test from PayloadObjectDetectionExampleTest (361 ms total)
+
+[----------] 1 test from PayloadObjectTrackingExampleTest
+[ RUN      ] PayloadObjectTrackingExampleTest.ActivePositionThenStop
+[522148892] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[522569451] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 1 
+[522689874] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 960.00 540.00 128.00 128.00 
+[522790285] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 1760.00 920.00 128.00 128.00 
+[522910757] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 1760.00 920.00 128.00 128.00 
+[523031195] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 1760.00 920.00 128.00 128.00 
+[523131605] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 1760.00 920.00 128.00 128.00 
+[523252021] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 1760.00 920.00 128.00 128.00 
+[523372486] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 1760.00 920.00 128.00 128.00 
+[523472884] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 1760.00 920.00 128.00 128.00 
+[523593374] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 1760.00 920.00 128.00 128.00 
+[523713864] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 1760.00 920.00 128.00 128.00 
+[523814278] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 1760.00 920.00 128.00 128.00 
+[523934787] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 1760.00 920.00 128.00 128.00 
+[524055274] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 1760.00 920.00 128.00 128.00 
+[524155662] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 1760.00 920.00 128.00 128.00 
+[524276140] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 1760.00 920.00 128.00 128.00 
+[524396632] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[524597496] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[       OK ] PayloadObjectTrackingExampleTest.ActivePositionThenStop (2969 ms)
+[----------] 1 test from PayloadObjectTrackingExampleTest (2969 ms total)
+
+[----------] 1 test from PayloadVideoRecordStatusExampleTest
+[ RUN      ] PayloadVideoRecordStatusExampleTest.StartAndStop_EmitRecordJsonAndCaptureStatus
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=0
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/payload/test_payload_video_record_status.cpp:25: Failure
+Value of: pet::waitForRecordText(recordSeq, activeText, 10000)
+  Actual: false
+Expected: true
+regPayloadRecordInfoChanged received no recording JSON.
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=10000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=10000
+[INFO] Capture status: imageStatus=0 videoStatus=1 imageCount=402 recordingTimeMs=11000
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[  FAILED  ] PayloadVideoRecordStatusExampleTest.StartAndStop_EmitRecordJsonAndCaptureStatus (12285 ms)
+[----------] 1 test from PayloadVideoRecordStatusExampleTest (12285 ms total)
+
+[----------] 1 test from PayloadZoomTargetEncodingTest
+[ RUN      ] PayloadZoomTargetEncodingTest.ExampleTargets_EncodeExactTargetPosition
+[537343421] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+CLOSE PORT
+
+CLOSE THREADS 
+
+[       OK ] PayloadZoomTargetEncodingTest.ExampleTargets_EncodeExactTargetPosition (1224 ms)
+[----------] 1 test from PayloadZoomTargetEncodingTest (1224 ms total)
+
+[----------] 1 test from PayloadZoomTargetHardwareTest
+[ RUN      ] PayloadZoomTargetHardwareTest.OneThenThirteenPointFive_NarrowsFov
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[       OK ] PayloadZoomTargetHardwareTest.OneThenThirteenPointFive_NarrowsFov (19083 ms)
+[----------] 1 test from PayloadZoomTargetHardwareTest (19083 ms total)
+
+[----------] 8 tests from StreamBitrateTest
+[ RUN      ] StreamBitrateTest.GetEOStreamBitrate
+[INFO] EO stream URI: rtsp://192.168.16.211:8554/payload
+[INFO] EO stream values: 0, 360, 640, 4E+06, 1
+[       OK ] StreamBitrateTest.GetEOStreamBitrate (20 ms)
+[ RUN      ] StreamBitrateTest.Getter_TriggersAsynchronousBitrateCallback
+[INFO] immediate getter result=0, asynchronous callback bitrate=4000000 bps
+[       OK ] StreamBitrateTest.Getter_TriggersAsynchronousBitrateCallback (20 ms)
+[ RUN      ] StreamBitrateTest.SetStreamBitrate
+[TEST] Setting bitrate to 16000000 bps
+[INFO] Actual bitrate: 1.6E+07 bps
+[       OK ] StreamBitrateTest.SetStreamBitrate (520 ms)
+[ RUN      ] StreamBitrateTest.SetStreamBitrate_MinBoundary_512kbps
+[TEST] Setting bitrate to 512000 bps
+[INFO] Actual bitrate: 512000 bps
+[       OK ] StreamBitrateTest.SetStreamBitrate_MinBoundary_512kbps (1020 ms)
+[ RUN      ] StreamBitrateTest.SetAndGetStreamBitrate
+[INFO] Original bitrate: 4E+06 bps
+[TEST] Setting bitrate to 14000000 bps
+[INFO] Actual bitrate: 1.4E+07 bps
+[CLEANUP] Restoring bitrate to 4E+06 bps
+[       OK ] StreamBitrateTest.SetAndGetStreamBitrate (1060 ms)
+[ RUN      ] StreamBitrateTest.SetAndGetStreamBitrate_IR
+[INFO] IR original bitrate: 2E+06 bps
+[TEST] Setting IR bitrate to 2000000 bps
+[INFO] IR actual bitrate: 2E+06 bps
+[CLEANUP] Restoring IR bitrate to 2E+06 bps
+[       OK ] StreamBitrateTest.SetAndGetStreamBitrate_IR (1060 ms)
+[ RUN      ] StreamBitrateTest.SetBitrate_BelowDocumentedMinimum_ObserveBehavior
+[FINDING] Requested 100000 bps (below documented minimum); payload reports 4E+06 bps.
+[       OK ] StreamBitrateTest.SetBitrate_BelowDocumentedMinimum_ObserveBehavior (1020 ms)
+[ RUN      ] StreamBitrateTest.SetBitrate_AboveDocumentedMaximum_ObserveBehavior
+[FINDING] Requested 20000000 bps (above documented maximum); payload reports 4E+06 bps.
+[       OK ] StreamBitrateTest.SetBitrate_AboveDocumentedMaximum_ObserveBehavior (1020 ms)
+[----------] 8 tests from StreamBitrateTest (5742 ms total)
+
+[----------] 5 tests from StreamInformationTest
+[ RUN      ] StreamInformationTest.DefaultStream_EventArrivesAndFieldsAreValid
+[INFO] default stream: id=1 type=0 640x360 bitrate=4000000 uri=rtsp://192.168.16.211:8554/payload
+[       OK ] StreamInformationTest.DefaultStream_EventArrivesAndFieldsAreValid (40 ms)
+[ RUN      ] StreamInformationTest.EOStream_IdAndFieldsMatchRequest
+[       OK ] StreamInformationTest.EOStream_IdAndFieldsMatchRequest (40 ms)
+[ RUN      ] StreamInformationTest.IRStream_ValidWhenAvailable
+[       OK ] StreamInformationTest.IRStream_ValidWhenAvailable (40 ms)
+[ RUN      ] StreamInformationTest.RepeatedEOQuery_IsStable
+[       OK ] StreamInformationTest.RepeatedEOQuery_IsStable (80 ms)
+[ RUN      ] StreamInformationTest.CallbackRegistration_IsActive
+[       OK ] StreamInformationTest.CallbackRegistration_IsActive (40 ms)
+[----------] 5 tests from StreamInformationTest (240 ms total)
+
+[----------] 3 tests from StreamProfileTest
+[ RUN      ] StreamProfileTest.EO_LowLatencyBalanceHighPerformance_Accepted
+[TEST] stream=1 profile=LowLatency (level 0)
+[TEST] stream=1 profile=Balance (level 1)
+[TEST] stream=1 profile=HighPerformance (level 2)
+[CLEANUP] Restoring stream 1 to Standard encoder mode at 4000000 bps
+[       OK ] StreamProfileTest.EO_LowLatencyBalanceHighPerformance_Accepted (2431 ms)
+[ RUN      ] StreamProfileTest.IR_LowLatencyBalanceHighPerformance_AcceptedWhenAvailable
+[TEST] stream=2 profile=LowLatency (level 0)
+[TEST] stream=2 profile=Balance (level 1)
+[TEST] stream=2 profile=HighPerformance (level 2)
+[CLEANUP] Restoring stream 2 to Standard encoder mode at 2000000 bps
+[       OK ] StreamProfileTest.IR_LowLatencyBalanceHighPerformance_AcceptedWhenAvailable (2471 ms)
+[ RUN      ] StreamProfileTest.BalanceProfile_RepeatedCommandRemainsResponsive
+[TEST] stream=1 profile=Balance (level 1)
+[TEST] stream=1 profile=Balance (level 1)
+[CLEANUP] Restoring stream 1 to Standard encoder mode at 4000000 bps
+[       OK ] StreamProfileTest.BalanceProfile_RepeatedCommandRemainsResponsive (1911 ms)
+[----------] 3 tests from StreamProfileTest (6814 ms total)
+
+[----------] 3 tests from StreamRateTest
+[ RUN      ] StreamRateTest.EOZoomIndex_OneSecondInterval_IsAccepted
+[       OK ] StreamRateTest.EOZoomIndex_OneSecondInterval_IsAccepted (40 ms)
+[ RUN      ] StreamRateTest.IRZoomIndex_DefaultInterval_IsAccepted
+[       OK ] StreamRateTest.IRZoomIndex_DefaultInterval_IsAccepted (20 ms)
+[ RUN      ] StreamRateTest.RepeatedRateRequest_RemainsConnected
+[       OK ] StreamRateTest.RepeatedRateRequest_RemainsConnected (80 ms)
+[----------] 3 tests from StreamRateTest (140 ms total)
+
+[----------] 4 tests from StreamResolutionTest
+[ RUN      ] StreamResolutionTest.SetResolution_1080p_Verified
+[       OK ] StreamResolutionTest.SetResolution_1080p_Verified (3540 ms)
+[ RUN      ] StreamResolutionTest.SetResolution_720p_Verified
+[       OK ] StreamResolutionTest.SetResolution_720p_Verified (3540 ms)
+[ RUN      ] StreamResolutionTest.SetResolution_540p_Verified
+[       OK ] StreamResolutionTest.SetResolution_540p_Verified (3520 ms)
+[ RUN      ] StreamResolutionTest.SetAndGetStreamResolution
+[INFO] EO baseline resolution: 960x540
+[TEST] Setting EO resolution to 1280x720 (level 1)
+[CLEANUP] Restoring EO resolution to 960x540 (level 2)
+[       OK ] StreamResolutionTest.SetAndGetStreamResolution (7080 ms)
+[----------] 4 tests from StreamResolutionTest (17682 ms total)
+
+[----------] 6 tests from StreamResolutionIRTest
+[ RUN      ] StreamResolutionIRTest.SetResolution_1280x1024_Verified
+[       OK ] StreamResolutionIRTest.SetResolution_1280x1024_Verified (3540 ms)
+[ RUN      ] StreamResolutionIRTest.SetResolution_640x512_Verified
+[       OK ] StreamResolutionIRTest.SetResolution_640x512_Verified (3540 ms)
+[ RUN      ] StreamResolutionIRTest.SetResolution_480x384_Verified
+[       OK ] StreamResolutionIRTest.SetResolution_480x384_Verified (3540 ms)
+[ RUN      ] StreamResolutionIRTest.SetResolution_320x256_Verified
+[       OK ] StreamResolutionIRTest.SetResolution_320x256_Verified (3540 ms)
+[ RUN      ] StreamResolutionIRTest.SetResolution_160x128_Verified
+[       OK ] StreamResolutionIRTest.SetResolution_160x128_Verified (3540 ms)
+[ RUN      ] StreamResolutionIRTest.SetAndGetStreamResolution
+[INFO] IR baseline resolution: 160x128
+[TEST] Setting IR resolution to 640x512 (level 1)
+[CLEANUP] Restoring IR resolution to 160x128 (level 4)
+[       OK ] StreamResolutionIRTest.SetAndGetStreamResolution (7100 ms)
+[----------] 6 tests from StreamResolutionIRTest (24803 ms total)
+
+[----------] 1 test from StandbyEncodingTest
+[ RUN      ] StandbyEncodingTest.EnableAndDisable_EncodeExpectedUser4Fields
+[613075788] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+CLOSE PORT
+
+CLOSE THREADS 
+
+[       OK ] StandbyEncodingTest.EnableAndDisable_EncodeExpectedUser4Fields (1144 ms)
+[----------] 1 test from StandbyEncodingTest (1144 ms total)
+
+[----------] 3 tests from StandbyTest
+[ RUN      ] StandbyTest.Disable_LeavesCameraAndHeartbeatResponsive
+[       OK ] StandbyTest.Disable_LeavesCameraAndHeartbeatResponsive (3893 ms)
+[ RUN      ] StandbyTest.EnableThenDisable_RestoresCameraQueries
+[INFO] Heartbeats observed during standby window: 6
+[       OK ] StandbyTest.EnableThenDisable_RestoresCameraQueries (9185 ms)
+[ RUN      ] StandbyTest.RepeatedEnableThenDisable_RemainsRecoverable
+[       OK ] StandbyTest.RepeatedEnableThenDisable_RemainsRecoverable (1701 ms)
+[----------] 3 tests from StandbyTest (14780 ms total)
+
+[----------] 3 tests from GpsPositionTest
+[ RUN      ] GpsPositionTest.EncodesExactGlobalPositionInt
+[629000594] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+CLOSE PORT
+
+CLOSE THREADS 
+
+[       OK ] GpsPositionTest.EncodesExactGlobalPositionInt (1123 ms)
+[ RUN      ] GpsPositionTest.NegativeLatitudeLongitudeAndAltitudePreserved
+[630124610] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+CLOSE PORT
+
+CLOSE THREADS 
+
+[       OK ] GpsPositionTest.NegativeLatitudeLongitudeAndAltitudePreserved (1123 ms)
+[ RUN      ] GpsPositionTest.TimestampVelocityAndHeadingBoundariesPreserved
+[631248598] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+CLOSE PORT
+
+CLOSE THREADS 
+
+[       OK ] GpsPositionTest.TimestampVelocityAndHeadingBoundariesPreserved (1124 ms)
+[----------] 3 tests from GpsPositionTest (3372 ms total)
+
+[----------] 3 tests from GpsRawTest
+[ RUN      ] GpsRawTest.EncodesAllBaseAndExtensionFieldsExactly
+[632373387] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+CLOSE PORT
+
+CLOSE THREADS 
+
+[       OK ] GpsRawTest.EncodesAllBaseAndExtensionFieldsExactly (1124 ms)
+[ RUN      ] GpsRawTest.NoFixAndUnknownValuesArePreserved
+[633497512] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+CLOSE PORT
+
+CLOSE THREADS 
+
+[       OK ] GpsRawTest.NoFixAndUnknownValuesArePreserved (1124 ms)
+[ RUN      ] GpsRawTest.ThreeDimensionalFixNegativeCoordinatesAndAccuracyPreserved
+[634621729] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+CLOSE PORT
+
+CLOSE THREADS 
+
+[       OK ] GpsRawTest.ThreeDimensionalFixNegativeCoordinatesAndAccuracyPreserved (1124 ms)
+[----------] 3 tests from GpsRawTest (3373 ms total)
+
+[----------] 3 tests from SystemTimeTest
+[ RUN      ] SystemTimeTest.EncodesUnixAndBootTimeExactly
+[635746750] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+CLOSE PORT
+
+CLOSE THREADS 
+
+[       OK ] SystemTimeTest.EncodesUnixAndBootTimeExactly (1124 ms)
+[ RUN      ] SystemTimeTest.ZeroValuesArePreserved
+[636871041] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+CLOSE PORT
+
+CLOSE THREADS 
+
+[       OK ] SystemTimeTest.ZeroValuesArePreserved (1123 ms)
+[ RUN      ] SystemTimeTest.MaximumTimestampsAreNotTruncated
+[637994879] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+CLOSE PORT
+
+CLOSE THREADS 
+
+[       OK ] SystemTimeTest.MaximumTimestampsAreNotTruncated (1124 ms)
+[----------] 3 tests from SystemTimeTest (3372 ms total)
+
+[----------] 4 tests from TrackingModeTest
+[ RUN      ] TrackingModeTest.Stop_ReportsIdle
+[639220018] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[639520120] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[639640600] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[       OK ] TrackingModeTest.Stop_ReportsIdle (962 ms)
+[ RUN      ] TrackingModeTest.Active_ProducesKnownTrackingStatus
+[640141872] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[640441973] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 1 
+[640562427] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[       OK ] TrackingModeTest.Active_ProducesKnownTrackingStatus (921 ms)
+[ RUN      ] TrackingModeTest.EagleEyes_CommandAcceptedOrTelemetryResponsive
+[641063392] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[641363491] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 2 
+[641504009] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[       OK ] TrackingModeTest.EagleEyes_CommandAcceptedOrTelemetryResponsive (942 ms)
+[ RUN      ] TrackingModeTest.ActiveThenStop_ReturnsIdle
+[642005866] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[642305993] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 1 
+[642426782] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[642527236] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[       OK ] TrackingModeTest.ActiveThenStop_ReturnsIdle (1022 ms)
+[----------] 4 tests from TrackingModeTest (3848 ms total)
+
+[----------] 8 tests from TrackingPositionTest
+[ RUN      ] TrackingPositionTest.CenteredBox_AppearsInTelemetry
+[643028225] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[643328314] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 1 
+[643448801] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 960.00 540.00 128.00 128.00 
+[643549206] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[       OK ] TrackingPositionTest.CenteredBox_AppearsInTelemetry (1021 ms)
+[ RUN      ] TrackingPositionTest.TopLeftValidBox_AppearsInTelemetry
+[644050287] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[644350389] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 1 
+[644470887] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 64.00 64.00 128.00 128.00 
+[644591385] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[       OK ] TrackingPositionTest.TopLeftValidBox_AppearsInTelemetry (1042 ms)
+[ RUN      ] TrackingPositionTest.BottomRightValidBox_RemainsInsideFrame
+[645092425] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[645392600] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 1 
+[645513293] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 1856.00 1016.00 128.00 128.00 
+[645714152] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[       OK ] TrackingPositionTest.BottomRightValidBox_RemainsInsideFrame (1122 ms)
+[ RUN      ] TrackingPositionTest.FarApartPoints_AreAppliedInSequence
+[646215250] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[646515347] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 1 
+[WATCH] Moving tracking point to top-left (x=160, y=160)
+[646636015] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 160.00 160.00 128.00 128.00 
+[WATCH] Hold at top-left for 2 seconds
+[WATCH] Moving tracking point to bottom-right (x=1760, y=920)
+[648756637] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 1760.00 920.00 128.00 128.00 
+[WATCH] Hold at bottom-right for 2 seconds
+[WATCH] Moving tracking point to top-right (x=1760, y=160)
+[650857102] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 1760.00 160.00 128.00 128.00 
+[650957603] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 1760.00 160.00 128.00 128.00 
+[WATCH] Hold at top-right for 2 seconds
+[WATCH] Moving tracking point to bottom-left (x=160, y=920)
+[653078094] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 160.00 920.00 128.00 128.00 
+[WATCH] Hold at bottom-left for 2 seconds
+[WATCH] Moving tracking point to center (x=960, y=540)
+[655198606] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 960.00 540.00 128.00 128.00 
+[WATCH] Hold at center for 2 seconds
+[657298993] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[       OK ] TrackingPositionTest.FarApartPoints_AreAppliedInSequence (11584 ms)
+[ RUN      ] TrackingPositionTest.OppositeFarPoints_TravelAcrossFrame
+[657799928] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[658099991] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 1 
+[658220386] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 192.00 540.00 128.00 128.00 
+[658320746] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 192.00 540.00 128.00 128.00 
+[660441183] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 1728.00 540.00 128.00 128.00 
+[660561843] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 1728.00 540.00 128.00 128.00 
+/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/tracking/test_tracking_position.cpp:88: Failure
+The difference between current.x and 1728 is 800, which exceeds 96, where
+current.x evaluates to 928,
+1728 evaluates to 1728, and
+96 evaluates to 96.
+[662763030] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[  FAILED  ] TrackingPositionTest.OppositeFarPoints_TravelAcrossFrame (5463 ms)
+[ RUN      ] TrackingPositionTest.ZeroSize_IsRejectedOrIgnored
+[663263850] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[663563915] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 1 
+[663664244] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 960.00 540.00 128.00 128.00 
+[663784643] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 960.00 540.00 0.00 0.00 
+[664425112] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[       OK ] TrackingPositionTest.ZeroSize_IsRejectedOrIgnored (1662 ms)
+[ RUN      ] TrackingPositionTest.OutOfFrame_IsRejectedOrClamped
+[664925877] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[665225942] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 1 
+[665346318] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 2500.00 1500.00 128.00 128.00 
+[665986852] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[       OK ] TrackingPositionTest.OutOfFrame_IsRejectedOrClamped (1561 ms)
+[ RUN      ] TrackingPositionTest.StopAfterTrigger_ReturnsIdle
+[666527726] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[666827805] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 1 
+[666948227] SDK setPayloadObjectTrackingPosition(): setPayloadObjectTrackingPosition, 960.00 540.00 128.00 128.00 
+[667068681] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[667289368] SDK setPayloadObjectTrackingMode(): setPayloadObjectTrackingMode 0 
+[       OK ] TrackingPositionTest.StopAfterTrigger_ReturnsIdle (1302 ms)
+[----------] 8 tests from TrackingPositionTest (24762 ms total)
+
+[----------] 5 tests from EoModes/CameraEoWhiteBalanceModeTest
+[ RUN      ] EoModes/CameraEoWhiteBalanceModeTest.SetAndReadBack/Auto
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[       OK ] EoModes/CameraEoWhiteBalanceModeTest.SetAndReadBack/Auto (1202 ms)
+[ RUN      ] EoModes/CameraEoWhiteBalanceModeTest.SetAndReadBack/Outdoor
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[       OK ] EoModes/CameraEoWhiteBalanceModeTest.SetAndReadBack/Outdoor (1202 ms)
+[ RUN      ] EoModes/CameraEoWhiteBalanceModeTest.SetAndReadBack/Indoor
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[       OK ] EoModes/CameraEoWhiteBalanceModeTest.SetAndReadBack/Indoor (1383 ms)
+[ RUN      ] EoModes/CameraEoWhiteBalanceModeTest.SetAndReadBack/Manual
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[       OK ] EoModes/CameraEoWhiteBalanceModeTest.SetAndReadBack/Manual (1222 ms)
+[ RUN      ] EoModes/CameraEoWhiteBalanceModeTest.SetAndReadBack/ATW
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[       OK ] EoModes/CameraEoWhiteBalanceModeTest.SetAndReadBack/ATW (1202 ms)
+[----------] 5 tests from EoModes/CameraEoWhiteBalanceModeTest (6213 ms total)
+
+[----------] 5 tests from SupportedModes/CameraWhiteBalanceModeTest
+[ RUN      ] SupportedModes/CameraWhiteBalanceModeTest.Mode_SetAndReadBack/Auto
+[       OK ] SupportedModes/CameraWhiteBalanceModeTest.Mode_SetAndReadBack/Auto (421 ms)
+[ RUN      ] SupportedModes/CameraWhiteBalanceModeTest.Mode_SetAndReadBack/Outdoor
+[       OK ] SupportedModes/CameraWhiteBalanceModeTest.Mode_SetAndReadBack/Outdoor (461 ms)
+[ RUN      ] SupportedModes/CameraWhiteBalanceModeTest.Mode_SetAndReadBack/Indoor
+[       OK ] SupportedModes/CameraWhiteBalanceModeTest.Mode_SetAndReadBack/Indoor (421 ms)
+[ RUN      ] SupportedModes/CameraWhiteBalanceModeTest.Mode_SetAndReadBack/Manual
+[       OK ] SupportedModes/CameraWhiteBalanceModeTest.Mode_SetAndReadBack/Manual (461 ms)
+[ RUN      ] SupportedModes/CameraWhiteBalanceModeTest.Mode_SetAndReadBack/ATW
+[       OK ] SupportedModes/CameraWhiteBalanceModeTest.Mode_SetAndReadBack/ATW (421 ms)
+[----------] 5 tests from SupportedModes/CameraWhiteBalanceModeTest (2187 ms total)
+
+[----------] 4 tests from CaptureModes/CameraCaptureSourceTest
+[ RUN      ] CaptureModes/CameraCaptureSourceTest.CaptureIncrementsImageCount/EO
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=402 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=403 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=403 recordingTimeMs=0
+[       OK ] CaptureModes/CameraCaptureSourceTest.CaptureIncrementsImageCount/EO (1543 ms)
+[ RUN      ] CaptureModes/CameraCaptureSourceTest.CaptureIncrementsImageCount/IR
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=403 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=403 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=404 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=404 recordingTimeMs=0
+[       OK ] CaptureModes/CameraCaptureSourceTest.CaptureIncrementsImageCount/IR (1482 ms)
+[ RUN      ] CaptureModes/CameraCaptureSourceTest.CaptureIncrementsImageCount/PiP
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=404 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=404 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=405 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=405 recordingTimeMs=0
+[       OK ] CaptureModes/CameraCaptureSourceTest.CaptureIncrementsImageCount/PiP (1542 ms)
+[ RUN      ] CaptureModes/CameraCaptureSourceTest.CaptureIncrementsImageCount/Both
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=405 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=405 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=406 recordingTimeMs=0
+[INFO] Capture status: imageStatus=0 videoStatus=0 imageCount=406 recordingTimeMs=0
+[       OK ] CaptureModes/CameraCaptureSourceTest.CaptureIncrementsImageCount/Both (1482 ms)
+[----------] 4 tests from CaptureModes/CameraCaptureSourceTest (6050 ms total)
+
+[----------] 6 tests from CoreCapabilities/CameraInformationCapabilityTest
+[ RUN      ] CoreCapabilities/CameraInformationCapabilityTest.CoreFeature_IsAdvertised/CaptureImage
+[INFO] CAMERA_INFORMATION flags=0xFCF image=1 video=1 modes=1 zoom=1 focus=1 stream=1
+[       OK ] CoreCapabilities/CameraInformationCapabilityTest.CoreFeature_IsAdvertised/CaptureImage (20 ms)
+[ RUN      ] CoreCapabilities/CameraInformationCapabilityTest.CoreFeature_IsAdvertised/CaptureVideo
+[INFO] CAMERA_INFORMATION flags=0xFCF image=1 video=1 modes=1 zoom=1 focus=1 stream=1
+[       OK ] CoreCapabilities/CameraInformationCapabilityTest.CoreFeature_IsAdvertised/CaptureVideo (200 ms)
+[ RUN      ] CoreCapabilities/CameraInformationCapabilityTest.CoreFeature_IsAdvertised/CameraModes
+[INFO] CAMERA_INFORMATION flags=0xFCF image=1 video=1 modes=1 zoom=1 focus=1 stream=1
+[       OK ] CoreCapabilities/CameraInformationCapabilityTest.CoreFeature_IsAdvertised/CameraModes (220 ms)
+[ RUN      ] CoreCapabilities/CameraInformationCapabilityTest.CoreFeature_IsAdvertised/BasicZoom
+[INFO] CAMERA_INFORMATION flags=0xFCF image=1 video=1 modes=1 zoom=1 focus=1 stream=1
+[       OK ] CoreCapabilities/CameraInformationCapabilityTest.CoreFeature_IsAdvertised/BasicZoom (180 ms)
+[ RUN      ] CoreCapabilities/CameraInformationCapabilityTest.CoreFeature_IsAdvertised/BasicFocus
+[INFO] CAMERA_INFORMATION flags=0xFCF image=1 video=1 modes=1 zoom=1 focus=1 stream=1
+[       OK ] CoreCapabilities/CameraInformationCapabilityTest.CoreFeature_IsAdvertised/BasicFocus (200 ms)
+[ RUN      ] CoreCapabilities/CameraInformationCapabilityTest.CoreFeature_IsAdvertised/VideoStream
+[INFO] CAMERA_INFORMATION flags=0xFCF image=1 video=1 modes=1 zoom=1 focus=1 stream=1
+[       OK ] CoreCapabilities/CameraInformationCapabilityTest.CoreFeature_IsAdvertised/VideoStream (200 ms)
+[----------] 6 tests from CoreCapabilities/CameraInformationCapabilityTest (1023 ms total)
+
+[----------] 3 tests from SafeModes/GimbalModeValueTest
+[ RUN      ] SafeModes/GimbalModeValueTest.SetAndReadBack/Lock
+[       OK ] SafeModes/GimbalModeValueTest.SetAndReadBack/Lock (321 ms)
+[ RUN      ] SafeModes/GimbalModeValueTest.SetAndReadBack/Follow
+[       OK ] SafeModes/GimbalModeValueTest.SetAndReadBack/Follow (140 ms)
+[ RUN      ] SafeModes/GimbalModeValueTest.SetAndReadBack/Mapping
+[       OK ] SafeModes/GimbalModeValueTest.SetAndReadBack/Mapping (120 ms)
+[----------] 3 tests from SafeModes/GimbalModeValueTest (582 ms total)
+
+[----------] 5 tests from SupportedApps/RestartAppEncodingTest
+[ RUN      ] SupportedApps/RestartAppEncodingTest.EncodesExpectedApplicationId/Payload
+[683788171] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+CLOSE PORT
+
+CLOSE THREADS 
+
+[       OK ] SupportedApps/RestartAppEncodingTest.EncodesExpectedApplicationId/Payload (1123 ms)
+[ RUN      ] SupportedApps/RestartAppEncodingTest.EncodesExpectedApplicationId/Streaming
+[684912120] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+CLOSE PORT
+
+CLOSE THREADS 
+
+[       OK ] SupportedApps/RestartAppEncodingTest.EncodesExpectedApplicationId/Streaming (1123 ms)
+[ RUN      ] SupportedApps/RestartAppEncodingTest.EncodesExpectedApplicationId/Tracking
+[686036053] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+CLOSE PORT
+
+CLOSE THREADS 
+
+[       OK ] SupportedApps/RestartAppEncodingTest.EncodesExpectedApplicationId/Tracking (1123 ms)
+[ RUN      ] SupportedApps/RestartAppEncodingTest.EncodesExpectedApplicationId/WebUI
+[687160089] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+CLOSE PORT
+
+CLOSE THREADS 
+
+[       OK ] SupportedApps/RestartAppEncodingTest.EncodesExpectedApplicationId/WebUI (1123 ms)
+[ RUN      ] SupportedApps/RestartAppEncodingTest.EncodesExpectedApplicationId/Gimbal
+[688283830] SDK PayloadSdkInterface(): Starting Gremsy PayloadSdk 3.1.0_build.26062026
+[32m start : 239 	 Set UDP_Port as UDP_CLIENT
+[0m
+START READ THREAD 
+CHECK FOR MESSAGES 
+Found 
+START WRITE THREAD 
+Thread created
+
+CLOSE PORT
+
+CLOSE THREADS 
+
+[       OK ] SupportedApps/RestartAppEncodingTest.EncodesExpectedApplicationId/Gimbal (1123 ms)
+[----------] 5 tests from SupportedApps/RestartAppEncodingTest (5619 ms total)
+
+[----------] Global test environment tear-down
+CLOSE PORT
+
+CLOSE THREADS 
+
+[==========] 239 tests from 72 test suites ran. (689419 ms total)
+[  PASSED  ] 208 tests.
+[  SKIPPED ] 1 test, listed below:
+[  SKIPPED ] CameraIRKnownGaps.GetFFCMode_IsEmptyStub_NothingToTest
+[  FAILED  ] 30 tests, listed below:
+[  FAILED  ] CameraIrIsothermProfileTest.UnsupportedProduct
+[  FAILED  ] CameraIrRecordVideoTest.ExampleFlow_StartTimeAdvancesThenStop
+[  FAILED  ] CameraIrZoomTest.StepInFourThenOutTwo_FactorChanges
+[  FAILED  ] CameraParamByIndexTest.FirstMiddleLast_ReturnExpectedEntries
+[  FAILED  ] CameraParamByIndexTest.EveryListedIndex_RoundTripsToSameId
+[  FAILED  ] CameraParamCatalogTest.EveryDeclaredParameter_IsReadable
+[  FAILED  ] CameraParamSetTest.OutOfRangeEnum_IsRejectedOrClamped
+[  FAILED  ] CameraModeTest.InvalidMode_IsRejectedOrIgnored
+[  FAILED  ] CameraStorageTest.TotalUsedAvailable_AreConsistent
+[  FAILED  ] GimbalChangeSettingsExampleTest.ExampleFlow_StiffTilt50ReadBackRestore
+[  FAILED  ] GimbalChangeSettingsExampleTest.SameStiffnessValue_IsIdempotent
+[  FAILED  ] GimbalMotionTest.V2Angle_ReachesSmallPitchOffset
+[  FAILED  ] GimbalMotionTest.V2Speed_ThenZeroChangesAndStopsYaw
+[  FAILED  ] GimbalMotionTest.MAVLinkV1Angle_CommandAcceptedAndMoves
+[  FAILED  ] GimbalMoveAngleExampleTest.MAVLinkV1_PitchAndYaw_ReachesTarget
+[  FAILED  ] GimbalMoveAngleExampleTest.MAVLinkV1_SecondFartherPosition_ReachesTarget
+[  FAILED  ] GimbalMoveAngleExampleTest.MAVLinkV2_PitchAndYaw_ReachesTarget
+[  FAILED  ] GimbalMoveSpeedExampleTest.ExampleFlow_RightThenLeft20DegPerSecond
+[  FAILED  ] GimbalMoveSpeedExampleTest.ZeroSpeed_HoldsYawStable
+[  FAILED  ] GimbalMoveSpeedExampleTest.PitchPositiveThenNegative_MoveOpposite
+[  FAILED  ] GimbalParamByIdTest.KnownVersionId_ReturnsExactId
+[  FAILED  ] GimbalParamByIdTest.KnownStiffnessId_IsRepeatable
+[  FAILED  ] GimbalParamByIndexTest.FirstCatalogIndex_ReturnsSameEntry
+[  FAILED  ] GimbalParamByIndexTest.MiddleCatalogIndex_MatchesIdQuery
+[  FAILED  ] GimbalParamListTest.List_ReturnsNonemptyUniqueCatalog
+[  FAILED  ] GimbalParamListTest.RepeatedList_HasStableIdSet
+[  FAILED  ] GimbalParamSetTest.StiffTilt_SetReadBackAndRestore
+[  FAILED  ] GimbalParamSetTest.SameValue_IsIdempotent
+[  FAILED  ] PayloadVideoRecordStatusExampleTest.StartAndStop_EmitRecordJsonAndCaptureStatus
+[  FAILED  ] TrackingPositionTest.OppositeFarPoints_TravelAcrossFrame
+
+30 FAILED TESTS
+  YOU HAVE 15 DISABLED TESTS
+

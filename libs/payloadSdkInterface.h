@@ -365,6 +365,7 @@ private:
     
     pthread_t thrd_recv;
     pthread_t thrd_request_params;
+    bool recv_thread_started = false;
 
     uint8_t payload_ctrl_type = CONTROL_METHOD;
     Generic_Port *port;

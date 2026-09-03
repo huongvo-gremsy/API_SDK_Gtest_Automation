@@ -107,11 +107,21 @@ sdkInitConnection(){
 void
 PayloadSdkInterface::
 sdkQuit(){
+    // Stop the SDK-level receive loop before tearing down the transport.
+    // The thread must be joined before this object is deleted by the test
+    // environment; otherwise it can continue accessing freed state.
+    time_to_exit = true;
+
     if(port_quit != nullptr){
         port_quit->stop();
     }
-    payload_interface->handle_quit(0);
-    time_to_exit = true;
+    if(payload_interface != nullptr){
+        payload_interface->handle_quit(0);
+    }
+    if(recv_thread_started && !pthread_equal(pthread_self(), thrd_recv)){
+        pthread_join(thrd_recv, nullptr);
+        recv_thread_started = false;
+    }
 }
 
 bool 
@@ -122,6 +132,7 @@ all_threads_init(){
         std::cout << "\nError: Can not create thread!" << rc << std::endl;
         return false;
     }
+    recv_thread_started = true;
     std::cout << "Thread created\n" << std::endl;
 
     return true;
@@ -195,10 +206,10 @@ setPayloadCameraParam(char param_id[], uint32_t param_value, uint8_t param_type)
 
     strcpy((char *)msg.param_id, param_id);
 
-    cam_param_union_t u;
-    u.param_uint32 = param_value;
-    std::string str(reinterpret_cast<char const *>(u.bytes), CAM_PARAM_VALUE_LEN);
-    strcpy(msg.param_value, str.c_str());
+    // PARAM_EXT values are fixed-size binary fields. Using strcpy() truncates
+    // values containing a zero byte (for example 30720 == 0x00007800 becomes
+    // zero because its first byte is 0x00 on little-endian systems).
+    memcpy(msg.param_value, &param_value, sizeof(param_value));
 
     msg.param_type = param_type;
     msg.target_system = CAMERA_SYSTEM_ID;

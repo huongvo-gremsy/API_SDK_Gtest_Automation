@@ -1,0 +1,48 @@
+CameraCaptureTest.
+  Storage_HasEnoughSpaceForCapture
+  CaptureImage_IncrementsImageCount
+  CaptureImage_BurstOfThree
+  GetCaptureStatus_EventArrives
+  StopImage_BestEffortAck
+PayloadTest.
+  SetFFCMode_InvalidValue_SendsNoMessage
+CameraIRTest.
+  SetManualMode_ThenTrigger_Acked
+  SetFFCMode_Manual_BestEffortAck
+  SetFFCMode_Auto_BestEffortAck
+  Trigger_WithoutConfirmingMode_ObserveBehavior
+CameraIRKnownGaps.
+  GetFFCMode_IsEmptyStub_NothingToTest
+CameraZoomFocusTest.
+  ZoomIn_ThenStop_IncreasesZoomLevel
+  ZoomOut_ThenStop_DecreasesZoomLevel
+  ZoomStop_BestEffortAck
+  SetZoomTarget_2x_Verified
+  SetZoomTarget_5x_Verified
+  SetAndGetZoomTarget
+  GetCameraFOVStatus_EO_EventArrives
+  SetZoomTarget_IncreasesZoom_NarrowsFOV
+  FocusIn_ThenStop_ChangesFocusLevel
+  FocusStop_BestEffortAck
+CameraWBTest.
+  SetCameraWBOnePushTrigger
+StreamBitrateTest.
+  GetEOStreamBitrate
+  SetStreamBitrate
+  SetStreamBitrate_MinBoundary_512kbps
+  SetAndGetStreamBitrate
+  SetAndGetStreamBitrate_IR
+  SetBitrate_BelowDocumentedMinimum_ObserveBehavior
+  SetBitrate_AboveDocumentedMaximum_ObserveBehavior
+StreamResolutionTest.
+  SetResolution_1080p_Verified
+  SetResolution_720p_Verified
+  SetResolution_540p_Verified
+  SetAndGetStreamResolution
+StreamResolutionIRTest.
+  SetResolution_1280x1024_Verified
+  SetResolution_640x512_Verified
+  SetResolution_480x384_Verified
+  SetResolution_320x256_Verified
+  SetResolution_160x128_Verified
+  SetAndGetStreamResolution
