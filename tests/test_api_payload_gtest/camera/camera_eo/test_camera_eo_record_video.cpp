@@ -60,7 +60,7 @@ bool waitForUint32ParamValue(const char* id, uint32_t expected,
                           std::chrono::milliseconds(timeoutMs);
     while (std::chrono::steady_clock::now() < deadline) {
         double actual = -1;
-        if (getCameraSettingByID(id, actual, 1000) &&
+        if (cet::getCameraSettingByID(id, actual, 1000) &&
             static_cast<uint32_t>(actual) == expected) {
             return true;
         }
@@ -171,7 +171,7 @@ TEST_F(CameraEoRecordVideoTest,
     g_payload->setPayloadCameraMode(CAMERA_MODE_VIDEO);
 
     double mode = -1;
-    const bool stateChanged = getCameraMode(mode, 4000) &&
+    const bool stateChanged = cet::getCameraMode(mode, 4000) &&
                               static_cast<int>(mode) == CAMERA_MODE_VIDEO;
     AckInfo ack;
     const bool receivedAck = waitForCommandAck(
@@ -186,11 +186,16 @@ TEST_F(CameraEoRecordVideoTest,
 TEST_F(CameraEoRecordVideoTest,
        SetPayloadCameraRecordVideoStart_ActivatesAndAdvancesTime) {
     double availableMb = -1;
-    ASSERT_TRUE(checkStorageReady(availableMb, 10.0, 4000))
+    ASSERT_TRUE(cet::checkStorageReady(availableMb, 10.0, 4000))
         << "EO recording storage is not ready; available=" << availableMb
         << " MB.";
     ASSERT_TRUE(cet::setCameraModeStateOrAck(CAMERA_MODE_VIDEO));
     ASSERT_TRUE(cet::stopRecording());
+#ifndef ZIO
+    // The documented non-ZIO recording source is BOTH (EO + IR).
+    ASSERT_TRUE(cet::setUint32Param(PAYLOAD_CAMERA_RECORD_SRC,
+                                    PAYLOAD_CAMERA_RECORD_BOTH));
+#endif
 
     const uint64_t ackSeq = getCommandAckSeq(MAV_CMD_VIDEO_START_CAPTURE);
 
@@ -202,10 +207,6 @@ TEST_F(CameraEoRecordVideoTest,
     AckInfo ack;
     const bool receivedAck = waitForCommandAck(
         MAV_CMD_VIDEO_START_CAPTURE, ackSeq, ack, 1500);
-    AckInfo stopAck;
-
-    const uint64_t seq =
-        getCommandAckSeq(MAV_CMD_VIDEO_STOP_CAPTURE);
 
     cet::CaptureStatus later = first;
     if (becameActive) {
@@ -215,12 +216,6 @@ TEST_F(CameraEoRecordVideoTest,
 
     // Always stop before reporting nonfatal verification failures.
     g_payload->setPayloadCameraRecordVideoStop();
-    // EXPECT_TRUE(waitForCommandAck(
-    //     MAV_CMD_VIDEO_STOP_CAPTURE,
-    //     seq,
-    //     stopAck,
-    //     2000))
-    //     << "No COMMAND_ACK for MAV_CMD_VIDEO_STOP_CAPTURE.";
     const bool returnedIdle = cet::waitForRecording(false, 8000);
 
     EXPECT_TRUE(becameActive)
@@ -240,11 +235,15 @@ TEST_F(CameraEoRecordVideoTest,
 TEST_F(CameraEoRecordVideoTest,
        SetPayloadCameraRecordVideoStop_ReturnsToIdle) {
     double availableMb = -1;
-    ASSERT_TRUE(checkStorageReady(availableMb, 10.0, 4000))
+    ASSERT_TRUE(cet::checkStorageReady(availableMb, 10.0, 4000))
         << "EO recording storage is not ready; available=" << availableMb
         << " MB.";
     ASSERT_TRUE(cet::setCameraModeStateOrAck(CAMERA_MODE_VIDEO));
     ASSERT_TRUE(cet::stopRecording());
+#ifndef ZIO
+    ASSERT_TRUE(cet::setUint32Param(PAYLOAD_CAMERA_RECORD_SRC,
+                                    PAYLOAD_CAMERA_RECORD_BOTH));
+#endif
 
     // Arrange an active recording so the stop API has an observable effect.
     g_payload->setPayloadCameraRecordVideoStart();
@@ -313,7 +312,7 @@ TEST_F(CameraEoRecordVideoTest, ExampleFlow_StartTimeAdvancesThenStop) {
     if (static_cast<int>(mode) != CAMERA_MODE_VIDEO) {
         const uint64_t ackSeq = getCommandAckSeq(MAV_CMD_SET_CAMERA_MODE);
         g_payload->setPayloadCameraMode(CAMERA_MODE_VIDEO);
-        const bool stateChanged = getCameraMode(mode, 4000) &&
+        const bool stateChanged = cet::getCameraMode(mode, 4000) &&
                                   static_cast<int>(mode) == CAMERA_MODE_VIDEO;
         AckInfo ack;
         const bool receivedAck = waitForCommandAck(
@@ -337,62 +336,4 @@ TEST_F(CameraEoRecordVideoTest, ExampleFlow_StartTimeAdvancesThenStop) {
 
     EXPECT_GT(later.recordingMs, first.recordingMs);
     EXPECT_TRUE(returnedIdle) << "video_status did not return to idle.";
-}
-
-
-// Manual test
-class ManualCameraEoRecordVideoTest : public ::testing::Test {
-protected:
-    void SetUp() override {
-        // Use your existing SDK initialization here if needed.
-    }
-
-    void TearDown() override {
-        // Cleanup if needed.
-    }
-};
-TEST_F(ManualCameraEoRecordVideoTest, setPayloadCameraModeManual) {
-    const uint64_t seq = g_cb.cameraSettingsSeq.load();
-
-    g_payload->setPayloadCameraMode(CAMERA_MODE_VIDEO);
-    std::this_thread::sleep_for(std::chrono::seconds(1));
-    g_payload->getPayloadCameraMode();
-    ASSERT_TRUE(waitForSeq(
-        g_cb.cameraSettingsSeq,
-        seq,
-        4000
-    )) << "No PAYLOAD_CAM_SETTINGS callback received.";
-    std::lock_guard<std::mutex> lk(g_cb.m);
-
-    std::cout
-        << "[TEST] mode_id="
-        << g_cb.cameraSettings[0]
-        << ", zoomLevel="
-        << g_cb.cameraSettings[1]
-        << ", focusLevel="
-        << g_cb.cameraSettings[2]
-        << std::endl;
-
-    EXPECT_EQ(
-        static_cast<int>(g_cb.cameraSettings[0]),
-        static_cast<int>(CAMERA_MODE_VIDEO)
-    );
-}
-
-TEST_F(ManualCameraEoRecordVideoTest, setPayloadStartRecordingManual) {
-    g_payload->setPayloadCameraRecordVideoStart();
-    std::this_thread::sleep_for(std::chrono::seconds(1));
-    // g_payload->getPayloadCaptureStatus();
-
-}
-
-TEST_F(ManualCameraEoRecordVideoTest, GetPayloadCaptureStatusManual) {
-    g_payload->getPayloadCaptureStatus();
-    std::this_thread::sleep_for(std::chrono::seconds(1));
-}
-
-
-TEST_F(ManualCameraEoRecordVideoTest, setPayloadStopRecordingManual) {
-    g_payload->setPayloadCameraRecordVideoStop();
-    std::this_thread::sleep_for(std::chrono::seconds(1));
 }

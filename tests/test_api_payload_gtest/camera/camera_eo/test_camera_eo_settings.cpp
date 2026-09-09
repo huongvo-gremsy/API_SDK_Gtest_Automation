@@ -95,12 +95,12 @@ protected:
         // API under test.
         g_payload->setPayloadCameraParam(
             osdModeId, mode, PARAM_TYPE_UINT32);
-        std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+        std::this_thread::sleep_for(std::chrono::milliseconds(500));
 
         // Verify through the setting-list API used by the SDK example.
         clearCameraParamHistory();
         g_payload->getPayloadCameraSettingList();
-        std::this_thread::sleep_for(std::chrono::milliseconds(4000));
+        std::this_thread::sleep_for(std::chrono::milliseconds(2000));
         return waitForListedValue(PAYLOAD_CAMERA_VIDEO_OSD_MODE, mode);
     }
 

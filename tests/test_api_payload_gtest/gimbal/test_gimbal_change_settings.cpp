@@ -25,17 +25,17 @@ protected:
     bool haveOriginal_ = false;
 };
 
-// TEST_F(GimbalChangeSettingsExampleTest, ExampleFlow_StiffTilt50ReadBackRestore) {
-//     ASSERT_TRUE(gt::setParamAndVerify("STIFF_TILT", 50));
-//     gt::GimbalParamSample changed;
-//     ASSERT_TRUE(gt::getParamById("STIFF_TILT", changed));
-//     EXPECT_NEAR(changed.value, 50.0, 0.01);
+TEST_F(GimbalChangeSettingsExampleTest, ExampleFlow_StiffTilt50ReadBackRestore) {
+    ASSERT_TRUE(gt::setParamAndVerify("STIFF_TILT", 50));
+    gt::GimbalParamSample changed;
+    ASSERT_TRUE(gt::getParamById("STIFF_TILT", changed));
+    EXPECT_NEAR(changed.value, 50.0, 0.01);
 
-//     ASSERT_TRUE(gt::setParamAndVerify("STIFF_TILT", original_.value));
-//     gt::GimbalParamSample restored;
-//     ASSERT_TRUE(gt::getParamById("STIFF_TILT", restored));
-//     EXPECT_NEAR(restored.value, original_.value, 0.01);
-// }
+    ASSERT_TRUE(gt::setParamAndVerify("STIFF_TILT", original_.value));
+    gt::GimbalParamSample restored;
+    ASSERT_TRUE(gt::getParamById("STIFF_TILT", restored));
+    EXPECT_NEAR(restored.value, original_.value, 0.01);
+}
 
 TEST_F(GimbalChangeSettingsExampleTest, SameStiffnessValue_IsIdempotent) {
     EXPECT_TRUE(gt::setParamAndVerify("STIFF_TILT", original_.value));

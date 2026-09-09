@@ -1,0 +1,83 @@
+tests/test_api_payload_gtest/
+├── common/                          (unchanged — shared fixture)
+│
+├── connection/
+│   └── test_connection.cpp          ← check_connect.cpp, payload_get_component_info.cpp
+│                                        PayloadSdkInterface(), sdkInitConnection(), sdkQuit(),
+│                                        checkPayloadConnection(), getPayloadComponentBasicInformation()
+│
+├── camera_eo/
+│   ├── test_camera_eo_capture.cpp        ← camera_eo_capture_image.cpp                 [DONE]
+│   ├── test_camera_eo_record.cpp         ← camera_eo_record_video.cpp
+│   ├── test_camera_eo_zoom_focus.cpp     ← camera_eo_set_zoom_focus.cpp,
+│   │                                        camera_do_setzoom_individual.cpp,
+│   │                                        payload_set_camera_zoom_targetpos.cpp       [DONE]
+│   ├── test_camera_eo_zoom_modes.cpp     ← camera_set_all_zoom_modes.cpp (Super Res / Combine factors)
+│   ├── test_camera_eo_shutter_speed.cpp  ← camera_eo_set_shutter_speed.cpp
+│   ├── test_camera_eo_wb_onepush.cpp     ← camera_eo_trigger_wb_onepush.cpp             [see note below]
+│   ├── test_camera_eo_ext_settings.cpp   ← camera_set_ext_settings.cpp (SpotAE, ORUSL-only)
+│   ├── test_camera_eo_settings.cpp       ← camera_change_settings.cpp, camera_load_settings.cpp
+│   └── test_camera_eo_timelapse.cpp      ← camera_time_lapse_photography.cpp
+│
+├── camera_ir/
+│   ├── test_camera_ir_capture.cpp   ← camera_ir_capture_image.cpp
+│   ├── test_camera_ir_record.cpp    ← camera_ir_record_video.cpp
+│   ├── test_camera_ir_ffc.cpp       ← camera_ir_do_ffc_control.cpp                      [DONE]
+│   ├── test_camera_ir_zoom.cpp      ← camera_ir_set_zoom.cpp
+│   ├── test_camera_ir_palette.cpp   ← camera_ir_set_palette.cpp
+│   └── test_camera_ir_isotherm.cpp  ← camera_ir_isotherm_profile.cpp
+│
+├── gimbal/
+│   ├── test_gimbal_move.cpp         ← gimbal_move_angle.cpp, gimbal_move_speed.cpp,
+│   │                                    gimbal_control_example.cpp
+│   ├── test_gimbal_mode.cpp         ← gimbal_set_mode.cpp
+│   ├── test_gimbal_settings.cpp     ← gimbal_change_settings.cpp, gimbal_load_settings.cpp
+│   └── test_gimbal_calibration.cpp  ← gimbal_do_calib.cpp, gimbal_calib_auto_tune.cpp  (destructive)
+│
+└── payload/                          ← everything that isn't camera- or gimbal-specific,
+    │                                    matching the "payload_*" example prefix
+    ├── test_stream_bitrate.cpp      ← payload_set_stream_bitrate.cpp                    [DONE]
+    ├── test_stream_resolution.cpp   ← payload_set_stream_resolution.cpp                 [DONE]
+    ├── test_stream_profile.cpp      ← payload_set_stream_profile.cpp
+    ├── test_stream_info.cpp         ← payload_get_video_streaming.cpp,
+    │                                    payload_get_video_record_status.cpp
+    ├── test_fov_status.cpp          ← payload_get_fov_status.cpp                        [DONE]
+    ├── test_status.cpp              ← payload_get_status.cpp
+    ├── test_object_tracking.cpp     ← payload_do_object_tracking.cpp,
+    │                                    payload_do_object_detection.cpp
+    ├── test_gps.cpp                 ← payload_set_gps.cpp                    (known gap — no getter)
+    ├── test_system_time.cpp         ← payload_set_system_time.cpp            (known gap — no getter)
+    ├── test_standby_mode.cpp        ← payload_set_standby_mode.cpp           (destructive)
+    ├── test_restart_apps.cpp        ← payload_set_restart_apps.cpp          (destructive)
+    ├── test_stream_rate.cpp         ← (generic, no direct example)          [DONE]
+    ├── test_download_media.cpp      ← payload_download_media_files.cpp     (see note below)
+    └── test_extract_tiff.cpp        ← payload_extract_tiff_file.cpp        (see note below)
+
+
+
+
+make -j12 2>&1 | grep -E "error|undefined"
+
+./tests/test_api_payload_gtest/test_api_payload_gtest --gtest_filter=*Resolution*
+
+
+./tests/test_api_payload_gtest/test_api_payload_gtest --gtest_filter=StreamResolutionTest.SetAndGetStreamResolution
+
+////// bash for run gtest
+# List all registered tests
+./tests/test_api_payload_gtest/test_api_payload_gtest --gtest_list_tests
+# Run all tests
+./tests/test_api_payload_gtest/test_api_payload_gtest
+
+# Continue running after assertion failures
+./tests/test_api_payload_gtest/test_api_payload_gtest \
+  --gtest_break_on_failure=0
+
+# Run all camera tests
+./tests/test_api_payload_gtest/test_api_payload_gtest \
+  --gtest_filter='Camera*Test.*'
+
+# Run all axcept StreamProfileTest
+
+./tests/test_api_payload_gtest/test_api_payload_gtest \
+  --gtest_filter='-StreamProfileTest.*'
