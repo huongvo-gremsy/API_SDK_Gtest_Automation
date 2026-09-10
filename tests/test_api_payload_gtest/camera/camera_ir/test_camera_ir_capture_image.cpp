@@ -15,7 +15,7 @@ TEST_F(CameraIrCaptureImageTest, ExampleFlow_CaptureIncrementsImageCount) {
     ASSERT_TRUE(cit::setCameraModeStateOrAck(CAMERA_MODE_VIDEO));
 
     double availableMb = -1;
-    ASSERT_TRUE(checkStorageReady(availableMb, 10.0, 4000))
+    ASSERT_TRUE(cit::checkStorageReady(availableMb, 10.0, 4000))
         << "IR capture storage is not ready; available=" << availableMb << " MB.";
 
     cit::CaptureStatus before;
@@ -23,13 +23,13 @@ TEST_F(CameraIrCaptureImageTest, ExampleFlow_CaptureIncrementsImageCount) {
     ASSERT_EQ(before.video, 0) << "Recording must be idle before image capture.";
 
     double reportedMode = 0;
-    ASSERT_TRUE(getCameraMode(reportedMode, 3000));
+    ASSERT_TRUE(cit::getCameraMode(reportedMode, 3000));
     ASSERT_TRUE(cit::setCameraModeStateOrAck(CAMERA_MODE_IMAGE));
 
     // Let the IR pipeline settle after the mode change. In particular, an ACK
     // can arrive before CAMERA_SETTINGS and the capture pipeline are ready.
     std::this_thread::sleep_for(std::chrono::seconds(1));
-    if (getCameraMode(reportedMode, 2000)) {
+    if (cit::getCameraMode(reportedMode, 2000)) {
         std::cout << "[INFO] Camera mode before capture: " << reportedMode
                   << " (IMAGE=" << static_cast<int>(CAMERA_MODE_IMAGE) << ")"
                   << std::endl;
@@ -89,8 +89,8 @@ TEST_F(CameraIrCaptureImageTest, ExampleFlow_CaptureIncrementsImageCount) {
 
 TEST_F(CameraIrCaptureImageTest, IRViewAndRecordSource_ReadBack) {
     double view = 0, record = 0;
-    ASSERT_TRUE(getCameraSettingByID(PAYLOAD_CAMERA_VIEW_SRC, view));
-    ASSERT_TRUE(getCameraSettingByID(PAYLOAD_CAMERA_RECORD_SRC, record));
+    ASSERT_TRUE(cit::getCameraSettingByID(PAYLOAD_CAMERA_VIEW_SRC, view));
+    ASSERT_TRUE(cit::getCameraSettingByID(PAYLOAD_CAMERA_RECORD_SRC, record));
     EXPECT_EQ(static_cast<uint32_t>(view), PAYLOAD_CAMERA_VIEW_IR);
     EXPECT_EQ(static_cast<uint32_t>(record), PAYLOAD_CAMERA_RECORD_IR);
 }

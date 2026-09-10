@@ -7,6 +7,7 @@
  * recording_time_ms to prove that an active recording is progressing.
  */
 
+#include "../query/camera_query_test_helpers.h"
 #include "camera_media_test_helpers.h"
 #include "../parameters/camera_param_test_helpers.h"
 

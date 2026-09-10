@@ -11,7 +11,7 @@ class CameraIrRecordVideoTest : public cit::CameraIrTest {};
 
 TEST_F(CameraIrRecordVideoTest, ExampleFlow_StartTimeAdvancesThenStop) {
     double availableMb = -1;
-    ASSERT_TRUE(checkStorageReady(availableMb, 10.0, 4000))
+    ASSERT_TRUE(cit::checkStorageReady(availableMb, 10.0, 4000))
         << "IR recording storage is not ready.";
     ASSERT_TRUE(cit::setCameraModeStateOrAck(CAMERA_MODE_VIDEO));
 

@@ -174,8 +174,16 @@ inline bool setControlParamAndVerify(const char* id, uint32_t value,
                                      int timeoutMs = 5000) {
     char mutableId[CAM_PARAM_ID_LEN] = {0};
     std::strncpy(mutableId, id, sizeof(mutableId) - 1);
-    return setAndVerifyCameraParam(mutableId, value, PARAM_TYPE_UINT32,
-                                   value, timeoutMs, 500);
+    const auto deadline = std::chrono::steady_clock::now() + std::chrono::milliseconds(timeoutMs);
+    while (std::chrono::steady_clock::now() < deadline) {
+        g_payload->setPayloadCameraParam(mutableId, value, PARAM_TYPE_UINT32);
+        g_payload->getPayloadCameraSettingByID(mutableId);
+        std::this_thread::sleep_for(std::chrono::milliseconds(500));
+        std::lock_guard<std::mutex> lock(g_cb.m);
+        auto it = g_cb.paramValueById.find(id);
+        if (it != g_cb.paramValueById.end() && it->second == value) return true;
+    }
+    return false;
 }
 
 inline bool waitForAttitudeNear(double pitch, double yaw, double tolerance,

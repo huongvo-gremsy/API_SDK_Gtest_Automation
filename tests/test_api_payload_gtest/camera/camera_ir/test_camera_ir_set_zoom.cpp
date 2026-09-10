@@ -12,7 +12,7 @@ protected:
     void SetUp() override {
         CameraIrTest::SetUp();
         if (::testing::Test::IsSkipped()) return;
-        ASSERT_TRUE(getCameraSettingByID(PAYLOAD_CAMERA_IR_ZOOM_FACTOR,
+        ASSERT_TRUE(cit::getCameraSettingByID(PAYLOAD_CAMERA_IR_ZOOM_FACTOR,
                                           originalZoom_, 3000));
         haveZoom_ = true;
         ASSERT_TRUE(cit::setUint32Param(PAYLOAD_CAMERA_IR_ZOOM_FACTOR,
@@ -34,13 +34,13 @@ protected:
 
 TEST_F(CameraIrZoomTest, StepInFourThenOutTwo_FactorChanges) {
     double baseline = 0;
-    ASSERT_TRUE(getCameraSettingByID(PAYLOAD_CAMERA_IR_ZOOM_FACTOR, baseline));
+    ASSERT_TRUE(cit::getCameraSettingByID(PAYLOAD_CAMERA_IR_ZOOM_FACTOR, baseline));
     for (int i = 0; i < 4; ++i) {
         g_payload->setCameraZoom(ZOOM_TYPE_STEP, ZOOM_IN);
         std::this_thread::sleep_for(std::chrono::seconds(1));
     }
     double zoomedIn = 0;
-    ASSERT_TRUE(getCameraSettingByID(PAYLOAD_CAMERA_IR_ZOOM_FACTOR, zoomedIn));
+    ASSERT_TRUE(cit::getCameraSettingByID(PAYLOAD_CAMERA_IR_ZOOM_FACTOR, zoomedIn));
     EXPECT_NE(zoomedIn, baseline);
 
     for (int i = 0; i < 2; ++i) {
@@ -48,7 +48,7 @@ TEST_F(CameraIrZoomTest, StepInFourThenOutTwo_FactorChanges) {
         std::this_thread::sleep_for(std::chrono::seconds(1));
     }
     double zoomedOut = 0;
-    ASSERT_TRUE(getCameraSettingByID(PAYLOAD_CAMERA_IR_ZOOM_FACTOR, zoomedOut));
+    ASSERT_TRUE(cit::getCameraSettingByID(PAYLOAD_CAMERA_IR_ZOOM_FACTOR, zoomedOut));
     EXPECT_NE(zoomedOut, zoomedIn);
 }
 

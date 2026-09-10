@@ -2,7 +2,6 @@
 #define PAYLOADSDK_TEST_SYSTEM_TEST_HELPERS_H_
 
 #include "../common/payload_test_fixture.h"
-#include "../camera/query/camera_query_test_helpers.h"
 
 #include <chrono>
 #include <cstdint>
@@ -33,7 +32,9 @@ inline bool waitForCameraAndHeartbeat(int timeoutMs = 30000) {
     while (std::chrono::steady_clock::now() < deadline) {
         if (g_cb.heartbeatSeq.load() > heartbeatSeq) heartbeatRecovered = true;
         uint32_t flags = 0;
-        if (getCameraInformation(flags, 800)) cameraRecovered = true;
+        const uint64_t seq = g_cb.cameraInfoSeq.load();
+        g_payload->getPayloadCameraInformation();
+        if (waitForSeq(g_cb.cameraInfoSeq, seq, 800)) cameraRecovered = true;
         if (heartbeatRecovered && cameraRecovered) return true;
         std::this_thread::sleep_for(std::chrono::milliseconds(200));
     }

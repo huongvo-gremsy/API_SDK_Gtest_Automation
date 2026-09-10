@@ -12,7 +12,7 @@ protected:
     void SetUp() override {
         CameraIrTest::SetUp();
         if (::testing::Test::IsSkipped()) return;
-        ASSERT_TRUE(getCameraSettingByID(PAYLOAD_CAMERA_IR_PALETTE,
+        ASSERT_TRUE(cit::getCameraSettingByID(PAYLOAD_CAMERA_IR_PALETTE,
                                           originalPalette_, 3000));
         havePalette_ = true;
     }
@@ -42,7 +42,7 @@ TEST_F(CameraIrPaletteTest, Palettes1Through10_SetAndReadBack) {
         ASSERT_TRUE(cit::setUint32Param(PAYLOAD_CAMERA_IR_PALETTE,
                                         palettes[index]));
         double actual = 0;
-        ASSERT_TRUE(getCameraSettingByID(PAYLOAD_CAMERA_IR_PALETTE, actual));
+        ASSERT_TRUE(cit::getCameraSettingByID(PAYLOAD_CAMERA_IR_PALETTE, actual));
         EXPECT_EQ(static_cast<uint32_t>(actual), palettes[index]);
         std::this_thread::sleep_for(std::chrono::milliseconds(1000));
     }

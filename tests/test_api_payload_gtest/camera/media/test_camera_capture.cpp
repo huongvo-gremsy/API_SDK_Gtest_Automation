@@ -13,6 +13,7 @@
  * as non-strict since we've already found ACKs unreliable here.
  */
 
+#include "../query/camera_query_test_helpers.h"
 #include "camera_media_test_helpers.h"
 #include "../parameters/camera_param_test_helpers.h"
 

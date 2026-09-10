@@ -1,7 +1,7 @@
 #ifndef PAYLOADSDK_TEST_CAMERA_MEDIA_TEST_HELPERS_H_
 #define PAYLOADSDK_TEST_CAMERA_MEDIA_TEST_HELPERS_H_
 
-#include "../query/camera_query_test_helpers.h"
+#include "../../common/payload_test_fixture.h"
 
 #include <chrono>
 #include <thread>

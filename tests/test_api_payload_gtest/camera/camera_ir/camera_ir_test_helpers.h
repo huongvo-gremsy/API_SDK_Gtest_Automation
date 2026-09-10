@@ -1,10 +1,9 @@
 #ifndef PAYLOADSDK_TEST_CAMERA_IR_TEST_HELPERS_H_
 #define PAYLOADSDK_TEST_CAMERA_IR_TEST_HELPERS_H_
 
-#include "../parameters/camera_param_test_helpers.h"
-#include "../query/camera_query_test_helpers.h"
-#include "../../stream/stream_test_helpers.h"
+#include "../../common/payload_test_fixture.h"
 
+#include <algorithm>
 #include <chrono>
 #include <cstdint>
 #include <cstring>
@@ -14,12 +13,94 @@
 
 namespace camera_ir_test {
 
+inline bool checkStorageReady(double& outAvailableMb,
+                              double minAvailableMb = 10.0,
+                              int timeoutMs = 3000) {
+    const uint64_t sequence = g_cb.cameraStorageInfoSeq.load();
+    g_payload->getPayloadStorage();
+    if (!waitForSeq(g_cb.cameraStorageInfoSeq, sequence, timeoutMs)) {
+        outAvailableMb = -1;
+        return false;
+    }
+    std::lock_guard<std::mutex> lock(g_cb.m);
+    outAvailableMb = g_cb.cameraStorageInfo[2];
+    return outAvailableMb >= minAvailableMb;
+}
+
+inline bool getCameraSettingByID(const char* id, double& value,
+                                 int timeoutMs = 3000) {
+    uint64_t sequence = 0;
+    {
+        std::lock_guard<std::mutex> lock(g_cb.m);
+        sequence = g_cb.paramSeqById[id];
+    }
+    const auto deadline = std::chrono::steady_clock::now() +
+                          std::chrono::milliseconds(timeoutMs);
+    while (std::chrono::steady_clock::now() < deadline) {
+        g_payload->getPayloadCameraSettingByID(const_cast<char*>(id));
+        const auto retryDeadline = std::min(
+            deadline, std::chrono::steady_clock::now() +
+                      std::chrono::milliseconds(500));
+        while (std::chrono::steady_clock::now() < retryDeadline) {
+            std::lock_guard<std::mutex> lock(g_cb.m);
+            if (g_cb.paramSeqById[id] > sequence) {
+                value = g_cb.paramValueById.at(id);
+                return true;
+            }
+            std::this_thread::sleep_for(std::chrono::milliseconds(20));
+        }
+    }
+    return false;
+}
+
+inline bool setAndVerifyCameraParam(char* id, uint32_t value,
+                                    uint8_t type, int timeoutMs = 5000) {
+    const auto deadline = std::chrono::steady_clock::now() +
+                          std::chrono::milliseconds(timeoutMs);
+    while (std::chrono::steady_clock::now() < deadline) {
+        g_payload->setPayloadCameraParam(id, value, type);
+        double actual = 0;
+        if (getCameraSettingByID(id, actual, 1000) && actual == value) return true;
+    }
+    return false;
+}
+
+inline bool getCameraMode(double& mode, int timeoutMs = 3000) {
+    const uint64_t sequence = g_cb.cameraSettingsSeq.load();
+    g_payload->getPayloadCameraMode();
+    if (!waitForSeq(g_cb.cameraSettingsSeq, sequence, timeoutMs)) return false;
+    std::lock_guard<std::mutex> lock(g_cb.m);
+    mode = g_cb.cameraSettings[0];
+    return true;
+}
+
+inline bool setAndVerifyCameraMode(CAMERA_MODE mode, int timeoutMs = 5000,
+                                   int = 500) {
+    g_payload->setPayloadCameraMode(mode);
+    double actual = -1;
+    return getCameraMode(actual, timeoutMs) &&
+           static_cast<int>(actual) == static_cast<int>(mode);
+}
+
+inline bool getCaptureStatus(double& image, double& video, double& count,
+                             double& recordingMs, int timeoutMs = 1500) {
+    const uint64_t sequence = g_cb.cameraCaptureStatusSeq.load();
+    g_payload->getPayloadCaptureStatus();
+    if (!waitForSeq(g_cb.cameraCaptureStatusSeq, sequence, timeoutMs)) return false;
+    std::lock_guard<std::mutex> lock(g_cb.m);
+    image = g_cb.cameraCaptureStatus[0];
+    video = g_cb.cameraCaptureStatus[1];
+    count = g_cb.cameraCaptureStatus[2];
+    recordingMs = g_cb.cameraCaptureStatus[3];
+    return true;
+}
+
 inline bool setUint32Param(const char* id, uint32_t value,
                            int timeoutMs = 5000) {
     char mutableId[CAM_PARAM_ID_LEN] = {0};
     std::strncpy(mutableId, id, sizeof(mutableId) - 1);
     return setAndVerifyCameraParam(mutableId, value, PARAM_TYPE_UINT32,
-                                   value, timeoutMs, 500);
+                                   timeoutMs);
 }
 
 inline bool setCameraModeStateOrAck(CAMERA_MODE mode, int timeoutMs = 5000) {
@@ -73,9 +154,9 @@ inline bool stopRecording(int timeoutMs = 8000) {
 }
 
 inline bool irStreamIsResponsive(int timeoutMs = 3000) {
-    stream_test::Snapshot info;
-    return stream_test::getSnapshot(stream_test::kIrStreamId, info, timeoutMs) &&
-           stream_test::isValid(info);
+    const uint64_t sequence = g_cb.streamSeq.load();
+    g_payload->getPayloadCameraStreamingInformation(2);
+    return waitForSeq(g_cb.streamSeq, sequence, timeoutMs);
 }
 
 inline bool sendUser4Accepted(const std::function<void()>& send,

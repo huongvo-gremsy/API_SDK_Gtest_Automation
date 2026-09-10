@@ -1,0 +1,3 @@
+[==========] Running 219 tests from 66 test suites.
+[----------] Global test environment set-up.
+error socket failed: Operation not permitted

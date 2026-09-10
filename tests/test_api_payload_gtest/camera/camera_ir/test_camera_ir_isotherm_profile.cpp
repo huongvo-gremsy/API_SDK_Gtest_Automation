@@ -53,7 +53,7 @@ protected:
             kRegion1ColorLow, kRegion1ColorHigh};
         for (const char* id : ids) {
             double value = 0;
-            if (!getCameraSettingByID(id, value, 2500)) {
+            if (!cit::getCameraSettingByID(id, value, 2500)) {
                 GTEST_SKIP() << "Isotherm parameter " << id
                              << " is unavailable; requires VIO F1 firmware v3.0.3+.";
             }
@@ -76,9 +76,9 @@ protected:
 TEST_F(CameraIrIsothermProfileTest, HumanProfile_35To40C_ReadsBack) {
     ASSERT_TRUE(applyProfile(35, 40, 9));
     double low = 0, high = 0, mode = 0;
-    ASSERT_TRUE(getCameraSettingByID(kRegion0Temp, low));
-    ASSERT_TRUE(getCameraSettingByID(kRegion1Temp, high));
-    ASSERT_TRUE(getCameraSettingByID(kRegionModes[1], mode));
+    ASSERT_TRUE(cit::getCameraSettingByID(kRegion0Temp, low));
+    ASSERT_TRUE(cit::getCameraSettingByID(kRegion1Temp, high));
+    ASSERT_TRUE(cit::getCameraSettingByID(kRegionModes[1], mode));
     EXPECT_EQ(low, 35);
     EXPECT_EQ(high, 40);
     EXPECT_EQ(mode, 2);
@@ -87,9 +87,9 @@ TEST_F(CameraIrIsothermProfileTest, HumanProfile_35To40C_ReadsBack) {
 TEST_F(CameraIrIsothermProfileTest, FireProfile_100To140C_ReadsBack) {
     ASSERT_TRUE(applyProfile(100, 140, 10));
     double low = 0, high = 0, color = 0;
-    ASSERT_TRUE(getCameraSettingByID(kRegion0Temp, low));
-    ASSERT_TRUE(getCameraSettingByID(kRegion1Temp, high));
-    ASSERT_TRUE(getCameraSettingByID(kRegion1ColorHigh, color));
+    ASSERT_TRUE(cit::getCameraSettingByID(kRegion0Temp, low));
+    ASSERT_TRUE(cit::getCameraSettingByID(kRegion1Temp, high));
+    ASSERT_TRUE(cit::getCameraSettingByID(kRegion1ColorHigh, color));
     EXPECT_EQ(low, 100);
     EXPECT_EQ(high, 140);
     EXPECT_EQ(color, 10);
