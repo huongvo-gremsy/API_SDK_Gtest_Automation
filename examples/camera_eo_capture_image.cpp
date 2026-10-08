@@ -35,7 +35,7 @@ typedef enum{
 }capture_sequence_t;
 
 capture_sequence_t my_capture = idle;
-uint8_t image_to_capture = 3;
+uint8_t image_to_capture = 200;
 
 int main(int argc, char *argv[]){
 	printf("Starting CaptureImage example...\n");

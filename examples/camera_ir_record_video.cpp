@@ -77,7 +77,7 @@ int main(int argc, char *argv[]){
 			break;
 		}
 		case check_capture_status:{
-			my_payload->getPayloadCaptureStatus();
+			// my_payload->getPayloadCaptureStatus();
 			break;
 		}
 		case check_camera_mode:{
@@ -113,7 +113,7 @@ int main(int argc, char *argv[]){
 			break;
 		}
 		case wait_record_done:{
-			my_payload->getPayloadCaptureStatus();
+			// my_payload->getPayloadCaptureStatus();
 			break;
 		}
 		default: break;

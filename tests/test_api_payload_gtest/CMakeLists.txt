@@ -7,6 +7,8 @@ file(GLOB_RECURSE TEST_API_PAYLOAD_SOURCES CONFIGURE_DEPENDS
     "${CMAKE_CURRENT_SOURCE_DIR}/connection/*.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/callbacks/*.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/camera/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/camera_eo/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/camera_ir/*.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/gimbal/*.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/stream/*.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/tracking/*.cpp"
@@ -17,6 +19,8 @@ file(GLOB_RECURSE TEST_API_PAYLOAD_SOURCES CONFIGURE_DEPENDS
     "${CMAKE_CURRENT_SOURCE_DIR}/product/*.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/lifecycle/*.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/soak/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/camera_eo_gl/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/feature/*.cpp"
 )
 
 # These tests use EO camera parameters that are defined by the VIO/ORUSL

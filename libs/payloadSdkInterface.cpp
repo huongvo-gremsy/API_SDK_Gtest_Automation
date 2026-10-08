@@ -1811,6 +1811,8 @@ _handle_msg_camera_information(mavlink_message_t* msg){
     mavlink_camera_information_t camera_info = {0};
     mavlink_msg_camera_information_decode(msg, &camera_info);
 
+    printf("camera definition: %s\n", camera_info.cam_definition_uri);
+
     if(__notifyPayloadStatusChanged != NULL){
         double params[1] = {camera_info.flags};
         __notifyPayloadStatusChanged(PAYLOAD_CAM_INFO, params);
