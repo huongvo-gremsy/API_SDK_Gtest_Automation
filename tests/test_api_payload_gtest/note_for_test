@@ -81,3 +81,6 @@ make -j12 2>&1 | grep -E "error|undefined"
 
 ./tests/test_api_payload_gtest/test_api_payload_gtest \
   --gtest_filter='-StreamProfileTest.*'
+
+# Run only one specific instantiation
+./api_camera_eo_test --gtest_filter='*ExposureCompensation*/Minus12'

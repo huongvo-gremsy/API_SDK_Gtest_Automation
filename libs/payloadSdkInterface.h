@@ -5,6 +5,7 @@
 #include <chrono> // for get time
 #include <map>
 #include "payloadsdk.h"
+#include "detection_packet.h"
 #include <functional>
 
 enum payload_status_event_t{
@@ -143,6 +144,7 @@ public:
     typedef std::function<void(int event, char* param_char, double* param_double)> payload_param_callback_t;
     typedef std::function<void(int event, char* param_char, double* param_double)> payload_streamInfo_callback_t;
     typedef std::function<void(int event, char* param_char, double* param_double)> payload_recordInfo_callback_t;
+    typedef std::function<void(const det_packet_t& pkt)> payload_detection_callback_t;
     typedef std::function<void(mavlink_message_t msg)> payload_heartbeat_callback_t;
 
     PayloadSdkInterface();
@@ -166,6 +168,9 @@ public:
 
     void regPayloadHeartbeatChanged(payload_heartbeat_callback_t func);
     payload_heartbeat_callback_t __notifyPayloadHeartbeatChanged = NULL;
+
+    void regPayloadDetectionChanged(payload_detection_callback_t func);
+    payload_detection_callback_t __notifyPayloadDetectionChanged = NULL;
 
 
     /**
@@ -378,7 +383,7 @@ private:
     bool is_send_stream_request = false;
 
     uint32_t current_gimbal_mode;
-    uint16_t current_attitude_flags;
+    uint16_t current_gb_device_flags;
 
     std::map<uint16_t, StatusTextBuffer> statustext_buffers;
 public:
@@ -387,6 +392,12 @@ public:
      * @para4 : Angular rate or angle mode
      * */
     void setGimbalSpeed(float spd_pitch, float spd_roll, float spd_yaw, input_mode_t mode);
+
+    /**
+     * We will use the flag inside the message MAVLINK_MSG_ID_GIMBAL_DEVICE_SET_ATTITUDE (284) for the gimbal's mode
+     **/
+    uint16_t getGimbalDeviceStatusFlags();
+    void setGimbalMode(uint16_t mode);
 
     /**
      * Set gimbal angle
@@ -466,11 +477,12 @@ public:
     void _handle_msg_camera_stream_information(mavlink_message_t* msg);
     void _handle_msg_camera_information(mavlink_message_t* msg);
 
-    void _handle_msg_device_attitude(mavlink_message_t* msg);
+    void _handle_msg_device_attitude_status(mavlink_message_t* msg);
     void _handle_request_camera_fov_status(mavlink_message_t* msg);
     void _handle_request_component_info(mavlink_message_t* msg);
 
     void _handle_statustext(mavlink_message_t* msg);
     void _handle_distance_sensor(mavlink_message_t* msg);
+    void _handle_msg_v2_extension(mavlink_message_t* msg);
 };
 #endif
