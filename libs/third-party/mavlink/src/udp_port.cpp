@@ -154,7 +154,7 @@ read_message(std::queue<mavlink_message_t> &message)
 		}
 	}
 	// Couldn't read from port
-	else
+	else if (is_open)
 	{
 		fprintf(stderr, "ERROR: Could not read, res = %d, errno = %d : %m\n", result, errno);
 	}
@@ -257,8 +257,17 @@ stop()
 {
 	printf("CLOSE PORT\n");
 
-	int result = close(sock);
-	sock = -1;
+	int result = 0;
+	if (sock >= 0)
+	{
+		is_open = false;
+		// close() from another thread does not reliably wake a blocking
+		// recvfrom() on Linux. shutdown() wakes the SDK read thread so it can
+		// observe the exit flag and pthread_join() can complete.
+		shutdown(sock, SHUT_RDWR);
+		result = close(sock);
+		sock = -1;
+	}
 
 	if ( result )
 	{
@@ -344,5 +353,3 @@ _write_port(char *buf, unsigned len)
 	}
 	return bytesWritten;
 }
-
-

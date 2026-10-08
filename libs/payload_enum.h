@@ -21,9 +21,11 @@ enum Camera_Zoom_Value
 
 enum Camera_Focus_Value
 {
-   FOCUS_OUT  = -1,
+   // MAV_CMD_SET_CAMERA_FOCUS continuous/step convention:
+   // -1 focuses inward (near), +1 focuses outward (toward infinity).
+   FOCUS_IN   = -1,
    FOCUS_STOP = 0, 
-   FOCUS_IN   = 1,
+   FOCUS_OUT  = 1,
    FOCUS_AUTO,
 };
 

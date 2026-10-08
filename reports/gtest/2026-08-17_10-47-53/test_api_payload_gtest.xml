@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="39" name="AllTests">
+  <testsuite name="CameraCaptureTest" tests="5">
+    <testcase name="Storage_HasEnoughSpaceForCapture" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/test_camera_capture.cpp" line="54" />
+    <testcase name="CaptureImage_IncrementsImageCount" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/test_camera_capture.cpp" line="63" />
+    <testcase name="CaptureImage_BurstOfThree" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/test_camera_capture.cpp" line="71" />
+    <testcase name="GetCaptureStatus_EventArrives" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/test_camera_capture.cpp" line="80" />
+    <testcase name="StopImage_BestEffortAck" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/test_camera_capture.cpp" line="88" />
+  </testsuite>
+  <testsuite name="PayloadTest" tests="1">
+    <testcase name="SetFFCMode_InvalidValue_SendsNoMessage" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/test_camera_ir_ffc.cpp" line="60" />
+  </testsuite>
+  <testsuite name="CameraIRTest" tests="4">
+    <testcase name="SetManualMode_ThenTrigger_Acked" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/test_camera_ir_ffc.cpp" line="88" />
+    <testcase name="SetFFCMode_Manual_BestEffortAck" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/test_camera_ir_ffc.cpp" line="118" />
+    <testcase name="SetFFCMode_Auto_BestEffortAck" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/test_camera_ir_ffc.cpp" line="126" />
+    <testcase name="Trigger_WithoutConfirmingMode_ObserveBehavior" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/test_camera_ir_ffc.cpp" line="140" />
+  </testsuite>
+  <testsuite name="CameraIRKnownGaps" tests="1">
+    <testcase name="GetFFCMode_IsEmptyStub_NothingToTest" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/test_camera_ir_ffc.cpp" line="158" />
+  </testsuite>
+  <testsuite name="CameraZoomFocusTest" tests="10">
+    <testcase name="ZoomIn_ThenStop_IncreasesZoomLevel" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/test_set_zoom.cpp" line="72" />
+    <testcase name="ZoomOut_ThenStop_DecreasesZoomLevel" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/test_set_zoom.cpp" line="98" />
+    <testcase name="ZoomStop_BestEffortAck" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/test_set_zoom.cpp" line="128" />
+    <testcase name="SetZoomTarget_2x_Verified" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/test_set_zoom.cpp" line="149" />
+    <testcase name="SetZoomTarget_5x_Verified" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/test_set_zoom.cpp" line="155" />
+    <testcase name="SetAndGetZoomTarget" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/test_set_zoom.cpp" line="161" />
+    <testcase name="GetCameraFOVStatus_EO_EventArrives" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/test_set_zoom.cpp" line="187" />
+    <testcase name="SetZoomTarget_IncreasesZoom_NarrowsFOV" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/test_set_zoom.cpp" line="197" />
+    <testcase name="FocusIn_ThenStop_ChangesFocusLevel" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/test_set_zoom.cpp" line="239" />
+    <testcase name="FocusStop_BestEffortAck" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/test_set_zoom.cpp" line="266" />
+  </testsuite>
+  <testsuite name="CameraWBTest" tests="1">
+    <testcase name="SetCameraWBOnePushTrigger" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/stream/test_setWBOnePushTrigg.cpp" line="5" />
+  </testsuite>
+  <testsuite name="StreamBitrateTest" tests="7">
+    <testcase name="GetEOStreamBitrate" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/stream/test_stream_bitrate.cpp" line="14" />
+    <testcase name="SetStreamBitrate" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/stream/test_stream_bitrate.cpp" line="45" />
+    <testcase name="SetStreamBitrate_MinBoundary_512kbps" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/stream/test_stream_bitrate.cpp" line="72" />
+    <testcase name="SetAndGetStreamBitrate" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/stream/test_stream_bitrate.cpp" line="102" />
+    <testcase name="SetAndGetStreamBitrate_IR" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/stream/test_stream_bitrate.cpp" line="158" />
+    <testcase name="SetBitrate_BelowDocumentedMinimum_ObserveBehavior" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/stream/test_stream_bitrate.cpp" line="214" />
+    <testcase name="SetBitrate_AboveDocumentedMaximum_ObserveBehavior" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/stream/test_stream_bitrate.cpp" line="239" />
+  </testsuite>
+  <testsuite name="StreamResolutionTest" tests="4">
+    <testcase name="SetResolution_1080p_Verified" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/stream/test_stream_resolution.cpp" line="95" />
+    <testcase name="SetResolution_720p_Verified" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/stream/test_stream_resolution.cpp" line="101" />
+    <testcase name="SetResolution_540p_Verified" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/stream/test_stream_resolution.cpp" line="107" />
+    <testcase name="SetAndGetStreamResolution" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/stream/test_stream_resolution.cpp" line="113" />
+  </testsuite>
+  <testsuite name="StreamResolutionIRTest" tests="6">
+    <testcase name="SetResolution_1280x1024_Verified" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/stream/test_stream_resolution.cpp" line="157" />
+    <testcase name="SetResolution_640x512_Verified" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/stream/test_stream_resolution.cpp" line="163" />
+    <testcase name="SetResolution_480x384_Verified" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/stream/test_stream_resolution.cpp" line="169" />
+    <testcase name="SetResolution_320x256_Verified" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/stream/test_stream_resolution.cpp" line="175" />
+    <testcase name="SetResolution_160x128_Verified" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/stream/test_stream_resolution.cpp" line="181" />
+    <testcase name="SetAndGetStreamResolution" file="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/stream/test_stream_resolution.cpp" line="187" />
+  </testsuite>
+</testsuites>

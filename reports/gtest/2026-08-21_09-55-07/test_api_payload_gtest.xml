@@ -1,0 +1,1219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="254" failures="30" disabled="15" errors="0" time="689.419" timestamp="2026-08-21T09:55:07.964" name="AllTests">
+  <testsuite name="CameraEoCaptureImageTest" tests="2" failures="0" disabled="0" skipped="0" errors="0" time="3.406" timestamp="2026-08-21T09:55:09.461">
+    <testcase name="ExampleFlow_CaptureIncrementsImageCount" status="run" result="completed" time="2.363" timestamp="2026-08-21T09:55:09.461" classname="CameraEoCaptureImageTest" />
+    <testcase name="SourceAndImageMode_ReadBack" status="run" result="completed" time="1.042" timestamp="2026-08-21T09:55:11.825" classname="CameraEoCaptureImageTest" />
+  </testsuite>
+  <testsuite name="CameraEoRecordVideoTest" tests="2" failures="0" disabled="0" skipped="0" errors="0" time="6.428" timestamp="2026-08-21T09:55:12.868">
+    <testcase name="ExampleFlow_StartTimeAdvancesThenStop" status="run" result="completed" time="5.486" timestamp="2026-08-21T09:55:12.868" classname="CameraEoRecordVideoTest" />
+    <testcase name="StopWhileIdle_RemainsIdle" status="run" result="completed" time="0.941" timestamp="2026-08-21T09:55:18.354" classname="CameraEoRecordVideoTest" />
+  </testsuite>
+  <testsuite name="CameraEoShutterSpeedTest" tests="2" failures="0" disabled="0" skipped="0" errors="0" time="2.587" timestamp="2026-08-21T09:55:19.296">
+    <testcase name="ExampleFlow_OneTenthThenOneThousandth" status="run" result="completed" time="1.243" timestamp="2026-08-21T09:55:19.296" classname="CameraEoShutterSpeedTest" />
+    <testcase name="RepresentativeSlowMediumFast_ReadBack" status="run" result="completed" time="1.343" timestamp="2026-08-21T09:55:20.539" classname="CameraEoShutterSpeedTest" />
+  </testsuite>
+  <testsuite name="CameraEoWhiteBalanceTest" tests="2" failures="0" disabled="0" skipped="0" errors="0" time="2.748" timestamp="2026-08-21T09:55:21.883">
+    <testcase name="Manual_RedBlueGainsReadBack" status="run" result="completed" time="1.584" timestamp="2026-08-21T09:55:21.883" classname="CameraEoWhiteBalanceTest" />
+    <testcase name="OnePushTrigger_AcceptedOrStreamResponsive" status="run" result="completed" time="1.163" timestamp="2026-08-21T09:55:23.468" classname="CameraEoWhiteBalanceTest" />
+  </testsuite>
+  <testsuite name="CameraEoZoomFocusTest" tests="5" failures="0" disabled="0" skipped="0" errors="0" time="90.153" timestamp="2026-08-21T09:55:24.631">
+    <testcase name="ExampleFlow_StepInFourThenOutTwo_ChangesFov" status="run" result="completed" time="16.445" timestamp="2026-08-21T09:55:24.631" classname="CameraEoZoomFocusTest" />
+    <testcase name="ContinuousInStopOutStop_ChangesFov" status="run" result="completed" time="19.605" timestamp="2026-08-21T09:55:41.077" classname="CameraEoZoomFocusTest" />
+    <testcase name="Range50_70_100_0_AcceptedOrResponsive" status="run" result="completed" time="14.325" timestamp="2026-08-21T09:56:00.683" classname="CameraEoZoomFocusTest" />
+    <testcase name="FocusInStopOutStop_VisualVerification" status="run" result="completed" time="29.429" timestamp="2026-08-21T09:56:15.009" classname="CameraEoZoomFocusTest" />
+    <testcase name="AutoFocus_CommandAcceptedOrStreamResponsive" status="run" result="completed" time="10.346" timestamp="2026-08-21T09:56:44.438" classname="CameraEoZoomFocusTest" />
+  </testsuite>
+  <testsuite name="CameraIrCaptureImageTest" tests="2" failures="0" disabled="0" skipped="0" errors="0" time="3.648" timestamp="2026-08-21T09:56:54.784">
+    <testcase name="ExampleFlow_CaptureIncrementsImageCount" status="run" result="completed" time="2.243" timestamp="2026-08-21T09:56:54.784" classname="CameraIrCaptureImageTest" />
+    <testcase name="IRViewAndRecordSource_ReadBack" status="run" result="completed" time="1.404" timestamp="2026-08-21T09:56:57.028" classname="CameraIrCaptureImageTest" />
+  </testsuite>
+  <testsuite name="CameraIrFfcControlTest" tests="2" failures="0" disabled="0" skipped="0" errors="0" time="13.043" timestamp="2026-08-21T09:56:58.433">
+    <testcase name="AutoThenManualThenTrigger_RemainsResponsive" status="run" result="completed" time="6.02" timestamp="2026-08-21T09:56:58.433" classname="CameraIrFfcControlTest" />
+    <testcase name="FiveManualTriggers_KeepIRResponsive" status="run" result="completed" time="7.023" timestamp="2026-08-21T09:57:04.454" classname="CameraIrFfcControlTest" />
+  </testsuite>
+  <testsuite name="CameraIrIsothermProfileTest" tests="3" failures="1" disabled="0" skipped="0" errors="0" time="4.947" timestamp="2026-08-21T09:57:11.477">
+    <testcase name="HumanProfile_35To40C_ReadsBack" status="run" result="completed" time="2.474" timestamp="2026-08-21T09:57:11.477" classname="CameraIrIsothermProfileTest" />
+    <testcase name="FireProfile_100To140C_ReadsBack" status="run" result="completed" time="2.472" timestamp="2026-08-21T09:57:13.951" classname="CameraIrIsothermProfileTest" />
+    <testcase name="UnsupportedProduct" status="run" result="completed" time="0" timestamp="2026-08-21T09:57:16.424" classname="CameraIrIsothermProfileTest">
+      <failure message="./googletest/src/gtest.cc:2506&#x0A;Failed&#x0A;All tests in the same test suite must use the same test fixture&#x0A;class, so mixing TEST_F and TEST in the same test suite is&#x0A;illegal.  In test suite CameraIrIsothermProfileTest,&#x0A;test HumanProfile_35To40C_ReadsBack is defined using TEST_F but&#x0A;test UnsupportedProduct is defined using TEST.  You probably&#x0A;want to change the TEST to TEST_F or move it to another test&#x0A;case." type=""><![CDATA[./googletest/src/gtest.cc:2506
+Failed
+All tests in the same test suite must use the same test fixture
+class, so mixing TEST_F and TEST in the same test suite is
+illegal.  In test suite CameraIrIsothermProfileTest,
+test HumanProfile_35To40C_ReadsBack is defined using TEST_F but
+test UnsupportedProduct is defined using TEST.  You probably
+want to change the TEST to TEST_F or move it to another test
+case.]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="CameraIrRecordVideoTest" tests="2" failures="1" disabled="0" skipped="0" errors="0" time="12.476" timestamp="2026-08-21T09:57:16.424">
+    <testcase name="ExampleFlow_StartTimeAdvancesThenStop" status="run" result="completed" time="11.513" timestamp="2026-08-21T09:57:16.424" classname="CameraIrRecordVideoTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/camera_ir/test_camera_ir_record_video.cpp:34&#x0A;Value of: cit::waitForRecording(false, 8000)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;IR video_status did not return to idle." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/camera_ir/test_camera_ir_record_video.cpp:34
+Value of: cit::waitForRecording(false, 8000)
+  Actual: false
+Expected: true
+IR video_status did not return to idle.]]></failure>
+    </testcase>
+    <testcase name="StopWhileIdle_RemainsIdle" status="run" result="completed" time="0.962" timestamp="2026-08-21T09:57:27.938" classname="CameraIrRecordVideoTest" />
+  </testsuite>
+  <testsuite name="CameraIrPaletteTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="11.608" timestamp="2026-08-21T09:57:28.900">
+    <testcase name="Palettes1Through10_SetAndReadBack" status="run" result="completed" time="11.608" timestamp="2026-08-21T09:57:28.900" classname="CameraIrPaletteTest" />
+  </testsuite>
+  <testsuite name="CameraIrZoomTest" tests="3" failures="1" disabled="0" skipped="0" errors="0" time="16.191" timestamp="2026-08-21T09:57:40.509">
+    <testcase name="StepInFourThenOutTwo_FactorChanges" status="run" result="completed" time="7.044" timestamp="2026-08-21T09:57:40.509" classname="CameraIrZoomTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/camera_ir/test_camera_ir_set_zoom.cpp:44&#x0A;Expected: (zoomedIn) != (baseline), actual: 0 vs 0" type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/camera_ir/test_camera_ir_set_zoom.cpp:44
+Expected: (zoomedIn) != (baseline), actual: 0 vs 0]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/camera_ir/test_camera_ir_set_zoom.cpp:52&#x0A;Expected: (zoomedOut) != (zoomedIn), actual: 0 vs 0" type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/camera_ir/test_camera_ir_set_zoom.cpp:52
+Expected: (zoomedOut) != (zoomedIn), actual: 0 vs 0]]></failure>
+    </testcase>
+    <testcase name="ContinuousInStopOutStop_RemainsResponsive" status="run" result="completed" time="8.063" timestamp="2026-08-21T09:57:47.554" classname="CameraIrZoomTest" />
+    <testcase name="Range0_50_70_100_CommandsAcceptedOrStreamHealthy" status="run" result="completed" time="1.083" timestamp="2026-08-21T09:57:55.617" classname="CameraIrZoomTest" />
+  </testsuite>
+  <testsuite name="CameraFocusTest" tests="6" failures="0" disabled="0" skipped="0" errors="0" time="43.978" timestamp="2026-08-21T09:57:56.700">
+    <testcase name="ContinuousInThenStop_IsAccepted" status="run" result="completed" time="11.523" timestamp="2026-08-21T09:57:56.700" classname="CameraFocusTest" />
+    <testcase name="ContinuousOutThenStop_IsAccepted" status="run" result="completed" time="11.463" timestamp="2026-08-21T09:58:08.224" classname="CameraFocusTest" />
+    <testcase name="VisualObserve_InStopOutStop" status="run" result="completed" time="19.584" timestamp="2026-08-21T09:58:19.688" classname="CameraFocusTest" />
+    <testcase name="Stop_BestEffortCommandAck" status="run" result="completed" time="0.441" timestamp="2026-08-21T09:58:39.273" classname="CameraFocusTest" />
+    <testcase name="RangeCommand_IsAccepted" status="run" result="completed" time="0.481" timestamp="2026-08-21T09:58:39.714" classname="CameraFocusTest" />
+    <testcase name="NativeFocusConfiguration_IsReadable" status="run" result="completed" time="0.482" timestamp="2026-08-21T09:58:40.196" classname="CameraFocusTest" />
+  </testsuite>
+  <testsuite name="CameraIrFfcSdkGuardTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="1.507" timestamp="2026-08-21T09:58:40.678">
+    <testcase name="SetFFCMode_InvalidValue_SendsNoMessage" status="run" result="completed" time="1.507" timestamp="2026-08-21T09:58:40.678" classname="CameraIrFfcSdkGuardTest" />
+  </testsuite>
+  <testsuite name="CameraIrFfcTest" tests="4" failures="0" disabled="0" skipped="0" errors="0" time="0.481" timestamp="2026-08-21T09:58:42.186">
+    <testcase name="SetManualMode_ThenTrigger_Acked" status="run" result="completed" time="0.36" timestamp="2026-08-21T09:58:42.186" classname="CameraIrFfcTest" />
+    <testcase name="SetFFCMode_Manual_BestEffortAck" status="run" result="completed" time="0.04" timestamp="2026-08-21T09:58:42.547" classname="CameraIrFfcTest" />
+    <testcase name="SetFFCMode_Auto_BestEffortAck" status="run" result="completed" time="0.04" timestamp="2026-08-21T09:58:42.587" classname="CameraIrFfcTest" />
+    <testcase name="Trigger_WithoutConfirmingMode_ObserveBehavior" status="run" result="completed" time="0.04" timestamp="2026-08-21T09:58:42.627" classname="CameraIrFfcTest" />
+  </testsuite>
+  <testsuite name="CameraIRKnownGaps" tests="1" failures="0" disabled="0" skipped="1" errors="0" time="0" timestamp="2026-08-21T09:58:42.667">
+    <testcase name="GetFFCMode_IsEmptyStub_NothingToTest" status="run" result="skipped" time="0" timestamp="2026-08-21T09:58:42.667" classname="CameraIRKnownGaps">
+      <skipped message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/control/test_camera_ir_ffc.cpp:165&#x0A;getPayloadCameraFFCMode(uint8_t&amp;) has an empty function body in the current SDK -- it sends nothing and does not set the output parameter. There is nothing to test until the SDK implements it."><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/control/test_camera_ir_ffc.cpp:165
+getPayloadCameraFFCMode(uint8_t&) has an empty function body in the current SDK -- it sends nothing and does not set the output parameter. There is nothing to test until the SDK implements it.]]></skipped>
+    </testcase>
+  </testsuite>
+  <testsuite name="CameraWhiteBalanceTest" tests="5" failures="0" disabled="0" skipped="0" errors="0" time="2.171" timestamp="2026-08-21T09:58:42.667">
+    <testcase name="ManualMode_RedAndBlueGainsReadBack" status="run" result="completed" time="0.562" timestamp="2026-08-21T09:58:42.667" classname="CameraWhiteBalanceTest" />
+    <testcase name="OnePushMode_ReadsBack" status="run" result="completed" time="0.381" timestamp="2026-08-21T09:58:43.230" classname="CameraWhiteBalanceTest" />
+    <testcase name="Trigger_BestEffortCommandAck" status="run" result="completed" time="0.381" timestamp="2026-08-21T09:58:43.612" classname="CameraWhiteBalanceTest" />
+    <testcase name="RepeatedTrigger_RemainsResponsive" status="run" result="completed" time="0.442" timestamp="2026-08-21T09:58:43.994" classname="CameraWhiteBalanceTest" />
+    <testcase name="Trigger_DoesNotBreakModeReadback" status="run" result="completed" time="0.402" timestamp="2026-08-21T09:58:44.436" classname="CameraWhiteBalanceTest" />
+  </testsuite>
+  <testsuite name="CameraZoomTest" tests="7" failures="0" disabled="0" skipped="0" errors="0" time="95.431" timestamp="2026-08-21T09:58:44.839">
+    <testcase name="ContinuousInThenStop_NarrowsFov" status="run" result="completed" time="14.702" timestamp="2026-08-21T09:58:44.839" classname="CameraZoomTest" />
+    <testcase name="ContinuousOutThenStop_WidensFov" status="run" result="completed" time="14.761" timestamp="2026-08-21T09:58:59.541" classname="CameraZoomTest" />
+    <testcase name="Stop_BestEffortCommandAck" status="run" result="completed" time="7.16" timestamp="2026-08-21T09:59:14.303" classname="CameraZoomTest" />
+    <testcase name="StepInThenOut_CommandsAccepted" status="run" result="completed" time="7.181" timestamp="2026-08-21T09:59:21.464" classname="CameraZoomTest" />
+    <testcase name="Target2x_IsMeasuredByFov" status="run" result="completed" time="17.241" timestamp="2026-08-21T09:59:28.645" classname="CameraZoomTest" />
+    <testcase name="Target3x_IsMeasuredByFov" status="run" result="completed" time="17.201" timestamp="2026-08-21T09:59:45.886" classname="CameraZoomTest" />
+    <testcase name="Target5x_IsMeasuredByFov" status="run" result="completed" time="17.181" timestamp="2026-08-21T10:00:03.088" classname="CameraZoomTest" />
+  </testsuite>
+  <testsuite name="CameraCaptureTest" tests="5" failures="0" disabled="0" skipped="0" errors="0" time="3.755" timestamp="2026-08-21T10:00:20.270">
+    <testcase name="Storage_HasEnoughSpaceForCapture" status="run" result="completed" time="0.523" timestamp="2026-08-21T10:00:20.270" classname="CameraCaptureTest" />
+    <testcase name="CaptureImage_IncrementsImageCount" status="run" result="completed" time="0.782" timestamp="2026-08-21T10:00:20.793" classname="CameraCaptureTest" />
+    <testcase name="CaptureImage_BurstOfThree" status="run" result="completed" time="1.502" timestamp="2026-08-21T10:00:21.576" classname="CameraCaptureTest" />
+    <testcase name="GetCaptureStatus_EventArrives" status="run" result="completed" time="0.462" timestamp="2026-08-21T10:00:23.079" classname="CameraCaptureTest" />
+    <testcase name="StopImage_BestEffortAck" status="run" result="completed" time="0.483" timestamp="2026-08-21T10:00:23.541" classname="CameraCaptureTest" />
+  </testsuite>
+  <testsuite name="CameraRecordTest" tests="9" failures="0" disabled="0" skipped="0" errors="0" time="35.401" timestamp="2026-08-21T10:00:24.025">
+    <testcase name="GetCaptureStatus_InitiallyIdle" status="run" result="completed" time="0.382" timestamp="2026-08-21T10:00:24.025" classname="CameraRecordTest" />
+    <testcase name="StartEO_VideoStatusBecomesActive" status="run" result="completed" time="4.246" timestamp="2026-08-21T10:00:24.407" classname="CameraRecordTest" />
+    <testcase name="StartIR_VideoStatusBecomesActive" status="run" result="completed" time="4.206" timestamp="2026-08-21T10:00:28.654" classname="CameraRecordTest" />
+    <testcase name="StartBoth_VideoStatusBecomesActive" status="run" result="completed" time="5.33" timestamp="2026-08-21T10:00:32.860" classname="CameraRecordTest" />
+    <testcase name="StartPiP_VideoStatusBecomesActive" status="run" result="completed" time="4.268" timestamp="2026-08-21T10:00:38.190" classname="CameraRecordTest" />
+    <testcase name="RecordingTime_Advances" status="run" result="completed" time="4.007" timestamp="2026-08-21T10:00:42.459" classname="CameraRecordTest" />
+    <testcase name="Stop_VideoStatusReturnsIdle" status="run" result="completed" time="4.245" timestamp="2026-08-21T10:00:46.467" classname="CameraRecordTest" />
+    <testcase name="TearDown_StopsInterruptedRecording" status="run" result="completed" time="4.287" timestamp="2026-08-21T10:00:50.712" classname="CameraRecordTest" />
+    <testcase name="StartWhileAlreadyRecording_ObservedBehavior" status="run" result="completed" time="4.426" timestamp="2026-08-21T10:00:54.999" classname="CameraRecordTest" />
+  </testsuite>
+  <testsuite name="CameraParamByIdTest" tests="6" failures="0" disabled="0" skipped="0" errors="0" time="5.568" timestamp="2026-08-21T10:00:59.426">
+    <testcase name="KnownId_ReturnsValue" status="run" result="completed" time="0.04" timestamp="2026-08-21T10:00:59.426" classname="CameraParamByIdTest" />
+    <testcase name="ResponseIsRoutedToExactRequestedId" status="run" result="completed" time="0.08" timestamp="2026-08-21T10:00:59.466" classname="CameraParamByIdTest" />
+    <testcase name="Value_MatchesListEntry" status="run" result="completed" time="2.994" timestamp="2026-08-21T10:00:59.547" classname="CameraParamByIdTest" />
+    <testcase name="RepeatedRead_IsStable" status="run" result="completed" time="0.04" timestamp="2026-08-21T10:01:02.541" classname="CameraParamByIdTest" />
+    <testcase name="UnknownId_DoesNotProduceFalseMatchingResponse" status="run" result="completed" time="1.206" timestamp="2026-08-21T10:01:02.581" classname="CameraParamByIdTest" />
+    <testcase name="SixteenCharacterUnknownId_IsHandledSafely" status="run" result="completed" time="1.205" timestamp="2026-08-21T10:01:03.788" classname="CameraParamByIdTest" />
+  </testsuite>
+  <testsuite name="CameraParamByIndexTest" tests="4" failures="2" disabled="0" skipped="0" errors="0" time="14.929" timestamp="2026-08-21T10:01:04.994">
+    <testcase name="FirstMiddleLast_ReturnExpectedEntries" status="run" result="completed" time="3.014" timestamp="2026-08-21T10:01:04.994" classname="CameraParamByIndexTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:24&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;CAM_MODE&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;ADV_EO_EIS&quot;" type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:24
+Expected equality of these values:
+  actual.id
+    Which is: "CAM_MODE"
+  expected.id
+    Which is: "ADV_EO_EIS"]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:25&#x0A;Expected equality of these values:&#x0A;  actual.value&#x0A;    Which is: 1&#x0A;  expected.value&#x0A;    Which is: 0" type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:25
+Expected equality of these values:
+  actual.value
+    Which is: 1
+  expected.value
+    Which is: 0]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:24&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_VE&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_BGAIN&quot;" type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:24
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_VE"
+  expected.id
+    Which is: "C_V_BGAIN"]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:25&#x0A;Expected equality of these values:&#x0A;  actual.value&#x0A;    Which is: 3&#x0A;  expected.value&#x0A;    Which is: 79" type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:25
+Expected equality of these values:
+  actual.value
+    Which is: 3
+  expected.value
+    Which is: 79]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:24&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_AGC_LNP&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;TRACK_MODE&quot;" type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:24
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_AGC_LNP"
+  expected.id
+    Which is: "TRACK_MODE"]]></failure>
+    </testcase>
+    <testcase name="ReturnedIndex_MatchesRequest" status="run" result="completed" time="2.972" timestamp="2026-08-21T10:01:08.008" classname="CameraParamByIndexTest" />
+    <testcase name="EveryListedIndex_RoundTripsToSameId" status="run" result="completed" time="4.775" timestamp="2026-08-21T10:01:10.981" classname="CameraParamByIndexTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;CAM_MODE&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;ADV_EO_EIS&quot;&#x0A;Index 0 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "CAM_MODE"
+  expected.id
+    Which is: "ADV_EO_EIS"
+Index 0 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;TRACK_MODE&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;ADV_EO_IMG_ENH&quot;&#x0A;Index 1 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "TRACK_MODE"
+  expected.id
+    Which is: "ADV_EO_IMG_ENH"
+Index 1 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;SETTING_TARGET&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;ADV_IR_EIS&quot;&#x0A;Index 2 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "SETTING_TARGET"
+  expected.id
+    Which is: "ADV_IR_EIS"
+Index 2 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;RC_MODE&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;ADV_IR_IMG_ENH&quot;&#x0A;Index 3 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "RC_MODE"
+  expected.id
+    Which is: "ADV_IR_IMG_ENH"
+Index 3 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;STORAGE_TYPE&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;ADV_OP_MODE&quot;&#x0A;Index 4 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "STORAGE_TYPE"
+  expected.id
+    Which is: "ADV_OP_MODE"
+Index 4 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_SOURCE&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;CAM_MODE&quot;&#x0A;Index 5 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_SOURCE"
+  expected.id
+    Which is: "CAM_MODE"
+Index 5 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_REC&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_SOURCE&quot;&#x0A;Index 6 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_REC"
+  expected.id
+    Which is: "C_SOURCE"
+Index 6 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;OSD_MODE&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_AGC_LNP&quot;&#x0A;Index 7 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "OSD_MODE"
+  expected.id
+    Which is: "C_T_AGC_LNP"
+Index 7 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;OSD_VALUE&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_AGC_M&quot;&#x0A;Index 8 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "OSD_VALUE"
+  expected.id
+    Which is: "C_T_AGC_M"
+Index 8 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_FLIP&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_CONST_M&quot;&#x0A;Index 9 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_FLIP"
+  expected.id
+    Which is: "C_T_CONST_M"
+Index 9 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;GB_MODE&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_G&quot;&#x0A;Index 10 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "GB_MODE"
+  expected.id
+    Which is: "C_T_G"
+Index 10 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;GB_FW_FLAG&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_ISO_M&quot;&#x0A;Index 11 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "GB_FW_FLAG"
+  expected.id
+    Which is: "C_T_ISO_M"
+Index 11 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;GB_SPD_P&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_ISO_U&quot;&#x0A;Index 12 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "GB_SPD_P"
+  expected.id
+    Which is: "C_T_ISO_U"
+Index 12 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;GB_SPD_Y&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_PALETTE&quot;&#x0A;Index 13 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "GB_SPD_Y"
+  expected.id
+    Which is: "C_T_PALETTE"
+Index 13 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;GB_P_PANDRIFT&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_RG0_CLR_M&quot;&#x0A;Index 14 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "GB_P_PANDRIFT"
+  expected.id
+    Which is: "C_T_RG0_CLR_M"
+Index 14 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;GB_BAUD&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_RG0_CLR_MN&quot;&#x0A;Index 15 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "GB_BAUD"
+  expected.id
+    Which is: "C_T_RG0_CLR_MN"
+Index 15 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;GB_DEBUG_MODE&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_RG0_CLR_MX&quot;&#x0A;Index 16 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "GB_DEBUG_MODE"
+  expected.id
+    Which is: "C_T_RG0_CLR_MX"
+Index 16 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;LRF_MODE&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_RG0_TMP&quot;&#x0A;Index 17 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "LRF_MODE"
+  expected.id
+    Which is: "C_T_RG0_TMP"
+Index 17 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_FM&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_RG1_CLR_M&quot;&#x0A;Index 18 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_FM"
+  expected.id
+    Which is: "C_T_RG1_CLR_M"
+Index 18 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_FV&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_RG1_CLR_MN&quot;&#x0A;Index 19 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_FV"
+  expected.id
+    Which is: "C_T_RG1_CLR_MN"
+Index 19 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_FA&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_RG1_CLR_MX&quot;&#x0A;Index 20 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_FA"
+  expected.id
+    Which is: "C_T_RG1_CLR_MX"
+Index 20 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_ZM_MODE&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_RG1_TMP&quot;&#x0A;Index 21 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_ZM_MODE"
+  expected.id
+    Which is: "C_T_RG1_TMP"
+Index 21 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_ZM_CB_LV&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_RG2_CLR_M&quot;&#x0A;Index 22 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_ZM_CB_LV"
+  expected.id
+    Which is: "C_T_RG2_CLR_M"
+Index 22 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_ZM_SR_LV&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_RG2_CLR_MN&quot;&#x0A;Index 23 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_ZM_SR_LV"
+  expected.id
+    Which is: "C_T_RG2_CLR_MN"
+Index 23 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_WB&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_RG2_CLR_MX&quot;&#x0A;Index 24 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_WB"
+  expected.id
+    Which is: "C_T_RG2_CLR_MX"
+Index 24 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_AE&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_RG2_TMP&quot;&#x0A;Index 25 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_AE"
+  expected.id
+    Which is: "C_T_RG2_TMP"
+Index 25 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_SP&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_RG3_CLR_M&quot;&#x0A;Index 26 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_SP"
+  expected.id
+    Which is: "C_T_RG3_CLR_M"
+Index 26 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_IrP&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_RG3_CLR_MN&quot;&#x0A;Index 27 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_IrP"
+  expected.id
+    Which is: "C_T_RG3_CLR_MN"
+Index 27 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_BrP&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_RG3_CLR_MX&quot;&#x0A;Index 28 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_BrP"
+  expected.id
+    Which is: "C_T_RG3_CLR_MX"
+Index 28 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_DEFOG&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_RG3_TMP&quot;&#x0A;Index 29 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_DEFOG"
+  expected.id
+    Which is: "C_T_RG3_TMP"
+Index 29 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_DEFOG_LV&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_RG4_CLR_M&quot;&#x0A;Index 30 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_DEFOG_LV"
+  expected.id
+    Which is: "C_T_RG4_CLR_M"
+Index 30 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_ICR&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_RG4_CLR_MN&quot;&#x0A;Index 31 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_ICR"
+  expected.id
+    Which is: "C_T_RG4_CLR_MN"
+Index 31 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_ICR_MAN&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_RG4_CLR_MX&quot;&#x0A;Index 32 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_ICR_MAN"
+  expected.id
+    Which is: "C_T_RG4_CLR_MX"
+Index 32 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_ICR_THR&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_RG4_TMP&quot;&#x0A;Index 33 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_ICR_THR"
+  expected.id
+    Which is: "C_T_RG4_TMP"
+Index 33 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_GAIN&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_RG5_CLR_M&quot;&#x0A;Index 34 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_GAIN"
+  expected.id
+    Which is: "C_T_RG5_CLR_M"
+Index 34 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_RGAIN&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_RG5_CLR_MN&quot;&#x0A;Index 35 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_RGAIN"
+  expected.id
+    Which is: "C_T_RG5_CLR_MN"
+Index 35 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_BGAIN&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_RG5_CLR_MX&quot;&#x0A;Index 36 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_BGAIN"
+  expected.id
+    Which is: "C_T_RG5_CLR_MX"
+Index 36 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_MinSP&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_SPOT_M&quot;&#x0A;Index 37 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_MinSP"
+  expected.id
+    Which is: "C_T_SPOT_M"
+Index 37 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_FREEZE&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_SPOT_S&quot;&#x0A;Index 38 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_FREEZE"
+  expected.id
+    Which is: "C_T_SPOT_S"
+Index 38 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_HS&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_SPOT_U&quot;&#x0A;Index 39 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_HS"
+  expected.id
+    Which is: "C_T_SPOT_U"
+Index 39 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_Z_SPD&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_T_ZOOM&quot;&#x0A;Index 40 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_Z_SPD"
+  expected.id
+    Which is: "C_T_ZOOM"
+Index 40 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_F_SPD&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_AE&quot;&#x0A;Index 41 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_F_SPD"
+  expected.id
+    Which is: "C_V_AE"
+Index 41 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_GAINLIMIT&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_AF_SEN&quot;&#x0A;Index 42 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_GAINLIMIT"
+  expected.id
+    Which is: "C_V_AF_SEN"
+Index 42 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_VE&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_BGAIN&quot;&#x0A;Index 43 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_VE"
+  expected.id
+    Which is: "C_V_BGAIN"
+Index 43 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_VE_BR&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_BrP&quot;&#x0A;Index 44 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_VE_BR"
+  expected.id
+    Which is: "C_V_BrP"
+Index 44 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_VE_COMP&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_DEFOG&quot;&#x0A;Index 45 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_VE_COMP"
+  expected.id
+    Which is: "C_V_DEFOG"
+Index 45 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_VE_COMP_LV&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_DEFOG_LV&quot;&#x0A;Index 46 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_VE_COMP_LV"
+  expected.id
+    Which is: "C_V_DEFOG_LV"
+Index 46 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_V_AF_SEN&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_FA&quot;&#x0A;Index 47 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_V_AF_SEN"
+  expected.id
+    Which is: "C_V_FA"
+Index 47 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;ADV_IR_IMG_ENH&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_FLIP&quot;&#x0A;Index 48 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "ADV_IR_IMG_ENH"
+  expected.id
+    Which is: "C_V_FLIP"
+Index 48 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;ADV_EO_IMG_ENH&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_FM&quot;&#x0A;Index 49 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "ADV_EO_IMG_ENH"
+  expected.id
+    Which is: "C_V_FM"
+Index 49 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;ADV_IR_EIS&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_FREEZE&quot;&#x0A;Index 50 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "ADV_IR_EIS"
+  expected.id
+    Which is: "C_V_FREEZE"
+Index 50 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;ADV_EO_EIS&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_FV&quot;&#x0A;Index 51 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "ADV_EO_EIS"
+  expected.id
+    Which is: "C_V_FV"
+Index 51 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;ADV_OP_MODE&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_F_SPD&quot;&#x0A;Index 52 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "ADV_OP_MODE"
+  expected.id
+    Which is: "C_V_F_SPD"
+Index 52 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_PALETTE&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_GAIN&quot;&#x0A;Index 53 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_PALETTE"
+  expected.id
+    Which is: "C_V_GAIN"
+Index 53 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_ZOOM&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_GAINLIMIT&quot;&#x0A;Index 54 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_ZOOM"
+  expected.id
+    Which is: "C_V_GAINLIMIT"
+Index 54 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_G&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_HS&quot;&#x0A;Index 55 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_G"
+  expected.id
+    Which is: "C_V_HS"
+Index 55 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_SPOT_M&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_ICR&quot;&#x0A;Index 56 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_SPOT_M"
+  expected.id
+    Which is: "C_V_ICR"
+Index 56 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_SPOT_U&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_ICR_MAN&quot;&#x0A;Index 57 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_SPOT_U"
+  expected.id
+    Which is: "C_V_ICR_MAN"
+Index 57 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_SPOT_S&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_ICR_THR&quot;&#x0A;Index 58 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_SPOT_S"
+  expected.id
+    Which is: "C_V_ICR_THR"
+Index 58 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_ISO_M&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_IrP&quot;&#x0A;Index 59 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_ISO_M"
+  expected.id
+    Which is: "C_V_IrP"
+Index 59 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_ISO_U&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_MinSP&quot;&#x0A;Index 60 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_ISO_U"
+  expected.id
+    Which is: "C_V_MinSP"
+Index 60 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_RG0_CLR_M&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_REC&quot;&#x0A;Index 61 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG0_CLR_M"
+  expected.id
+    Which is: "C_V_REC"
+Index 61 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_RG0_TMP&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_RGAIN&quot;&#x0A;Index 62 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG0_TMP"
+  expected.id
+    Which is: "C_V_RGAIN"
+Index 62 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_RG0_CLR_MN&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_SP&quot;&#x0A;Index 63 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG0_CLR_MN"
+  expected.id
+    Which is: "C_V_SP"
+Index 63 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_RG0_CLR_MX&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_VE&quot;&#x0A;Index 64 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG0_CLR_MX"
+  expected.id
+    Which is: "C_V_VE"
+Index 64 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_RG1_CLR_M&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_VE_BR&quot;&#x0A;Index 65 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG1_CLR_M"
+  expected.id
+    Which is: "C_V_VE_BR"
+Index 65 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_RG1_TMP&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_VE_COMP&quot;&#x0A;Index 66 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG1_TMP"
+  expected.id
+    Which is: "C_V_VE_COMP"
+Index 66 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_RG1_CLR_MN&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_VE_COMP_LV&quot;&#x0A;Index 67 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG1_CLR_MN"
+  expected.id
+    Which is: "C_V_VE_COMP_LV"
+Index 67 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_RG1_CLR_MX&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_WB&quot;&#x0A;Index 68 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG1_CLR_MX"
+  expected.id
+    Which is: "C_V_WB"
+Index 68 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_RG2_CLR_M&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_ZM_CB_LV&quot;&#x0A;Index 69 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG2_CLR_M"
+  expected.id
+    Which is: "C_V_ZM_CB_LV"
+Index 69 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_RG2_TMP&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_ZM_MODE&quot;&#x0A;Index 70 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG2_TMP"
+  expected.id
+    Which is: "C_V_ZM_MODE"
+Index 70 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_RG2_CLR_MN&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_ZM_SR_LV&quot;&#x0A;Index 71 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG2_CLR_MN"
+  expected.id
+    Which is: "C_V_ZM_SR_LV"
+Index 71 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_RG2_CLR_MX&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;C_V_Z_SPD&quot;&#x0A;Index 72 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG2_CLR_MX"
+  expected.id
+    Which is: "C_V_Z_SPD"
+Index 72 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_RG3_CLR_M&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;GB_BAUD&quot;&#x0A;Index 73 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG3_CLR_M"
+  expected.id
+    Which is: "GB_BAUD"
+Index 73 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_RG3_TMP&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;GB_DEBUG_MODE&quot;&#x0A;Index 74 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG3_TMP"
+  expected.id
+    Which is: "GB_DEBUG_MODE"
+Index 74 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_RG3_CLR_MN&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;GB_FW_FLAG&quot;&#x0A;Index 75 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG3_CLR_MN"
+  expected.id
+    Which is: "GB_FW_FLAG"
+Index 75 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_RG3_CLR_MX&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;GB_MODE&quot;&#x0A;Index 76 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG3_CLR_MX"
+  expected.id
+    Which is: "GB_MODE"
+Index 76 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_RG4_CLR_M&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;GB_P_PANDRIFT&quot;&#x0A;Index 77 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG4_CLR_M"
+  expected.id
+    Which is: "GB_P_PANDRIFT"
+Index 77 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_RG4_TMP&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;GB_SPD_P&quot;&#x0A;Index 78 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG4_TMP"
+  expected.id
+    Which is: "GB_SPD_P"
+Index 78 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_RG4_CLR_MN&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;GB_SPD_Y&quot;&#x0A;Index 79 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG4_CLR_MN"
+  expected.id
+    Which is: "GB_SPD_Y"
+Index 79 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_RG4_CLR_MX&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;LRF_MODE&quot;&#x0A;Index 80 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG4_CLR_MX"
+  expected.id
+    Which is: "LRF_MODE"
+Index 80 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_RG5_CLR_M&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;OSD_MODE&quot;&#x0A;Index 81 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG5_CLR_M"
+  expected.id
+    Which is: "OSD_MODE"
+Index 81 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_RG5_CLR_MN&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;OSD_VALUE&quot;&#x0A;Index 82 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG5_CLR_MN"
+  expected.id
+    Which is: "OSD_VALUE"
+Index 82 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_RG5_CLR_MX&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;RC_MODE&quot;&#x0A;Index 83 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_RG5_CLR_MX"
+  expected.id
+    Which is: "RC_MODE"
+Index 83 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_CONST_M&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;SETTING_TARGET&quot;&#x0A;Index 84 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_CONST_M"
+  expected.id
+    Which is: "SETTING_TARGET"
+Index 84 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_AGC_M&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;STORAGE_TYPE&quot;&#x0A;Index 85 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_AGC_M"
+  expected.id
+    Which is: "STORAGE_TYPE"
+Index 85 returned the wrong ID.]]></failure>
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49&#x0A;Expected equality of these values:&#x0A;  actual.id&#x0A;    Which is: &quot;C_T_AGC_LNP&quot;&#x0A;  expected.id&#x0A;    Which is: &quot;TRACK_MODE&quot;&#x0A;Index 86 returned the wrong ID." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_by_index.cpp:49
+Expected equality of these values:
+  actual.id
+    Which is: "C_T_AGC_LNP"
+  expected.id
+    Which is: "TRACK_MODE"
+Index 86 returned the wrong ID.]]></failure>
+    </testcase>
+    <testcase name="InvalidIndex_DoesNotProduceMatchingResponse" status="run" result="completed" time="4.166" timestamp="2026-08-21T10:01:15.757" classname="CameraParamByIndexTest" />
+  </testsuite>
+  <testsuite name="CameraParamCatalogTest" tests="7" failures="1" disabled="0" skipped="0" errors="0" time="11.595" timestamp="2026-08-21T10:01:19.923">
+    <testcase name="DeclaredIds_AreUniqueAndFitMavlinkField" status="run" result="completed" time="0" timestamp="2026-08-21T10:01:19.923" classname="CameraParamCatalogTest" />
+    <testcase name="EveryDeclaredParameter_IsReadable" status="run" result="completed" time="9.703" timestamp="2026-08-21T10:01:19.923" classname="CameraParamCatalogTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_catalog.cpp:34&#x0A;Expected equality of these values:&#x0A;  failures&#x0A;    Which is: 3&#x0A;  0&#x0A;3 declared parameters were not exposed by this payload." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_catalog.cpp:34
+Expected equality of these values:
+  failures
+    Which is: 3
+  0
+3 declared parameters were not exposed by this payload.]]></failure>
+    </testcase>
+    <testcase name="SourceRecordAndOsd_RepresentativeValues" status="run" result="completed" time="0.402" timestamp="2026-08-21T10:01:29.627" classname="CameraParamCatalogTest" />
+    <testcase name="ExposureAndImage_RepresentativeValues" status="run" result="completed" time="0.442" timestamp="2026-08-21T10:01:30.029" classname="CameraParamCatalogTest" />
+    <testcase name="WhiteBalanceAndFocus_RepresentativeValues" status="run" result="completed" time="0.301" timestamp="2026-08-21T10:01:30.472" classname="CameraParamCatalogTest" />
+    <testcase name="ZoomAndIr_RepresentativeValues" status="run" result="completed" time="0.442" timestamp="2026-08-21T10:01:30.774" classname="CameraParamCatalogTest" />
+    <testcase name="ControlAndIcr_RepresentativeValues" status="run" result="completed" time="0.301" timestamp="2026-08-21T10:01:31.217" classname="CameraParamCatalogTest" />
+  </testsuite>
+  <testsuite name="CameraParamListTest" tests="5" failures="0" disabled="0" skipped="0" errors="0" time="17.742" timestamp="2026-08-21T10:01:31.518">
+    <testcase name="Request_ReturnsParameters" status="run" result="completed" time="2.957" timestamp="2026-08-21T10:01:31.518" classname="CameraParamListTest" />
+    <testcase name="Ids_AreNonemptyUniqueAndBounded" status="run" result="completed" time="2.956" timestamp="2026-08-21T10:01:34.476" classname="CameraParamListTest" />
+    <testcase name="Indices_AreUnique" status="run" result="completed" time="2.957" timestamp="2026-08-21T10:01:37.433" classname="CameraParamListTest" />
+    <testcase name="Values_AreFinite" status="run" result="completed" time="2.956" timestamp="2026-08-21T10:01:40.390" classname="CameraParamListTest" />
+    <testcase name="RepeatedRequest_ReturnsStableIdsAndIndices" status="run" result="completed" time="5.914" timestamp="2026-08-21T10:01:43.346" classname="CameraParamListTest" />
+  </testsuite>
+  <testsuite name="CameraParamSetTest" tests="5" failures="1" disabled="0" skipped="0" errors="0" time="1.671" timestamp="2026-08-21T10:01:49.261">
+    <testcase name="Uint32Value_RoundTripsAndRestores" status="run" result="completed" time="0.12" timestamp="2026-08-21T10:01:49.261" classname="CameraParamSetTest" />
+    <testcase name="ValueContainingZeroBytes_RoundTrips" status="run" result="completed" time="0.1" timestamp="2026-08-21T10:01:49.381" classname="CameraParamSetTest" />
+    <testcase name="MinimumAndMaximumKnownValues_RoundTrip" status="run" result="completed" time="0.141" timestamp="2026-08-21T10:01:49.482" classname="CameraParamSetTest" />
+    <testcase name="UnknownId_IsNotCreated" status="run" result="completed" time="1.208" timestamp="2026-08-21T10:01:49.623" classname="CameraParamSetTest" />
+    <testcase name="OutOfRangeEnum_IsRejectedOrClamped" status="run" result="completed" time="0.1" timestamp="2026-08-21T10:01:50.832" classname="CameraParamSetTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_set.cpp:61&#x0A;Expected: (observed) != (255.0), actual: 255 vs 255&#x0A;Invalid RC mode was stored without rejection or clamping." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/parameters/test_camera_param_set.cpp:61
+Expected: (observed) != (255.0), actual: 255 vs 255
+Invalid RC mode was stored without rejection or clamping.]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="CameraFovTest" tests="4" failures="0" disabled="0" skipped="0" errors="0" time="0.101" timestamp="2026-08-21T10:01:50.932">
+    <testcase name="EO_EventArrivesAndAnglesAreValid" status="run" result="completed" time="0.02" timestamp="2026-08-21T10:01:50.932" classname="CameraFovTest" />
+    <testcase name="IR_EventArrivesAndAnglesAreValid" status="run" result="completed" time="0.02" timestamp="2026-08-21T10:01:50.953" classname="CameraFovTest" />
+    <testcase name="RepeatedEORead_IsStable" status="run" result="completed" time="0.04" timestamp="2026-08-21T10:01:50.973" classname="CameraFovTest" />
+    <testcase name="EO_AspectRatioIsPlausible" status="run" result="completed" time="0.02" timestamp="2026-08-21T10:01:51.013" classname="CameraFovTest" />
+  </testsuite>
+  <testsuite name="CameraInformationTest" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="0.825" timestamp="2026-08-21T10:01:51.033">
+    <testcase name="Request_ReturnsInformation" status="run" result="completed" time="0.02" timestamp="2026-08-21T10:01:51.033" classname="CameraInformationTest" />
+    <testcase name="CapabilityBitmap_IsNotEmpty" status="run" result="completed" time="0.201" timestamp="2026-08-21T10:01:51.054" classname="CameraInformationTest" />
+    <testcase name="RepeatedRequests_ReturnStableCapabilities" status="run" result="completed" time="0.603" timestamp="2026-08-21T10:01:51.255" classname="CameraInformationTest" />
+  </testsuite>
+  <testsuite name="CameraModeTest" tests="5" failures="1" disabled="0" skipped="0" errors="0" time="0.764" timestamp="2026-08-21T10:01:51.859">
+    <testcase name="GetMode_EventArrives" status="run" result="completed" time="0.261" timestamp="2026-08-21T10:01:51.859" classname="CameraModeTest" />
+    <testcase name="SetImage_StateOrAcceptedAck" status="run" result="completed" time="0.14" timestamp="2026-08-21T10:01:52.121" classname="CameraModeTest" />
+    <testcase name="SetVideo_StateOrAcceptedAck" status="run" result="completed" time="0.1" timestamp="2026-08-21T10:01:52.262" classname="CameraModeTest" />
+    <testcase name="InvalidMode_IsRejectedOrIgnored" status="run" result="completed" time="0.1" timestamp="2026-08-21T10:01:52.362" classname="CameraModeTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/query/test_camera_mode.cpp:122&#x0A;Value of: explicitlyRejected || ignored&#x0A;  Actual: false&#x0A;Expected: true&#x0A;Invalid mode 255 was not rejected and changed the reported mode from 1 to 255 (ACK received=true, ACK result=0)." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/query/test_camera_mode.cpp:122
+Value of: explicitlyRejected || ignored
+  Actual: false
+Expected: true
+Invalid mode 255 was not rejected and changed the reported mode from 1 to 255 (ACK received=true, ACK result=0).]]></failure>
+    </testcase>
+    <testcase name="OriginalMode_IsRestored" status="run" result="completed" time="0.16" timestamp="2026-08-21T10:01:52.463" classname="CameraModeTest" />
+  </testsuite>
+  <testsuite name="CameraStorageTest" tests="5" failures="1" disabled="0" skipped="0" errors="0" time="0.422" timestamp="2026-08-21T10:01:52.624">
+    <testcase name="InformationEventArrives" status="run" result="completed" time="0.02" timestamp="2026-08-21T10:01:52.624" classname="CameraStorageTest" />
+    <testcase name="Capacities_AreFiniteAndNonnegative" status="run" result="completed" time="0.1" timestamp="2026-08-21T10:01:52.644" classname="CameraStorageTest" />
+    <testcase name="TotalUsedAvailable_AreConsistent" status="run" result="completed" time="0.1" timestamp="2026-08-21T10:01:52.744" classname="CameraStorageTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/query/test_camera_storage.cpp:59&#x0A;The difference between info.used + info.available and info.total is 24435.265625, which exceeds tolerance, where&#x0A;info.used + info.available evaluates to 455259.640625,&#x0A;info.total evaluates to 479694.90625, and&#x0A;tolerance evaluates to 9593.8981249999997.&#x0A;Used plus available storage differs materially from total." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/camera/query/test_camera_storage.cpp:59
+The difference between info.used + info.available and info.total is 24435.265625, which exceeds tolerance, where
+info.used + info.available evaluates to 455259.640625,
+info.total evaluates to 479694.90625, and
+tolerance evaluates to 9593.8981249999997.
+Used plus available storage differs materially from total.]]></failure>
+    </testcase>
+    <testcase name="Status_IsKnown" status="run" result="completed" time="0.1" timestamp="2026-08-21T10:01:52.845" classname="CameraStorageTest" />
+    <testcase name="AvailableCapacity_ExceedsMediaThreshold" status="run" result="completed" time="0.1" timestamp="2026-08-21T10:01:52.946" classname="CameraStorageTest" />
+  </testsuite>
+  <testsuite name="CaptureStatusTest" tests="5" failures="0" disabled="0" skipped="0" errors="0" time="0.221" timestamp="2026-08-21T10:01:53.047">
+    <testcase name="EventArrives" status="run" result="completed" time="0.1" timestamp="2026-08-21T10:01:53.047" classname="CaptureStatusTest" />
+    <testcase name="ImageAndVideoStatus_AreKnown" status="run" result="completed" time="0.02" timestamp="2026-08-21T10:01:53.147" classname="CaptureStatusTest" />
+    <testcase name="ImageCount_IsFiniteNonnegativeInteger" status="run" result="completed" time="0.02" timestamp="2026-08-21T10:01:53.167" classname="CaptureStatusTest" />
+    <testcase name="RecordingTime_IsFiniteAndNonnegative" status="run" result="completed" time="0.02" timestamp="2026-08-21T10:01:53.188" classname="CaptureStatusTest" />
+    <testcase name="RepeatedRead_ImageCountIsMonotonic" status="run" result="completed" time="0.06" timestamp="2026-08-21T10:01:53.208" classname="CaptureStatusTest" />
+  </testsuite>
+  <testsuite name="ComponentInformationTest" tests="5" failures="0" disabled="0" skipped="0" errors="0" time="0.141" timestamp="2026-08-21T10:01:53.268">
+    <testcase name="InfoCallbackArrives" status="run" result="completed" time="0.04" timestamp="2026-08-21T10:01:53.268" classname="ComponentInformationTest" />
+    <testcase name="ModelName_IsNonempty" status="run" result="completed" time="0.02" timestamp="2026-08-21T10:01:53.308" classname="ComponentInformationTest" />
+    <testcase name="SoftwareVersion_IsNonempty" status="run" result="completed" time="0.02" timestamp="2026-08-21T10:01:53.329" classname="ComponentInformationTest" />
+    <testcase name="SerialNumber_IsNonempty" status="run" result="completed" time="0.02" timestamp="2026-08-21T10:01:53.349" classname="ComponentInformationTest" />
+    <testcase name="RepeatedRequests_ReturnStableIdentity" status="run" result="completed" time="0.04" timestamp="2026-08-21T10:01:53.369" classname="ComponentInformationTest" />
+  </testsuite>
+  <testsuite name="GimbalAutoTuneTest" tests="2" failures="0" disabled="2" skipped="0" errors="0" time="0" timestamp="1970-01-01T08:00:00.000">
+    <testcase name="DISABLED_EnableThenDisable_Accepted" status="notrun" result="suppressed" time="0" timestamp="1970-01-01T08:00:00.000" classname="GimbalAutoTuneTest" />
+    <testcase name="DISABLED_Disable_IsIdempotent" status="notrun" result="suppressed" time="0" timestamp="1970-01-01T08:00:00.000" classname="GimbalAutoTuneTest" />
+  </testsuite>
+  <testsuite name="GimbalCalibrationTest" tests="3" failures="0" disabled="3" skipped="0" errors="0" time="0" timestamp="1970-01-01T08:00:00.000">
+    <testcase name="DISABLED_GyroCalibration_StartsOrCompletes" status="notrun" result="suppressed" time="0" timestamp="1970-01-01T08:00:00.000" classname="GimbalCalibrationTest" />
+    <testcase name="DISABLED_AccelerometerCalibration_StartsOrCompletes" status="notrun" result="suppressed" time="0" timestamp="1970-01-01T08:00:00.000" classname="GimbalCalibrationTest" />
+    <testcase name="DISABLED_MotorCalibration_StartsOrCompletes" status="notrun" result="suppressed" time="0" timestamp="1970-01-01T08:00:00.000" classname="GimbalCalibrationTest" />
+  </testsuite>
+  <testsuite name="GimbalChangeSettingsExampleTest" tests="2" failures="2" disabled="0" skipped="0" errors="0" time="8.013" timestamp="2026-08-21T10:01:53.409">
+    <testcase name="ExampleFlow_StiffTilt50ReadBackRestore" status="run" result="completed" time="4.005" timestamp="2026-08-21T10:01:53.409" classname="GimbalChangeSettingsExampleTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_change_settings.cpp:10&#x0A;Value of: gt::getParamById(&quot;STIFF_TILT&quot;, original_)&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_change_settings.cpp:10
+Value of: gt::getParamById("STIFF_TILT", original_)
+  Actual: false
+Expected: true]]></failure>
+    </testcase>
+    <testcase name="SameStiffnessValue_IsIdempotent" status="run" result="completed" time="4.008" timestamp="2026-08-21T10:01:57.415" classname="GimbalChangeSettingsExampleTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_change_settings.cpp:10&#x0A;Value of: gt::getParamById(&quot;STIFF_TILT&quot;, original_)&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_change_settings.cpp:10
+Value of: gt::getParamById("STIFF_TILT", original_)
+  Actual: false
+Expected: true]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="GimbalHomeTest" tests="1" failures="0" disabled="1" skipped="0" errors="0" time="0" timestamp="1970-01-01T08:00:00.000">
+    <testcase name="DISABLED_SearchHome_AcceptedAndTelemetryContinues" status="notrun" result="suppressed" time="0" timestamp="1970-01-01T08:00:00.000" classname="GimbalHomeTest" />
+  </testsuite>
+  <testsuite name="GimbalModeTest" tests="2" failures="0" disabled="1" skipped="0" errors="0" time="4.242" timestamp="2026-08-21T10:02:01.423">
+    <testcase name="ExampleFlow_LockFollowMapping_ReadBack" status="run" result="completed" time="4.242" timestamp="2026-08-21T10:02:01.423" classname="GimbalModeTest" />
+    <testcase name="DISABLED_ExampleFlow_OffThenReset_ReadBack" status="notrun" result="suppressed" time="0" timestamp="1970-01-01T08:00:00.000" classname="GimbalModeTest" />
+  </testsuite>
+  <testsuite name="GimbalMotionTest" tests="3" failures="3" disabled="0" skipped="0" errors="0" time="12.01" timestamp="2026-08-21T10:02:05.665">
+    <testcase name="V2Angle_ReachesSmallPitchOffset" status="run" result="completed" time="4.004" timestamp="2026-08-21T10:02:05.665" classname="GimbalMotionTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_motion.cpp:13&#x0A;Value of: gt::getAttitude(original_, 4000)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;No gimbal attitude telemetry." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_motion.cpp:13
+Value of: gt::getAttitude(original_, 4000)
+  Actual: false
+Expected: true
+No gimbal attitude telemetry.]]></failure>
+    </testcase>
+    <testcase name="V2Speed_ThenZeroChangesAndStopsYaw" status="run" result="completed" time="4.005" timestamp="2026-08-21T10:02:09.670" classname="GimbalMotionTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_motion.cpp:13&#x0A;Value of: gt::getAttitude(original_, 4000)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;No gimbal attitude telemetry." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_motion.cpp:13
+Value of: gt::getAttitude(original_, 4000)
+  Actual: false
+Expected: true
+No gimbal attitude telemetry.]]></failure>
+    </testcase>
+    <testcase name="MAVLinkV1Angle_CommandAcceptedAndMoves" status="run" result="completed" time="4" timestamp="2026-08-21T10:02:13.676" classname="GimbalMotionTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_motion.cpp:13&#x0A;Value of: gt::getAttitude(original_, 4000)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;No gimbal attitude telemetry." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_motion.cpp:13
+Value of: gt::getAttitude(original_, 4000)
+  Actual: false
+Expected: true
+No gimbal attitude telemetry.]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="GimbalMoveAngleExampleTest" tests="3" failures="3" disabled="0" skipped="0" errors="0" time="12.014" timestamp="2026-08-21T10:02:17.676">
+    <testcase name="MAVLinkV1_PitchAndYaw_ReachesTarget" status="run" result="completed" time="4.002" timestamp="2026-08-21T10:02:17.676" classname="GimbalMoveAngleExampleTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/gimbal_example_test_helpers.h:17&#x0A;Value of: gt::getAttitude(original_, 4000)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;No MOUNT_ORIENTATION telemetry." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/gimbal_example_test_helpers.h:17
+Value of: gt::getAttitude(original_, 4000)
+  Actual: false
+Expected: true
+No MOUNT_ORIENTATION telemetry.]]></failure>
+    </testcase>
+    <testcase name="MAVLinkV1_SecondFartherPosition_ReachesTarget" status="run" result="completed" time="4.006" timestamp="2026-08-21T10:02:21.679" classname="GimbalMoveAngleExampleTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/gimbal_example_test_helpers.h:17&#x0A;Value of: gt::getAttitude(original_, 4000)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;No MOUNT_ORIENTATION telemetry." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/gimbal_example_test_helpers.h:17
+Value of: gt::getAttitude(original_, 4000)
+  Actual: false
+Expected: true
+No MOUNT_ORIENTATION telemetry.]]></failure>
+    </testcase>
+    <testcase name="MAVLinkV2_PitchAndYaw_ReachesTarget" status="run" result="completed" time="4.005" timestamp="2026-08-21T10:02:25.685" classname="GimbalMoveAngleExampleTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/gimbal_example_test_helpers.h:17&#x0A;Value of: gt::getAttitude(original_, 4000)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;No MOUNT_ORIENTATION telemetry." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/gimbal_example_test_helpers.h:17
+Value of: gt::getAttitude(original_, 4000)
+  Actual: false
+Expected: true
+No MOUNT_ORIENTATION telemetry.]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="GimbalMoveSpeedExampleTest" tests="3" failures="3" disabled="0" skipped="0" errors="0" time="12.029" timestamp="2026-08-21T10:02:29.691">
+    <testcase name="ExampleFlow_RightThenLeft20DegPerSecond" status="run" result="completed" time="4.006" timestamp="2026-08-21T10:02:29.691" classname="GimbalMoveSpeedExampleTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/gimbal_example_test_helpers.h:17&#x0A;Value of: gt::getAttitude(original_, 4000)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;No MOUNT_ORIENTATION telemetry." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/gimbal_example_test_helpers.h:17
+Value of: gt::getAttitude(original_, 4000)
+  Actual: false
+Expected: true
+No MOUNT_ORIENTATION telemetry.]]></failure>
+    </testcase>
+    <testcase name="ZeroSpeed_HoldsYawStable" status="run" result="completed" time="4.002" timestamp="2026-08-21T10:02:33.698" classname="GimbalMoveSpeedExampleTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/gimbal_example_test_helpers.h:17&#x0A;Value of: gt::getAttitude(original_, 4000)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;No MOUNT_ORIENTATION telemetry." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/gimbal_example_test_helpers.h:17
+Value of: gt::getAttitude(original_, 4000)
+  Actual: false
+Expected: true
+No MOUNT_ORIENTATION telemetry.]]></failure>
+    </testcase>
+    <testcase name="PitchPositiveThenNegative_MoveOpposite" status="run" result="completed" time="4.019" timestamp="2026-08-21T10:02:37.700" classname="GimbalMoveSpeedExampleTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/gimbal_example_test_helpers.h:17&#x0A;Value of: gt::getAttitude(original_, 4000)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;No MOUNT_ORIENTATION telemetry." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/gimbal_example_test_helpers.h:17
+Value of: gt::getAttitude(original_, 4000)
+  Actual: false
+Expected: true
+No MOUNT_ORIENTATION telemetry.]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="GimbalParamByIdTest" tests="3" failures="2" disabled="0" skipped="0" errors="0" time="9.21" timestamp="2026-08-21T10:02:41.720">
+    <testcase name="KnownVersionId_ReturnsExactId" status="run" result="completed" time="4.002" timestamp="2026-08-21T10:02:41.720" classname="GimbalParamByIdTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_by_id.cpp:9&#x0A;Value of: gt::getParamById(&quot;VERSION_X&quot;, value)&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_by_id.cpp:9
+Value of: gt::getParamById("VERSION_X", value)
+  Actual: false
+Expected: true]]></failure>
+    </testcase>
+    <testcase name="KnownStiffnessId_IsRepeatable" status="run" result="completed" time="4" timestamp="2026-08-21T10:02:45.723" classname="GimbalParamByIdTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_by_id.cpp:16&#x0A;Value of: gt::getParamById(&quot;STIFF_TILT&quot;, first)&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_by_id.cpp:16
+Value of: gt::getParamById("STIFF_TILT", first)
+  Actual: false
+Expected: true]]></failure>
+    </testcase>
+    <testcase name="UnknownId_DoesNotProduceFalseMatchingResponse" status="run" result="completed" time="1.206" timestamp="2026-08-21T10:02:49.723" classname="GimbalParamByIdTest" />
+  </testsuite>
+  <testsuite name="GimbalParamByIndexTest" tests="2" failures="2" disabled="0" skipped="0" errors="0" time="16.017" timestamp="2026-08-21T10:02:50.931">
+    <testcase name="FirstCatalogIndex_ReturnsSameEntry" status="run" result="completed" time="8.004" timestamp="2026-08-21T10:02:50.931" classname="GimbalParamByIndexTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_by_index.cpp:9&#x0A;Value of: catalog.empty()&#x0A;  Actual: true&#x0A;Expected: false" type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_by_index.cpp:9
+Value of: catalog.empty()
+  Actual: true
+Expected: false]]></failure>
+    </testcase>
+    <testcase name="MiddleCatalogIndex_MatchesIdQuery" status="run" result="completed" time="8.012" timestamp="2026-08-21T10:02:58.935" classname="GimbalParamByIndexTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_by_index.cpp:20&#x0A;Value of: catalog.empty()&#x0A;  Actual: true&#x0A;Expected: false" type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_by_index.cpp:20
+Value of: catalog.empty()
+  Actual: true
+Expected: false]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="GimbalParamListTest" tests="2" failures="2" disabled="0" skipped="0" errors="0" time="24.026" timestamp="2026-08-21T10:03:06.948">
+    <testcase name="List_ReturnsNonemptyUniqueCatalog" status="run" result="completed" time="8.011" timestamp="2026-08-21T10:03:06.948" classname="GimbalParamListTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_list.cpp:12&#x0A;Value of: values.empty()&#x0A;  Actual: true&#x0A;Expected: false&#x0A;No gimbal PARAM_VALUE list response." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_list.cpp:12
+Value of: values.empty()
+  Actual: true
+Expected: false
+No gimbal PARAM_VALUE list response.]]></failure>
+    </testcase>
+    <testcase name="RepeatedList_HasStableIdSet" status="run" result="completed" time="16.015" timestamp="2026-08-21T10:03:14.959" classname="GimbalParamListTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_list.cpp:28&#x0A;Value of: first.empty()&#x0A;  Actual: true&#x0A;Expected: false" type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_list.cpp:28
+Value of: first.empty()
+  Actual: true
+Expected: false]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="GimbalParamSetTest" tests="2" failures="2" disabled="0" skipped="0" errors="0" time="8.002" timestamp="2026-08-21T10:03:30.975">
+    <testcase name="StiffTilt_SetReadBackAndRestore" status="run" result="completed" time="4.002" timestamp="2026-08-21T10:03:30.975" classname="GimbalParamSetTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_set.cpp:9&#x0A;Value of: gt::getParamById(&quot;STIFF_TILT&quot;, original_)&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_set.cpp:9
+Value of: gt::getParamById("STIFF_TILT", original_)
+  Actual: false
+Expected: true]]></failure>
+    </testcase>
+    <testcase name="SameValue_IsIdempotent" status="run" result="completed" time="4" timestamp="2026-08-21T10:03:34.977" classname="GimbalParamSetTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_set.cpp:9&#x0A;Value of: gt::getParamById(&quot;STIFF_TILT&quot;, original_)&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/gimbal/test_gimbal_param_set.cpp:9
+Value of: gt::getParamById("STIFF_TILT", original_)
+  Actual: false
+Expected: true]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="PayloadGpsExampleTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="1.164" timestamp="2026-08-21T10:03:38.978">
+    <testcase name="NoFixRawThenDgpsRawAndGlobalPosition" status="run" result="completed" time="1.164" timestamp="2026-08-21T10:03:38.978" classname="PayloadGpsExampleTest" />
+  </testsuite>
+  <testsuite name="PayloadSystemTimeExampleTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="1.164" timestamp="2026-08-21T10:03:40.142">
+    <testcase name="CurrentEpochAndIncreasingBootTimeEncode" status="run" result="completed" time="1.164" timestamp="2026-08-21T10:03:40.142" classname="PayloadSystemTimeExampleTest" />
+  </testsuite>
+  <testsuite name="PayloadComponentInfoExampleTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.02" timestamp="2026-08-21T10:03:41.306">
+    <testcase name="ModelVersionSerial_Arrive" status="run" result="completed" time="0.02" timestamp="2026-08-21T10:03:41.306" classname="PayloadComponentInfoExampleTest" />
+  </testsuite>
+  <testsuite name="PayloadFovStatusExampleTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.04" timestamp="2026-08-21T10:03:41.327">
+    <testcase name="EoAndIr_AreValidWhenAvailable" status="run" result="completed" time="0.04" timestamp="2026-08-21T10:03:41.327" classname="PayloadFovStatusExampleTest" />
+  </testsuite>
+  <testsuite name="PayloadVideoStreamingExampleTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.24" timestamp="2026-08-21T10:03:41.367">
+    <testcase name="CameraCapabilityThenStreamInfo" status="run" result="completed" time="0.24" timestamp="2026-08-21T10:03:41.367" classname="PayloadVideoStreamingExampleTest" />
+  </testsuite>
+  <testsuite name="PayloadStatusExampleTest" tests="2" failures="0" disabled="0" skipped="0" errors="0" time="0.1" timestamp="2026-08-21T10:03:41.608">
+    <testcase name="SetRates_ProducesRequestedStatusValues" status="run" result="completed" time="0.04" timestamp="2026-08-21T10:03:41.608" classname="PayloadStatusExampleTest" />
+    <testcase name="RequestParamValue_ReturnsMatchingIndex" status="run" result="completed" time="0.06" timestamp="2026-08-21T10:03:41.648" classname="PayloadStatusExampleTest" />
+  </testsuite>
+  <testsuite name="PayloadStreamControlEncodingTest" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="3.633" timestamp="2026-08-21T10:03:41.708">
+    <testcase name="Bitrate_EoAndIrEncode" status="run" result="completed" time="1.144" timestamp="2026-08-21T10:03:41.708" classname="PayloadStreamControlEncodingTest" />
+    <testcase name="Resolution_AllDocumentedLevelsEncode" status="run" result="completed" time="1.265" timestamp="2026-08-21T10:03:42.853" classname="PayloadStreamControlEncodingTest" />
+    <testcase name="Profile_AllDocumentedLevelsEncode" status="run" result="completed" time="1.223" timestamp="2026-08-21T10:03:44.118" classname="PayloadStreamControlEncodingTest" />
+  </testsuite>
+  <testsuite name="PayloadStreamBitrateHardwareTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="2.08" timestamp="2026-08-21T10:03:45.342">
+    <testcase name="EoFourMbps_ReadBackAndRestore" status="run" result="completed" time="2.08" timestamp="2026-08-21T10:03:45.342" classname="PayloadStreamBitrateHardwareTest" />
+  </testsuite>
+  <testsuite name="PayloadSystemControlEncodingTest" tests="2" failures="0" disabled="0" skipped="0" errors="0" time="2.268" timestamp="2026-08-21T10:03:47.423">
+    <testcase name="StandbyOnAndOffEncode" status="run" result="completed" time="1.144" timestamp="2026-08-21T10:03:47.423" classname="PayloadSystemControlEncodingTest" />
+    <testcase name="RestartGimbalAppId4Encodes" status="run" result="completed" time="1.124" timestamp="2026-08-21T10:03:48.567" classname="PayloadSystemControlEncodingTest" />
+  </testsuite>
+  <testsuite name="PayloadSystemControlHardwareTest" tests="2" failures="0" disabled="2" skipped="0" errors="0" time="0" timestamp="1970-01-01T08:00:00.000">
+    <testcase name="DISABLED_StandbyEnableDisable_RecoversHeartbeat" status="notrun" result="suppressed" time="0" timestamp="1970-01-01T08:00:00.000" classname="PayloadSystemControlHardwareTest" />
+    <testcase name="DISABLED_RestartGimbalApp_HeartbeatRecovers" status="notrun" result="suppressed" time="0" timestamp="1970-01-01T08:00:00.000" classname="PayloadSystemControlHardwareTest" />
+  </testsuite>
+  <testsuite name="PayloadObjectDetectionExampleTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.361" timestamp="2026-08-21T10:03:49.691">
+    <testcase name="EnableDetectionThenTracking_ReadBack" status="run" result="completed" time="0.361" timestamp="2026-08-21T10:03:49.691" classname="PayloadObjectDetectionExampleTest" />
+  </testsuite>
+  <testsuite name="PayloadObjectTrackingExampleTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="2.969" timestamp="2026-08-21T10:03:50.052">
+    <testcase name="ActivePositionThenStop" status="run" result="completed" time="2.969" timestamp="2026-08-21T10:03:50.052" classname="PayloadObjectTrackingExampleTest" />
+  </testsuite>
+  <testsuite name="PayloadVideoRecordStatusExampleTest" tests="1" failures="1" disabled="0" skipped="0" errors="0" time="12.285" timestamp="2026-08-21T10:03:53.022">
+    <testcase name="StartAndStop_EmitRecordJsonAndCaptureStatus" status="run" result="completed" time="12.285" timestamp="2026-08-21T10:03:53.022" classname="PayloadVideoRecordStatusExampleTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/payload/test_payload_video_record_status.cpp:25&#x0A;Value of: pet::waitForRecordText(recordSeq, activeText, 10000)&#x0A;  Actual: false&#x0A;Expected: true&#x0A;regPayloadRecordInfoChanged received no recording JSON." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/payload/test_payload_video_record_status.cpp:25
+Value of: pet::waitForRecordText(recordSeq, activeText, 10000)
+  Actual: false
+Expected: true
+regPayloadRecordInfoChanged received no recording JSON.]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="PayloadZoomTargetEncodingTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="1.224" timestamp="2026-08-21T10:04:05.307">
+    <testcase name="ExampleTargets_EncodeExactTargetPosition" status="run" result="completed" time="1.224" timestamp="2026-08-21T10:04:05.307" classname="PayloadZoomTargetEncodingTest" />
+  </testsuite>
+  <testsuite name="PayloadZoomTargetHardwareTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="19.083" timestamp="2026-08-21T10:04:06.532">
+    <testcase name="OneThenThirteenPointFive_NarrowsFov" status="run" result="completed" time="19.083" timestamp="2026-08-21T10:04:06.532" classname="PayloadZoomTargetHardwareTest" />
+  </testsuite>
+  <testsuite name="StreamBitrateTest" tests="8" failures="0" disabled="0" skipped="0" errors="0" time="5.742" timestamp="2026-08-21T10:04:25.615">
+    <testcase name="GetEOStreamBitrate" status="run" result="completed" time="0.02" timestamp="2026-08-21T10:04:25.615" classname="StreamBitrateTest" />
+    <testcase name="Getter_TriggersAsynchronousBitrateCallback" status="run" result="completed" time="0.02" timestamp="2026-08-21T10:04:25.636" classname="StreamBitrateTest" />
+    <testcase name="SetStreamBitrate" status="run" result="completed" time="0.52" timestamp="2026-08-21T10:04:25.656" classname="StreamBitrateTest" />
+    <testcase name="SetStreamBitrate_MinBoundary_512kbps" status="run" result="completed" time="1.02" timestamp="2026-08-21T10:04:26.176" classname="StreamBitrateTest" />
+    <testcase name="SetAndGetStreamBitrate" status="run" result="completed" time="1.06" timestamp="2026-08-21T10:04:27.196" classname="StreamBitrateTest" />
+    <testcase name="SetAndGetStreamBitrate_IR" status="run" result="completed" time="1.06" timestamp="2026-08-21T10:04:28.257" classname="StreamBitrateTest" />
+    <testcase name="SetBitrate_BelowDocumentedMinimum_ObserveBehavior" status="run" result="completed" time="1.02" timestamp="2026-08-21T10:04:29.318" classname="StreamBitrateTest" />
+    <testcase name="SetBitrate_AboveDocumentedMaximum_ObserveBehavior" status="run" result="completed" time="1.02" timestamp="2026-08-21T10:04:30.338" classname="StreamBitrateTest" />
+  </testsuite>
+  <testsuite name="StreamInformationTest" tests="5" failures="0" disabled="0" skipped="0" errors="0" time="0.24" timestamp="2026-08-21T10:04:31.358">
+    <testcase name="DefaultStream_EventArrivesAndFieldsAreValid" status="run" result="completed" time="0.04" timestamp="2026-08-21T10:04:31.358" classname="StreamInformationTest" />
+    <testcase name="EOStream_IdAndFieldsMatchRequest" status="run" result="completed" time="0.04" timestamp="2026-08-21T10:04:31.398" classname="StreamInformationTest" />
+    <testcase name="IRStream_ValidWhenAvailable" status="run" result="completed" time="0.04" timestamp="2026-08-21T10:04:31.439" classname="StreamInformationTest" />
+    <testcase name="RepeatedEOQuery_IsStable" status="run" result="completed" time="0.08" timestamp="2026-08-21T10:04:31.479" classname="StreamInformationTest" />
+    <testcase name="CallbackRegistration_IsActive" status="run" result="completed" time="0.04" timestamp="2026-08-21T10:04:31.559" classname="StreamInformationTest" />
+  </testsuite>
+  <testsuite name="StreamProfileTest" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="6.814" timestamp="2026-08-21T10:04:31.599">
+    <testcase name="EO_LowLatencyBalanceHighPerformance_Accepted" status="run" result="completed" time="2.431" timestamp="2026-08-21T10:04:31.599" classname="StreamProfileTest" />
+    <testcase name="IR_LowLatencyBalanceHighPerformance_AcceptedWhenAvailable" status="run" result="completed" time="2.471" timestamp="2026-08-21T10:04:34.031" classname="StreamProfileTest" />
+    <testcase name="BalanceProfile_RepeatedCommandRemainsResponsive" status="run" result="completed" time="1.911" timestamp="2026-08-21T10:04:36.502" classname="StreamProfileTest" />
+  </testsuite>
+  <testsuite name="StreamRateTest" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="0.14" timestamp="2026-08-21T10:04:38.413">
+    <testcase name="EOZoomIndex_OneSecondInterval_IsAccepted" status="run" result="completed" time="0.04" timestamp="2026-08-21T10:04:38.413" classname="StreamRateTest" />
+    <testcase name="IRZoomIndex_DefaultInterval_IsAccepted" status="run" result="completed" time="0.02" timestamp="2026-08-21T10:04:38.454" classname="StreamRateTest" />
+    <testcase name="RepeatedRateRequest_RemainsConnected" status="run" result="completed" time="0.08" timestamp="2026-08-21T10:04:38.474" classname="StreamRateTest" />
+  </testsuite>
+  <testsuite name="StreamResolutionTest" tests="4" failures="0" disabled="0" skipped="0" errors="0" time="17.682" timestamp="2026-08-21T10:04:38.554">
+    <testcase name="SetResolution_1080p_Verified" status="run" result="completed" time="3.54" timestamp="2026-08-21T10:04:38.554" classname="StreamResolutionTest" />
+    <testcase name="SetResolution_720p_Verified" status="run" result="completed" time="3.54" timestamp="2026-08-21T10:04:42.095" classname="StreamResolutionTest" />
+    <testcase name="SetResolution_540p_Verified" status="run" result="completed" time="3.52" timestamp="2026-08-21T10:04:45.635" classname="StreamResolutionTest" />
+    <testcase name="SetAndGetStreamResolution" status="run" result="completed" time="7.08" timestamp="2026-08-21T10:04:49.155" classname="StreamResolutionTest" />
+  </testsuite>
+  <testsuite name="StreamResolutionIRTest" tests="6" failures="0" disabled="0" skipped="0" errors="0" time="24.803" timestamp="2026-08-21T10:04:56.236">
+    <testcase name="SetResolution_1280x1024_Verified" status="run" result="completed" time="3.54" timestamp="2026-08-21T10:04:56.236" classname="StreamResolutionIRTest" />
+    <testcase name="SetResolution_640x512_Verified" status="run" result="completed" time="3.54" timestamp="2026-08-21T10:04:59.777" classname="StreamResolutionIRTest" />
+    <testcase name="SetResolution_480x384_Verified" status="run" result="completed" time="3.54" timestamp="2026-08-21T10:05:03.317" classname="StreamResolutionIRTest" />
+    <testcase name="SetResolution_320x256_Verified" status="run" result="completed" time="3.54" timestamp="2026-08-21T10:05:06.858" classname="StreamResolutionIRTest" />
+    <testcase name="SetResolution_160x128_Verified" status="run" result="completed" time="3.54" timestamp="2026-08-21T10:05:10.398" classname="StreamResolutionIRTest" />
+    <testcase name="SetAndGetStreamResolution" status="run" result="completed" time="7.1" timestamp="2026-08-21T10:05:13.939" classname="StreamResolutionIRTest" />
+  </testsuite>
+  <testsuite name="RestartAppInvalidIdTest" tests="1" failures="0" disabled="1" skipped="0" errors="0" time="0" timestamp="1970-01-01T08:00:00.000">
+    <testcase name="DISABLED_Invalid255_IsRejectedAndPayloadStaysResponsive" status="notrun" result="suppressed" time="0" timestamp="1970-01-01T08:00:00.000" classname="RestartAppInvalidIdTest" />
+  </testsuite>
+  <testsuite name="StandbyEncodingTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="1.144" timestamp="2026-08-21T10:05:21.039">
+    <testcase name="EnableAndDisable_EncodeExpectedUser4Fields" status="run" result="completed" time="1.144" timestamp="2026-08-21T10:05:21.039" classname="StandbyEncodingTest" />
+  </testsuite>
+  <testsuite name="StandbyTest" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="14.78" timestamp="2026-08-21T10:05:22.184">
+    <testcase name="Disable_LeavesCameraAndHeartbeatResponsive" status="run" result="completed" time="3.893" timestamp="2026-08-21T10:05:22.184" classname="StandbyTest" />
+    <testcase name="EnableThenDisable_RestoresCameraQueries" status="run" result="completed" time="9.185" timestamp="2026-08-21T10:05:26.077" classname="StandbyTest" />
+    <testcase name="RepeatedEnableThenDisable_RemainsRecoverable" status="run" result="completed" time="1.701" timestamp="2026-08-21T10:05:35.263" classname="StandbyTest" />
+  </testsuite>
+  <testsuite name="GpsPositionTest" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="3.372" timestamp="2026-08-21T10:05:36.964">
+    <testcase name="EncodesExactGlobalPositionInt" status="run" result="completed" time="1.123" timestamp="2026-08-21T10:05:36.964" classname="GpsPositionTest" />
+    <testcase name="NegativeLatitudeLongitudeAndAltitudePreserved" status="run" result="completed" time="1.123" timestamp="2026-08-21T10:05:38.088" classname="GpsPositionTest" />
+    <testcase name="TimestampVelocityAndHeadingBoundariesPreserved" status="run" result="completed" time="1.124" timestamp="2026-08-21T10:05:39.212" classname="GpsPositionTest" />
+  </testsuite>
+  <testsuite name="GpsRawTest" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="3.373" timestamp="2026-08-21T10:05:40.337">
+    <testcase name="EncodesAllBaseAndExtensionFieldsExactly" status="run" result="completed" time="1.124" timestamp="2026-08-21T10:05:40.337" classname="GpsRawTest" />
+    <testcase name="NoFixAndUnknownValuesArePreserved" status="run" result="completed" time="1.124" timestamp="2026-08-21T10:05:41.461" classname="GpsRawTest" />
+    <testcase name="ThreeDimensionalFixNegativeCoordinatesAndAccuracyPreserved" status="run" result="completed" time="1.124" timestamp="2026-08-21T10:05:42.585" classname="GpsRawTest" />
+  </testsuite>
+  <testsuite name="SystemTimeTest" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="3.372" timestamp="2026-08-21T10:05:43.710">
+    <testcase name="EncodesUnixAndBootTimeExactly" status="run" result="completed" time="1.124" timestamp="2026-08-21T10:05:43.710" classname="SystemTimeTest" />
+    <testcase name="ZeroValuesArePreserved" status="run" result="completed" time="1.123" timestamp="2026-08-21T10:05:44.835" classname="SystemTimeTest" />
+    <testcase name="MaximumTimestampsAreNotTruncated" status="run" result="completed" time="1.124" timestamp="2026-08-21T10:05:45.959" classname="SystemTimeTest" />
+  </testsuite>
+  <testsuite name="TrackingModeTest" tests="4" failures="0" disabled="0" skipped="0" errors="0" time="3.848" timestamp="2026-08-21T10:05:47.083">
+    <testcase name="Stop_ReportsIdle" status="run" result="completed" time="0.962" timestamp="2026-08-21T10:05:47.083" classname="TrackingModeTest" />
+    <testcase name="Active_ProducesKnownTrackingStatus" status="run" result="completed" time="0.921" timestamp="2026-08-21T10:05:48.045" classname="TrackingModeTest" />
+    <testcase name="EagleEyes_CommandAcceptedOrTelemetryResponsive" status="run" result="completed" time="0.942" timestamp="2026-08-21T10:05:48.967" classname="TrackingModeTest" />
+    <testcase name="ActiveThenStop_ReturnsIdle" status="run" result="completed" time="1.022" timestamp="2026-08-21T10:05:49.909" classname="TrackingModeTest" />
+  </testsuite>
+  <testsuite name="TrackingPositionTest" tests="8" failures="1" disabled="0" skipped="0" errors="0" time="24.762" timestamp="2026-08-21T10:05:50.932">
+    <testcase name="CenteredBox_AppearsInTelemetry" status="run" result="completed" time="1.021" timestamp="2026-08-21T10:05:50.932" classname="TrackingPositionTest" />
+    <testcase name="TopLeftValidBox_AppearsInTelemetry" status="run" result="completed" time="1.042" timestamp="2026-08-21T10:05:51.954" classname="TrackingPositionTest" />
+    <testcase name="BottomRightValidBox_RemainsInsideFrame" status="run" result="completed" time="1.122" timestamp="2026-08-21T10:05:52.996" classname="TrackingPositionTest" />
+    <testcase name="FarApartPoints_AreAppliedInSequence" status="run" result="completed" time="11.584" timestamp="2026-08-21T10:05:54.119" classname="TrackingPositionTest" />
+    <testcase name="OppositeFarPoints_TravelAcrossFrame" status="run" result="completed" time="5.463" timestamp="2026-08-21T10:06:05.703" classname="TrackingPositionTest">
+      <failure message="/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/tracking/test_tracking_position.cpp:88&#x0A;The difference between current.x and 1728 is 800, which exceeds 96, where&#x0A;current.x evaluates to 928,&#x0A;1728 evaluates to 1728, and&#x0A;96 evaluates to 96." type=""><![CDATA[/home/myhuong/Documents/testing_documents/sdk_cpp/PayloadSDK_VIO_0810_Gtest/PayloadSdk/tests/test_api_payload_gtest/tracking/test_tracking_position.cpp:88
+The difference between current.x and 1728 is 800, which exceeds 96, where
+current.x evaluates to 928,
+1728 evaluates to 1728, and
+96 evaluates to 96.]]></failure>
+    </testcase>
+    <testcase name="ZeroSize_IsRejectedOrIgnored" status="run" result="completed" time="1.662" timestamp="2026-08-21T10:06:11.167" classname="TrackingPositionTest" />
+    <testcase name="OutOfFrame_IsRejectedOrClamped" status="run" result="completed" time="1.561" timestamp="2026-08-21T10:06:12.829" classname="TrackingPositionTest" />
+    <testcase name="StopAfterTrigger_ReturnsIdle" status="run" result="completed" time="1.302" timestamp="2026-08-21T10:06:14.391" classname="TrackingPositionTest" />
+  </testsuite>
+  <testsuite name="EoModes/CameraEoWhiteBalanceModeTest" tests="5" failures="0" disabled="0" skipped="0" errors="0" time="6.213" timestamp="2026-08-21T10:06:15.694">
+    <testcase name="SetAndReadBack/Auto" value_param="Auto (value=0)" status="run" result="completed" time="1.202" timestamp="2026-08-21T10:06:15.694" classname="EoModes/CameraEoWhiteBalanceModeTest" />
+    <testcase name="SetAndReadBack/Outdoor" value_param="Outdoor (value=2)" status="run" result="completed" time="1.202" timestamp="2026-08-21T10:06:16.897" classname="EoModes/CameraEoWhiteBalanceModeTest" />
+    <testcase name="SetAndReadBack/Indoor" value_param="Indoor (value=1)" status="run" result="completed" time="1.383" timestamp="2026-08-21T10:06:18.099" classname="EoModes/CameraEoWhiteBalanceModeTest" />
+    <testcase name="SetAndReadBack/Manual" value_param="Manual (value=5)" status="run" result="completed" time="1.222" timestamp="2026-08-21T10:06:19.482" classname="EoModes/CameraEoWhiteBalanceModeTest" />
+    <testcase name="SetAndReadBack/ATW" value_param="ATW (value=4)" status="run" result="completed" time="1.202" timestamp="2026-08-21T10:06:20.705" classname="EoModes/CameraEoWhiteBalanceModeTest" />
+  </testsuite>
+  <testsuite name="SupportedModes/CameraWhiteBalanceModeTest" tests="5" failures="0" disabled="0" skipped="0" errors="0" time="2.187" timestamp="2026-08-21T10:06:21.908">
+    <testcase name="Mode_SetAndReadBack/Auto" value_param="Auto (value=0)" status="run" result="completed" time="0.421" timestamp="2026-08-21T10:06:21.908" classname="SupportedModes/CameraWhiteBalanceModeTest" />
+    <testcase name="Mode_SetAndReadBack/Outdoor" value_param="Outdoor (value=2)" status="run" result="completed" time="0.461" timestamp="2026-08-21T10:06:22.329" classname="SupportedModes/CameraWhiteBalanceModeTest" />
+    <testcase name="Mode_SetAndReadBack/Indoor" value_param="Indoor (value=1)" status="run" result="completed" time="0.421" timestamp="2026-08-21T10:06:22.791" classname="SupportedModes/CameraWhiteBalanceModeTest" />
+    <testcase name="Mode_SetAndReadBack/Manual" value_param="Manual (value=5)" status="run" result="completed" time="0.461" timestamp="2026-08-21T10:06:23.212" classname="SupportedModes/CameraWhiteBalanceModeTest" />
+    <testcase name="Mode_SetAndReadBack/ATW" value_param="ATW (value=4)" status="run" result="completed" time="0.421" timestamp="2026-08-21T10:06:23.674" classname="SupportedModes/CameraWhiteBalanceModeTest" />
+  </testsuite>
+  <testsuite name="CaptureModes/CameraCaptureSourceTest" tests="4" failures="0" disabled="0" skipped="0" errors="0" time="6.05" timestamp="2026-08-21T10:06:24.096">
+    <testcase name="CaptureIncrementsImageCount/EO" value_param="EO (view=1, record=1)" status="run" result="completed" time="1.543" timestamp="2026-08-21T10:06:24.096" classname="CaptureModes/CameraCaptureSourceTest" />
+    <testcase name="CaptureIncrementsImageCount/IR" value_param="IR (view=2, record=2)" status="run" result="completed" time="1.482" timestamp="2026-08-21T10:06:25.639" classname="CaptureModes/CameraCaptureSourceTest" />
+    <testcase name="CaptureIncrementsImageCount/PiP" value_param="PiP (view=0, record=5)" status="run" result="completed" time="1.542" timestamp="2026-08-21T10:06:27.122" classname="CaptureModes/CameraCaptureSourceTest" />
+    <testcase name="CaptureIncrementsImageCount/Both" value_param="Both (view=0, record=0)" status="run" result="completed" time="1.482" timestamp="2026-08-21T10:06:28.664" classname="CaptureModes/CameraCaptureSourceTest" />
+  </testsuite>
+  <testsuite name="CoreCapabilities/CameraInformationCapabilityTest" tests="6" failures="0" disabled="0" skipped="0" errors="0" time="1.023" timestamp="2026-08-21T10:06:30.146">
+    <testcase name="CoreFeature_IsAdvertised/CaptureImage" value_param="CaptureImage (flag=0x2)" status="run" result="completed" time="0.02" timestamp="2026-08-21T10:06:30.146" classname="CoreCapabilities/CameraInformationCapabilityTest" />
+    <testcase name="CoreFeature_IsAdvertised/CaptureVideo" value_param="CaptureVideo (flag=0x1)" status="run" result="completed" time="0.2" timestamp="2026-08-21T10:06:30.166" classname="CoreCapabilities/CameraInformationCapabilityTest" />
+    <testcase name="CoreFeature_IsAdvertised/CameraModes" value_param="CameraModes (flag=0x4)" status="run" result="completed" time="0.22" timestamp="2026-08-21T10:06:30.367" classname="CoreCapabilities/CameraInformationCapabilityTest" />
+    <testcase name="CoreFeature_IsAdvertised/BasicZoom" value_param="BasicZoom (flag=0x40)" status="run" result="completed" time="0.18" timestamp="2026-08-21T10:06:30.588" classname="CoreCapabilities/CameraInformationCapabilityTest" />
+    <testcase name="CoreFeature_IsAdvertised/BasicFocus" value_param="BasicFocus (flag=0x80)" status="run" result="completed" time="0.2" timestamp="2026-08-21T10:06:30.768" classname="CoreCapabilities/CameraInformationCapabilityTest" />
+    <testcase name="CoreFeature_IsAdvertised/VideoStream" value_param="VideoStream (flag=0x100)" status="run" result="completed" time="0.2" timestamp="2026-08-21T10:06:30.969" classname="CoreCapabilities/CameraInformationCapabilityTest" />
+  </testsuite>
+  <testsuite name="SafeModes/GimbalModeValueTest" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="0.582" timestamp="2026-08-21T10:06:31.170">
+    <testcase name="SetAndReadBack/Lock" value_param="Lock (value=1)" status="run" result="completed" time="0.321" timestamp="2026-08-21T10:06:31.170" classname="SafeModes/GimbalModeValueTest" />
+    <testcase name="SetAndReadBack/Follow" value_param="Follow (value=2)" status="run" result="completed" time="0.14" timestamp="2026-08-21T10:06:31.491" classname="SafeModes/GimbalModeValueTest" />
+    <testcase name="SetAndReadBack/Mapping" value_param="Mapping (value=3)" status="run" result="completed" time="0.12" timestamp="2026-08-21T10:06:31.631" classname="SafeModes/GimbalModeValueTest" />
+  </testsuite>
+  <testsuite name="SupportedApps/RestartAppEncodingTest" tests="5" failures="0" disabled="0" skipped="0" errors="0" time="5.619" timestamp="2026-08-21T10:06:31.752">
+    <testcase name="EncodesExpectedApplicationId/Payload" value_param="Payload(id=0)" status="run" result="completed" time="1.123" timestamp="2026-08-21T10:06:31.752" classname="SupportedApps/RestartAppEncodingTest" />
+    <testcase name="EncodesExpectedApplicationId/Streaming" value_param="Streaming(id=1)" status="run" result="completed" time="1.123" timestamp="2026-08-21T10:06:32.876" classname="SupportedApps/RestartAppEncodingTest" />
+    <testcase name="EncodesExpectedApplicationId/Tracking" value_param="Tracking(id=2)" status="run" result="completed" time="1.123" timestamp="2026-08-21T10:06:34.000" classname="SupportedApps/RestartAppEncodingTest" />
+    <testcase name="EncodesExpectedApplicationId/WebUI" value_param="WebUI(id=3)" status="run" result="completed" time="1.123" timestamp="2026-08-21T10:06:35.124" classname="SupportedApps/RestartAppEncodingTest" />
+    <testcase name="EncodesExpectedApplicationId/Gimbal" value_param="Gimbal(id=4)" status="run" result="completed" time="1.123" timestamp="2026-08-21T10:06:36.248" classname="SupportedApps/RestartAppEncodingTest" />
+  </testsuite>
+  <testsuite name="SupportedApps/RestartAppHardwareTest" tests="5" failures="0" disabled="5" skipped="0" errors="0" time="0" timestamp="1970-01-01T08:00:00.000">
+    <testcase name="DISABLED_Restart_RecoversWithinTimeout/Payload" value_param="Payload(id=0)" status="notrun" result="suppressed" time="0" timestamp="1970-01-01T08:00:00.000" classname="SupportedApps/RestartAppHardwareTest" />
+    <testcase name="DISABLED_Restart_RecoversWithinTimeout/Streaming" value_param="Streaming(id=1)" status="notrun" result="suppressed" time="0" timestamp="1970-01-01T08:00:00.000" classname="SupportedApps/RestartAppHardwareTest" />
+    <testcase name="DISABLED_Restart_RecoversWithinTimeout/Tracking" value_param="Tracking(id=2)" status="notrun" result="suppressed" time="0" timestamp="1970-01-01T08:00:00.000" classname="SupportedApps/RestartAppHardwareTest" />
+    <testcase name="DISABLED_Restart_RecoversWithinTimeout/WebUI" value_param="WebUI(id=3)" status="notrun" result="suppressed" time="0" timestamp="1970-01-01T08:00:00.000" classname="SupportedApps/RestartAppHardwareTest" />
+    <testcase name="DISABLED_Restart_RecoversWithinTimeout/Gimbal" value_param="Gimbal(id=4)" status="notrun" result="suppressed" time="0" timestamp="1970-01-01T08:00:00.000" classname="SupportedApps/RestartAppHardwareTest" />
+  </testsuite>
+</testsuites>
